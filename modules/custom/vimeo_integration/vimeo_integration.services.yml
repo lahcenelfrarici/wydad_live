@@ -1,0 +1,4 @@
+services:
+  vimeo_integration.client:
+    class: Drupal\vimeo_integration\VimeoClient
+    arguments: ['@http_client', '@config.factory']

@@ -1,0 +1,189 @@
+<?php
+
+
+use Drupal\taxonomy\Entity\Term;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Form\FormStateInterface;
+
+
+ /**
+ * Implements hook_form_alter().
+ */
+function dynamic_subprofile_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_digital_services_form' || $form_id == 'node_digital_services_edit_form') {
+    $form['field_profile']['widget']['#ajax'] = [
+      'callback' => 'dynamic_subprofile_ajax_callback',
+      'event' => 'change',
+      'wrapper' => 'subprofile-wrapper',
+    ];
+
+    $form['field_subprofile']['#prefix'] = '<div id="subprofile-wrapper">';
+    $form['field_subprofile']['#suffix'] = '</div>';
+
+    // Get the current node if we're on the edit form
+    $node = $form_state->getFormObject()->getEntity();
+
+    // Get the profile_id from form_state first (for both create and edit forms)
+    $profile_id = $form_state->getValue('field_profile')[0]['target_id'] ?? NULL;
+
+    // If profile_id is not in form_state, try to get it from the node (for edit form initial load)
+    if (!$profile_id && $node->id() && $node->hasField('field_profile') && !$node->get('field_profile')->isEmpty()) {
+      $profile_id = $node->get('field_profile')->target_id;
+    }
+
+    // Populate subprofile options
+    $subprofile_options = $profile_id ? _dynamic_subprofile_get_options($profile_id) : [];
+    
+    if (!empty($subprofile_options)) {
+      $form['field_subprofile']['widget']['#options'] = ['' => t('- Select a subprofile -')] + $subprofile_options;
+    } else {
+      $form['field_subprofile']['widget']['#options'] = ['' => t('- Select a profile first -')];
+    }
+
+    // Set default value for subprofile if it exists and is valid
+    $subprofile_id = $form_state->getValue('field_subprofile')[0]['target_id'] 
+      ?? ($node->id() && $node->hasField('field_subprofile') && !$node->get('field_subprofile')->isEmpty() 
+          ? $node->get('field_subprofile')->target_id 
+          : NULL);
+
+    if ($subprofile_id && isset($subprofile_options[$subprofile_id])) {
+      $form['field_subprofile']['widget']['#default_value'] = $subprofile_id;
+    } else {
+      $form['field_subprofile']['widget']['#default_value'] = NULL;
+    }
+
+    $form['#validate'][] = 'dynamic_subprofile_form_validate';
+  }
+  if($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-digital-services-page-1'){
+    //theme
+    $form['key_word']['#theme_wrappers'] = [];      
+    $form['profile']['#theme_wrappers'] = [];
+    $form['profile']['#attributes']['class'] = ['form-select'];
+    $form['subprofile']['#theme_wrappers'] = [];
+    $form['subprofile']['#attributes']['class'] = ['form-select'];
+    $form['category']['#theme_wrappers'] = [];
+    $form['category']['#attributes']['class'] = ['form-select'];
+  }
+}
+
+
+/**
+ * Ajax callback for the profile field.
+*/
+function dynamic_subprofile_ajax_callback(array &$form, FormStateInterface $form_state) {
+  $profile_id = $form_state->getValue('field_profile')[0]['target_id'] ?? NULL;
+  $subprofile_options = $profile_id ? _dynamic_subprofile_get_options($profile_id) : [];
+
+  if (!empty($subprofile_options)) {
+    $form['field_subprofile']['widget']['#options'] = ['' => t('- Select a subprofile -')] + $subprofile_options;
+  } else {
+    $form['field_subprofile']['widget']['#options'] = ['' => t('- Select a profile first -')];
+  }
+
+  // Reset the subprofile value when profile changes
+  $form['field_subprofile']['widget']['#default_value'] = NULL;
+
+  return $form['field_subprofile'];
+}
+  
+  /**
+   * Custom validation for the form.
+   */
+  function dynamic_subprofile_form_validate(&$form, FormStateInterface $form_state) {
+    $profile_id = $form_state->getValue('field_profile')[0]['target_id'] ?? NULL;
+    $subprofile_id = $form_state->getValue('field_subprofile')[0]['target_id'] ?? NULL;
+  
+    if ($profile_id && $subprofile_id) {
+      $valid_options = _dynamic_subprofile_get_options($profile_id);
+      if (!isset($valid_options[$subprofile_id])) {
+        $form_state->setErrorByName('field_subprofile', t('The selected sub-profile is not valid for the chosen profile.'));
+      }
+    }
+  }
+  
+  /**
+   * Helper function to get subprofile options for a given profile.
+   */
+  function _dynamic_subprofile_get_options($profile_id) {
+    $subprofile_options = [];
+    $query = \Drupal::entityQuery('taxonomy_term')
+      ->condition('vid', 'subprofile')
+      ->condition('field_profile', $profile_id)
+      ->accessCheck(true);
+    $subprofile_ids = $query->execute();
+    
+    foreach ($subprofile_ids as $id) {
+      $term = Term::load($id);
+      $subprofile_options[$id] = $term->label();
+    }
+    
+    return $subprofile_options;
+  }
+
+  /**
+ * Implements hook_form_views_exposed_form_alter().
+ */
+function dynamic_subprofile_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $view = $form_state->get('view');
+  if ($view instanceof ViewExecutable && $view->id() == 'digital_services' && $view->current_display == 'page_1') {
+    $form['#attached']['library'][] = 'dynamic_subprofile/dynamic_subprofile';
+    
+    // Add a custom data attribute to the subprofile field for JavaScript targeting
+    $form['subprofile']['#attributes']['data-subprofile-select'] = TRUE;
+    $form['#attributes']['class'] = ['filter--search--box'];
+    $form['field_name']['#attributes']['data-summary-field'] = 'text'; // or 'select' for dropdowns
+    
+    // Add data attributes to help JavaScript identify the fields
+    $form['key_word']['#attributes']['data-summary-field'] = 'text';
+    $form['profile']['#attributes']['data-summary-field'] = 'select';
+    $form['subprofile']['#attributes']['data-summary-field'] = 'select';
+    $form['category']['#attributes']['data-summary-field'] = 'select';
+  }
+
+  if ($form['#id'] == 'views-exposed-form-patrimoine-materiel-page-1') {
+    $form['title']['#attributes']['data-summary-field'] = 'text';
+    $form['field_regions_target_id']['#attributes']['data-summary-field'] = 'select';
+    $form['field_villes_target_id']['#attributes']['data-summary-field'] = 'select';
+    $form['field_classifications_target_id']['#attributes']['data-summary-field'] = 'select';
+  }
+}
+
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function dynamic_subprofile_views_pre_render(ViewExecutable $view) {
+  // Check if this is the correct view
+  if ($view->id() == 'digital_services' && ($view->current_display == 'block_1' || $view->current_display == 'block_2') ) {
+    $results = $view->result;
+    $grouped_results = [];
+    $limit_per_group = 2;
+
+    // Group results by subprofile
+    foreach ($results as $result) {
+      $subprofile_id = $result->_entity->get('field_subprofile')->target_id;
+      if (!isset($grouped_results[$subprofile_id])) {
+        $grouped_results[$subprofile_id] = [];
+      }
+      if (count($grouped_results[$subprofile_id]) < $limit_per_group) {
+        $grouped_results[$subprofile_id][] = $result;
+      }
+    }
+
+    // Flatten the grouped results back into a single array
+    $new_results = [];
+    foreach ($grouped_results as $group) {
+      $new_results = array_merge($new_results, $group);
+    }
+    
+
+    // Replace the view results with our modified results
+    $view->result = $new_results;
+
+    // Update the total number of rows in the view
+    $view->total_rows = count($new_results);
+    $view->pager->total_items = count($new_results);
+    $view->pager->updatePageInfo();
+  }
+
+}

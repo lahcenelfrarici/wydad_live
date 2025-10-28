@@ -1,0 +1,87 @@
+{#
+/**
+ * @file
+ * Default theme implementation for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   JavaScript.
+ *
+ * @see template_preprocess_views_view()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<main>
+	<section class="three_block_news">
+	    <div class="container">
+	    	<div class="col-md-12">
+          <div class="result-title">
+            <h3>{{'Search Results for'|t}} "<span id="search-term"></span>"</h3>
+            <p>{{'Browse through relevant results and find what you’re looking for'|t}}</p>
+          </div>
+        </div>
+	      <div class="row g-4 mt-2" id="list--news-all">
+	        {{ rows }}
+	      </div>
+	    </div>
+	  </section>
+    {{ pager }}
+
+</main>
+	{# <div
+		class="ires_search">
+
+		<!-- SEARCH -->
+
+		<section class="page_search">
+			<div class="container">
+				<div
+					class="row">
+					<!-- Filter search-->
+					<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+						<div class="result-title">
+							<h3>{{'No Results Found for'|t}}
+								"<span>Lorem</span>"</h3>
+							<p>{{'Try adjusting your search terms, checking for typos, or exploring related topics to discover relevant information.'|t}}</p>
+						</div>
+						<div class="search_result">
+							{{ exposed }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Show Result 1-->
+			{{ rows }}
+		</section>
+
+		<!-- END SEARCH -->
+
+		<!-- EPAGINATIONS -->
+
+		{{ pager }}
+
+		<!-- END PAGINATIONS -->
+
+	</div> #}

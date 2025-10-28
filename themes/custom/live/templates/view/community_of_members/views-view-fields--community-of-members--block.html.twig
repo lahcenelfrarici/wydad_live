@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a single field in a view.
+ *
+ * Available variables:
+ * - view: The view that the field belongs to.
+ * - field: The field handler that can process the input.
+ * - row: The raw result of the database query that generated this field.
+ * - output: The processed output that will normally be used.
+ *
+ * When fetching output from the row this construct should be used:
+ * data = row[field.field_alias]
+ *
+ * The above will guarantee that you'll always get the correct data, regardless
+ * of any changes in the aliasing that might happen if the view is modified.
+ *
+ * @see template_preprocess_views_view_field()
+ *
+ * @ingroup themeable
+ */
+#}
+{# {% set youtubeUrl = fields.field_country_name.content|raw|striptags %}
+<div data-value="{{ youtubeUrl|trim }}">
+	<img src="{{ file_url(row._entity.field_flag_image.entity.fileuri) }}" alt="{{ row.content['#country_name'] }}" width="20" height="15"/>
+	<span>{{fields.field_country_name.content }}</span>
+</div> #}
+{% set industrieseUrl = fields.field_all_industries.content|raw|striptags %}
+{% set country_payseUrl = fields.field_country_pays.content|raw|striptags %}
+{% set Url_link = fields.field_members_links.content|raw|striptags %}
+<div class="member" data-country="{{ country_payseUrl|trim }}" data-category="{{ industrieseUrl|trim }}">
+					<div class="img--pays-el"><img src="{{ file_url(row._entity.field_image_member.entity.fileuri) }}"></div>
+					<div class="parnet--title">{{fields.title.content }}<div class="link--arrow-ps">
+							{# <a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewbox="0 0 38 38" fill="none">
+									<path d="M7.12477 20.5815H25.4693L18.3443 27.7065L20.5831 29.9453L31.5303 18.9981L20.5831 8.05098L18.3443 10.2898L25.4693 17.4148H7.12477V20.5815Z" fill="#00677F"/>
+								</svg>
+							</a> #}
+               <a href="{{ Url_link|trim }}" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+      <path d="M7.12477 20.5815H25.4693L18.3443 27.7065L20.5831 29.9453L31.5303 18.9981L20.5831 8.05098L18.3443 10.2898L25.4693 17.4148H7.12477V20.5815Z" fill="#00677F"/>
+    </svg>
+  </a>
+						</div>
+					</div>
+				</div>

@@ -1,0 +1,29 @@
+{# <div class="container" id="alpha-champs">
+  <div class="title-primary-sc mb-3">
+    <h2>{{'What’s up in CFC?'|t}}</h2>
+  </div>
+  <div class="card---filter">
+    <div class="filter" id="filter"></div>
+    <div class="articles-container">
+      <div class="articles articles-slider" id="articles">
+        {{ rows }}
+      </div>
+    </div>
+    <div class="pagination-container">
+      <div class="slider-dots" id="slider-dots"></div>
+    </div>
+  </div>
+</div> #}
+<div class="container">
+    <div class="title-primary-sc mb-3">
+        <h2>What’s up in CFC?</h2>
+    </div>
+    <div class="card---filter">
+        <div class="filter" id="filter">
+            <!-- Alphabet buttons will be dynamically generated here -->
+        </div>
+        <div class="articles owl-carousel" id="articles">
+            {{ rows }} <!-- Replace this with your actual article items -->
+        </div>
+    </div>
+</div>

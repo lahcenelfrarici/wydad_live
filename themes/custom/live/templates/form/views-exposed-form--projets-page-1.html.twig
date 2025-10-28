@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @see template_preprocess_views_exposed_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <form {{ attributes }}>
+  <div class="row mb-4">
+    <div class="col-12 col-md-3 mb-3">
+     {{ form.sort_bef_combine }}
+    </div>
+    <div class="col-12 col-md-3 mb-3">
+      {{ form.year }}
+    </div>
+
+    <!-- Action search -->
+    <div class="col-auto mb-3">
+      {{ form.actions }}
+    </div>
+  </div>
+</form> #}
+
+{# views-exposed-form--news-page-1.html.twig #}
+
+{# <form {{ attributes }}>
+<div class="col-md-4">
+					<div class="filter-option">
+           {{ form.title }}
+					</div>
+				</div>
+<div class="col-md-8">
+				<div class="col-md-2 select__list" id="select__list">
+					<div class="filter-option">
+						<div class="filter-label">Lieu</div>
+					{{ form.field_lieu_value }}
+					</div>
+				</div>
+				<div class="col-md-2 select__list">
+					<div class="filter-option">
+						<div class="filter-label">Type</div>
+						{{ form.field_type_value }}
+					</div>
+				</div>
+				<div class="col-md-2 select__list">
+					<div class="filter-option">
+						<div class="filter-label">Etat</div>
+					{{ form.field_etat_value }}
+					</div>
+				</div>
+
+        <div class="btn__sbmt col-md-2">
+          {{ form.actions.submit }}
+        </div>
+        </div>
+</form> #}
+{# <div class="button-row">
+  <button class="btn">Tout</button>
+  <button class="btn">Résidentiel</button>
+  <button class="btn">Sport et loisirs</button>
+  <button class="btn">Santé</button>
+  <button class="btn">Transport</button>
+  <button class="btn">Industriel</button>
+  <button class="btn">Institutionnel</button>
+  <button class="btn">Éducation</button>
+  <button class="btn">Hôtellerie</button>
+</div> #}
+

@@ -1,0 +1,7 @@
+dynamic_subprofile.get_subprofiles:
+  path: '/dynamic-subprofile/get-subprofiles'
+  defaults:
+    _controller: '\Drupal\dynamic_subprofile\Controller\DynamicSubprofileController::getSubprofiles'
+    _title: 'Get Subprofiles'
+  requirements:
+    _permission: 'access content'

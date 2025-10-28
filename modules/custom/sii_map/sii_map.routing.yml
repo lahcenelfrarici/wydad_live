@@ -1,0 +1,7 @@
+sii_map.data:
+  path: '/sii-map/data'
+  defaults:
+    _controller: '\Drupal\sii_map\Controller\MapController::getMapData'
+    _title: 'Map Data'
+  requirements:
+    _permission: 'access content'

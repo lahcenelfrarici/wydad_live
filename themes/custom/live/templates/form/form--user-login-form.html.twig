@@ -1,0 +1,79 @@
+{#
+/**
+ * @file
+ * Theme override for a login form.
+ *
+ * Available variables:
+ * - form: The form array.
+ * - attributes: HTML attributes for the form.
+ * - children: Child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <div class="login--page-cfc container">
+    {% if messages %}
+        <div class="messages">
+            {{ messages }}
+        </div>
+    {% endif %}
+
+    <form{{ attributes }}>
+        {{ children }}
+    </form>
+
+</div> #}
+
+
+<div class="container container-md mb-5 pb-6 pt-6">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-xxl-7">
+            <div class="card px-md-4 shadow-sm">
+                <div class="card-body p-5">
+                    <h1 class="text-center mb-5 h2">{{ "Se connecter"|t }}</h1>
+                    <form {{ attributes }}>
+                        <div class="position-relative mb-4">
+                            {{ element.name }}
+                        </div>
+                        <div class="position-relative mb-4">
+                            {{ element.pass }}
+                            <i toggle="#login_pwd" class="fa-solid fa-eye toggle-password"></i>
+                        </div>
+                        {# <div class="row justify-content-between">
+                            <div class="col-auto mb-4">
+                                <div class="check-box">
+                                    {{ element.persistent_login }}
+                                    <label for="switch" class="label-text px-2">{{ element.persistent_login['#title'] }}</label>
+                                </div>
+                            </div>
+                            <div class="col-auto mb-4">
+                                <a href="{{ path('user.pass') }}" class="text-danger"><p>{{ "Mot de passe oublié?"|t }}</p></a>
+                            </div>
+                        </div> #}
+
+                        <!-- reCAPTCHA -->
+                        <div class="mb-4 captcha_log">
+                            {{ element.captcha }}
+                        </div>
+
+                        <div class="text-center mb-2">
+                            {{ element.form_build_id }}
+                            {{ element.form_id }}
+                            {{ element.actions.submit }}
+                        </div>
+                    </form>
+                    <hr class="my-md-4">
+                    {# <div class="text-center">
+                        <p class="text-primary">{{ "Vous n'avez pas un compte?"|t }}</p>
+                        <a href="{{ path('user.register') }}" class="btn btn-outline-danger">
+                            {{ "S'inscrire"|t }} <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div> #}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

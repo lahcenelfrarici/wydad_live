@@ -1,0 +1,135 @@
+{# <header class="bg-white shadow-sm header--menu" data-sticky-class="is-sticky">
+	<nav class="navbar navbar-expand-lg navbar-light container">
+		{{ drupal_entity('block','cfc_identitedusite') }}
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			{% if page.primary_menu %}
+				{{page.primary_menu}}
+			{% endif %}
+		</div>
+	</nav>
+</header> #}
+
+<div class="preloader">
+	<div class="logo-container"><!-- Using a placeholder logo with your color -->
+		<!-- <div class="live__pr">
+				            live
+				            </div> -->
+	</div>
+	<div class="spinner"><img class="two--sc--img" src="/themes/custom/live/live/assets/images/logo.png"></div>
+	<!-- <p class="loading-text">LOADING</p>
+		        <div class="progress-bar">
+		            <div class="progress"></div>
+		        </div> -->
+</div>
+<header class="header-inside" id="header-inside">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand logo__1" href="{{ path('<front>') }}">
+				<img class="two--sc--img" src="/themes/custom/live/live/assets/images/logo.png"></a>
+			<a class="navbar-brand logo__2" href="{{ path('<front>') }}">
+				<img class="two--sc--img" src="/themes/custom/live/live/assets/images/logo-2.png"></a>
+			<button
+				class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				{# <span class="navbar-toggler-icon"></span> #}
+				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewbox="0 0 28 20" fill="none">
+					<path d="M0.828125 0.78125H27.0781M0.828125 9.53125H27.0781M0.828125 18.2813H27.0781" stroke="#600100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+			<div class="right--contact-multi-langue" id="mobile_multi_right">
+				<div class="d-flex align-items-center gap-3">
+
+
+					{{ drupal_entity('block','live_languageswitcher') }}
+
+
+				</div>
+			</div>
+			<div
+				class="collapse navbar-collapse" id="navbarNav">
+				{# <ul class="navbar-nav ms-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="/index.html">Accueil</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/Our_hestory.html">Agence</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/Nos_projets.html">Projets</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/carriere.html">Carrières</a>
+									</li>
+
+								</ul> #}
+				{% if page.primary_menu %}
+					{{page.primary_menu}}
+				{% endif %}
+			</div>
+			<div class="right--contact-multi-langue">
+				<div
+					class="d-flex align-items-center gap-3">
+
+					{# <button class="btn btn-lang dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">FR</button>
+											<ul class="dropdown-menu" aria-labelledby="langDropdown">
+												<li>
+													<a class="dropdown-item" href="#">EN</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">ES</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">DE</a>
+												</li>
+											</ul> #}
+					{{ drupal_entity('block','live_languageswitcher') }}
+
+					<button class="btn btn-contact">
+						<a class="show_fr_page" href="/fr/Contactez-nous">
+							<span class="contact-text">{{'Contact'|t}}</span>
+							<span class="contact-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewbox="0 0 19 16" fill="none">
+									<path d="M1.0625 8H17.9375M17.9375 8L11.6094 1.5M17.9375 8L11.6094 14.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</span>
+						</a>
+						{#  #}
+						<a class="show_en_page" href="/en/Contactez-nous">
+							<span class="contact-text">{{'Contact'|t}}</span>
+							<span class="contact-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewbox="0 0 19 16" fill="none">
+									<path d="M1.0625 8H17.9375M17.9375 8L11.6094 1.5M17.9375 8L11.6094 14.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</span>
+						</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+{# <header class="bg-white shadow-sm header--menu" data-sticky-class="is-sticky">
+    <div class="top_header">
+
+       {{ drupal_entity('block','live_languageswitcher') }}
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light menu_principe">
+      <div class="container">
+
+        {{ drupal_entity('block','desktech_site_branding') }}
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+
+
+	{% if page.primary_menu %}
+				{{page.primary_menu}}
+			{% endif %}
+        </div>
+      </div>
+    </nav>
+  </header> #}

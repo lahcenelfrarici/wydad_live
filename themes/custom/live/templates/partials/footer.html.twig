@@ -1,0 +1,174 @@
+{#
+<section class="contact---us" id="contact---us">
+	<div
+		class="contact-container">
+		<!-- Left Form Section -->
+		<div class="contact-form">
+			<h3>{{'I am interested in getting in touch with Casablanca Finance City'|t}}</h3>
+
+			<div class="web__form_dr">
+				{{ drupal_entity('block','cfc_webform') }}
+			</div>
+		</div>
+
+		<!-- Right Image Section -->
+		<div class="contact-image">
+			<img src="/themes/custom/cfc/CFC/assets/images/contatc-img.png" alt="Office"/>
+		</div>
+	</div>
+</section>
+<section class="section---filter-block">
+	{{ drupal_view('news','block_1') }}
+</section>
+
+
+<footer class="bg-dark text-light py-5">
+	<div class="container">
+		<div
+			class="row">
+			<!-- Copyright -->
+			<div class="text-center mb-4">
+				<p class="mb-0">
+					{{ drupal_entity('block','cfc_copyright') }}</p>
+			</div>
+			<!-- Logo and Social Links -->
+			<div class="col-md-4 ">
+				{{ drupal_entity('block','cfc_logofooter') }}
+
+				{{ drupal_entity('block','cfc_socialmedia') }}
+
+
+			</div>
+
+			<!-- Stay Updated -->
+			<div class="col-md-4">
+				<h5>{{ 'Stay Updated'|t }}</h5>
+				{{ drupal_entity('block','cfc_stayupdated') }}
+				<form class="d-flex mt-3">
+					<input type="email" class="form-control rounded-pill" placeholder="Email..." required="">
+					<button type="submit" class="form--news">{{'Subscribe'|t}}
+						<i class="fas fa-arrow-right ms-2"></i>
+					</button>
+				</form>
+			</div>
+
+			<!-- Quick Links -->
+			<div class="col-md-4">
+
+				{{ drupal_entity('block','cfc_quicklinks') }}
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WWD1TRBQN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-9WWD1TRBQN');
+	</script>
+</footer> #}
+<footer class="footer---btm bg-dark-red text-white pt-5 pb-3">
+	<div class="container">
+		<div
+			class="row">
+			<!-- Logo and slogan -->
+			<div class="col-md-3 mb-4">
+				<a class="navbar-brand" href="{{ path('<front>') }}">
+					<img class="two--sc--img mb-3" src="/themes/custom/live/live/assets/images/logo.png"></a>
+
+
+				<p>{{"Créer l'excellence architecturale à travers le Maroc et au-delà" |t}}.</p>
+				{# {{ drupal_entity('block','live_footer1') }} #}
+			</div>
+
+			<!-- Quick links -->
+			<div class="col-md-3 mb-4">
+				<h6 class="mb-3">{{'Liens rapides'|t}}</h6>
+				{# <ul class="list-unstyled">
+								            <li><a href="#" class="footer-link">À propos</a></li>
+								            <li><a href="#" class="footer-link">Projets</a></li>
+								            <li><a href="#" class="footer-link">Carrières</a></li>
+								            <li><a href="#" class="footer-link">Contact</a></li>
+								          </ul> #}
+				{% if page.footer_top_2 %}
+					{{page.footer_top_2}}
+				{% endif %}
+			</div>
+
+			<!-- Contact information -->
+			<div
+				class="col-md-3 mb-4 localed-icon">
+				{# <h6 class="mb-3">Informations de contact</h6>
+								          <p><i class="fa-solid fa-location-dot"></i>Casablanca, Morocco</p>
+								          <p><i class="fa-solid fa-phone"></i>+212 522 22 24 45</p>
+								          <p><i class="fa-solid fa-envelope"></i>secretariat@agencelive.com</p> #}
+				{{ drupal_entity('block','live_footer3') }}
+			</div>
+
+			<!-- Social links -->
+			<div class="col-md-3 mb-4">
+				<h6 class="mb-3">{{'Suivez-nous'|t}}</h6>
+				<a href="#" class="footer-social">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				<a href="#" class="footer-social">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a href="#" class="footer-social">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				{# {{ drupal_entity('block','live_footer4') }} #}
+			</div>
+		</div>
+
+		<hr class="border-light">
+
+		<div class="text-center">
+			<small>{{'© 2025 Agence live. All rights reserved'|t}}.</small>
+		</div>
+	</div>
+</footer>
+{# <footer class="text-light py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 mb-4">
+				{{ drupal_entity('block','desktech_site_branding') }}
+			</div>
+
+			<div class="col-md-4">
+      {{ drupal_entity('block','desktech_footerleft') }}
+
+
+			</div>
+
+			<div class="col-md-4">
+ {{ drupal_entity('block','desktech_liensutiles') }}
+
+
+			</div>
+
+			<div class="col-md-4 last--list-foooter">
+				<h3>Newsletter</h3>
+				<p>
+					Abonnez-vous pour recevoir les dernières nouveautés et offres exclusives Ricoh au Maroc.
+				</p>
+
+        {{ drupal_entity('block','desktech_webform_3') }}
+			</div>
+
+			<div class="text-center mb-4 copyright--foooter mt-3">
+				<hr class="line__footer">
+        {{ drupal_entity('block','desktech_copyright') }}
+			</div>
+
+		</div>
+
+
+	</div>
+</footer> #}

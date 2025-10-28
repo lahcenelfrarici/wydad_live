@@ -1,0 +1,94 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a single field in a view.
+ *
+ * Available variables:
+ * - view: The view that the field belongs to.
+ * - field: The field handler that can process the input.
+ * - row: The raw result of the database query that generated this field.
+ * - output: The processed output that will normally be used.
+ *
+ * When fetching output from the row this construct should be used:
+ * data = row[field.field_alias]
+ *
+ * The above will guarantee that you'll always get the correct data, regardless
+ * of any changes in the aliasing that might happen if the view is modified.
+ *
+ * @see template_preprocess_views_view_field()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="col-md-6 col-lg-4">
+	<article
+		class="job-card h-100">
+		<!-- Top (red) -->
+		<div class="job-card__head d-flex flex-column align-items-start">
+			<div class="w-100 d-flex justify-content-between align-items-start">
+				<h5 class="m-0 text-white fw-semibold">{{fields.title.content }}</h5>
+				<a href="#" class="btn btn-light btn-sm rounded-pill px-3">{{'Postuler'|t}}</a>
+			</div>
+
+			<ul class="list-unstyled d-flex flex-wrap small text-white-50 gap-3 mt-2 mb-0">
+				<li class="d-flex align-items-center gap-1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none">
+						<path d="M8.575 4.8L5 8.375L3.4 6.775L3.75 6.42L5 7.67L8.22 4.445L8.575 4.8ZM5.75 1.5C8.375 1.5 10.5 3.625 10.5 6.25C10.5 8.875 8.375 11 5.75 11C3.125 11 1 8.875 1 6.25C1 3.625 3.125 1.5 5.75 1.5ZM5.75 2C3.405 2 1.5 3.905 1.5 6.25C1.5 8.595 3.405 10.5 5.75 10.5C8.095 10.5 10 8.595 10 6.25C10 3.905 8.095 2 5.75 2Z" fill="white"/>
+					</svg>
+					{{fields.field_postes_ouverts.content }}
+				</li>
+			</ul>
+
+			{# <ul class="list-unstyled d-flex flex-wrap small text-white gap-3 mt-2 mb-0">
+
+										<li
+											class="d-flex align-items-center gap-1">
+											<!-- Location pin from your SVG -->
+											<span class="d-inline-flex">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+													<path d="M7.66536 4.66667C8.10739 4.66667 8.53131 4.84226 8.84387 5.15482C9.15643 5.46738 9.33203 5.89131 9.33203 6.33333C9.33203 6.5522 9.28892 6.76893 9.20516 6.97114C9.1214 7.17335 8.99863 7.35708 8.84387 7.51184C8.68911 7.66661 8.50537 7.78937 8.30317 7.87313C8.10096 7.95689 7.88423 8 7.66536 8C7.22333 8 6.79941 7.8244 6.48685 7.51184C6.17429 7.19928 5.99869 6.77536 5.99869 6.33333C5.99869 5.89131 6.17429 5.46738 6.48685 5.15482C6.79941 4.84226 7.22333 4.66667 7.66536 4.66667ZM7.66536 5.33333C7.40014 5.33333 7.14579 5.43869 6.95825 5.62623C6.77072 5.81376 6.66536 6.06812 6.66536 6.33333C6.66536 6.59855 6.77072 6.8529 6.95825 7.04044C7.14579 7.22798 7.40014 7.33333 7.66536 7.33333C7.93058 7.33333 8.18493 7.22798 8.37247 7.04044C8.56 6.8529 8.66536 6.59855 8.66536 6.33333C8.66536 6.06812 8.56 5.81376 8.37247 5.62623C8.18493 5.43869 7.93058 5.33333 7.66536 5.33333ZM4.53203 8.24L7.66536 13.3933L10.7987 8.24C11.1387 7.66667 11.332 7.03333 11.332 6.33333C11.332 5.36087 10.9457 4.42824 10.2581 3.74061C9.57045 3.05298 8.63782 2.66667 7.66536 2.66667C6.6929 2.66667 5.76027 3.05298 5.07263 3.74061C4.385 4.42824 3.99869 5.36087 3.99869 6.33333C3.99869 7.03333 4.19203 7.66667 4.53203 8.24ZM11.3653 8.58667L7.66536 14.6667L3.96536 8.58667C3.56536 7.92667 3.33203 7.16 3.33203 6.33333C3.33203 5.18406 3.78857 4.08186 4.60123 3.2692C5.41389 2.45655 6.51609 2 7.66536 2C8.81463 2 9.91683 2.45655 10.7295 3.2692C11.5421 4.08186 11.9987 5.18406 11.9987 6.33333C11.9987 7.16 11.7653 7.92667 11.3653 8.58667Z" fill="white"/>
+												</svg>
+											</span>
+															{{fields.field_ville.content }}
+
+										</li>
+
+
+									</ul> #}
+			<ul class="list-unstyled d-flex flex-wrap small text-white gap-3 mt-2 mb-0">
+				{% for ville in row._entity.field_ville %}
+					<li class="d-flex align-items-center gap-1">
+						<span
+							class="d-inline-flex">
+							<!-- SVG icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+								<path d="M7.66536 4.66667C8.10739 4.66667 8.53131 4.84226 8.84387 5.15482C9.15643 5.46738 9.33203 5.89131 9.33203 6.33333C9.33203 6.5522 9.28892 6.76893 9.20516 6.97114C9.1214 7.17335 8.99863 7.35708 8.84387 7.51184C8.68911 7.66661 8.50537 7.78937 8.30317 7.87313C8.10096 7.95689 7.88423 8 7.66536 8C7.22333 8 6.79941 7.8244 6.48685 7.51184C6.17429 7.19928 5.99869 6.77536 5.99869 6.33333C5.99869 5.89131 6.17429 5.46738 6.48685 5.15482C6.79941 4.84226 7.22333 4.66667 7.66536 4.66667ZM7.66536 5.33333C7.40014 5.33333 7.14579 5.43869 6.95825 5.62623C6.77072 5.81376 6.66536 6.06812 6.66536 6.33333C6.66536 6.59855 6.77072 6.8529 6.95825 7.04044C7.14579 7.22798 7.40014 7.33333 7.66536 7.33333C7.93058 7.33333 8.18493 7.22798 8.37247 7.04044C8.56 6.8529 8.66536 6.59855 8.66536 6.33333C8.66536 6.06812 8.56 5.81376 8.37247 5.62623C8.18493 5.43869 7.93058 5.33333 7.66536 5.33333ZM4.53203 8.24L7.66536 13.3933L10.7987 8.24C11.1387 7.66667 11.332 7.03333 11.332 6.33333C11.332 5.36087 10.9457 4.42824 10.2581 3.74061C9.57045 3.05298 8.63782 2.66667 7.66536 2.66667C6.6929 2.66667 5.76027 3.05298 5.07263 3.74061C4.385 4.42824 3.99869 5.36087 3.99869 6.33333C3.99869 7.03333 4.19203 7.66667 4.53203 8.24ZM11.3653 8.58667L7.66536 14.6667L3.96536 8.58667C3.56536 7.92667 3.33203 7.16 3.33203 6.33333C3.33203 5.18406 3.78857 4.08186 4.60123 3.2692C5.41389 2.45655 6.51609 2 7.66536 2C8.81463 2 9.91683 2.45655 10.7295 3.2692C11.5421 4.08186 11.9987 5.18406 11.9987 6.33333C11.9987 7.16 11.7653 7.92667 11.3653 8.58667Z" fill="white"/>
+							</svg>
+						</span>
+						{{ ville.value }}
+					</li>
+				{% endfor %}
+			</ul>
+
+		</div>
+
+		<!-- Bottom (gray) -->
+		<div class="job-card__body">
+			<p class="small mb-2 text-secondary">
+				{{fields.body.content }}
+			</p>
+
+			{# <div class="small fw-semibold mb-2">{{'Compétences clés:'|t}}</div>
+			<div
+				class="d-flex flex-wrap gap-2">
+				{% for exp in row._entity.field_competences_cles %}
+					<span class="badge rounded-pill bg-white text-body border">
+						{{ exp.value }}
+					</span>
+				{% endfor %}
+			</div> #}
+		</div>
+	</article>
+</div>
+
+{# ******************** #}

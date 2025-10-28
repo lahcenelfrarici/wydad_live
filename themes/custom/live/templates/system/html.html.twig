@@ -1,0 +1,317 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain one or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ * - olivero_path: Returns the path to an Olivero theme.
+ * - noscript_styles: <noscript> content.
+ *
+ * @see template_preprocess_html()
+ */
+#}
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+  ]
+%}
+<!DOCTYPE html>
+<html{{html_attributes}}>
+	<head>
+		<head-placeholder token="{{ placeholder_token }}">
+			<title>{{ head_title|safe_join(' | ') }}</title>
+			<css-placeholder token="{{ placeholder_token }}">
+				<js-placeholder token="{{ placeholder_token }}">
+					{% include '@olivero/includes/preload.twig' with { olivero_path: olivero_path } only %}
+					{{ noscript_styles }}
+
+					{# {% if html_attributes['dir'] == 'rtl' %}
+						{{ attach_library('cfc/global-css-rtl') }}
+					{% endif %} #}
+					{{ attach_library('cfc/global-css-responsive') }}
+				</head>
+				<body{{attributes.addClass(body_classes)}}>
+					<!-- Lodaer -->
+					{# <style id="loader-style">
+						#loader {
+							position: fixed;
+							width: 100%;
+							height: 100%;
+							top: 0;
+							left: 0;
+							background: #009681;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							z-index: 9999;
+						}
+
+						@keyframes gradient {
+							0% {
+								background-position: 0 50%;
+							}
+							50% {
+								background-position: 100% 50%;
+							}
+							100% {
+								background-position: 0 50%;
+							}
+						}
+
+						.cube-folding {
+							width: 50px;
+							height: 50px;
+							display: inline-block;
+							-webkit-transform: rotate(45deg);
+							-moz-transform: rotate(45deg);
+							transform: rotate(45deg);
+							font-size: 0;
+						}
+
+						.cube-folding span {
+							position: relative;
+							width: 25px;
+							height: 25px;
+							-webkit-transform: scale(1.1);
+							-moz-transform: scale(1.1);
+							transform: scale(1.1);
+							display: inline-block;
+						}
+
+						.cube-folding span::before {
+							content: "";
+							background-color: white;
+							position: absolute;
+							left: 0;
+							top: 0;
+							display: block;
+							width: 25px;
+							height: 25px;
+							-moz-transform-origin: 100% 100%;
+							-ms-transform-origin: 100% 100%;
+							-webkit-transform-origin: 100% 100%;
+							transform-origin: 100% 100%;
+							-webkit-animation: folding 2.5s infinite linear both;
+							-moz-animation: folding 2.5s infinite linear both;
+							animation: folding 2.5s infinite linear both;
+						}
+
+						.cube-folding .leaf2 {
+							-webkit-transform: rotateZ(90deg) scale(1.1);
+							-moz-transform: rotateZ(90deg) scale(1.1);
+							transform: rotateZ(90deg) scale(1.1);
+						}
+
+						.cube-folding .leaf2::before {
+							-webkit-animation-delay: 0.3s;
+							animation-delay: 0.3s;
+							background-color: #f2f2f2;
+						}
+
+						.cube-folding .leaf3 {
+							-webkit-transform: rotateZ(270deg) scale(1.1);
+							-moz-transform: rotateZ(270deg) scale(1.1);
+							transform: rotateZ(270deg) scale(1.1);
+						}
+
+						.cube-folding .leaf3::before {
+							-webkit-animation-delay: 0.9s;
+							animation-delay: 0.9s;
+							background-color: #f2f2f2;
+						}
+
+						.cube-folding .leaf4 {
+							-webkit-transform: rotateZ(180deg) scale(1.1);
+							-moz-transform: rotateZ(180deg) scale(1.1);
+							transform: rotateZ(180deg) scale(1.1);
+						}
+
+						.cube-folding .leaf4::before {
+							-webkit-animation-delay: 0.6s;
+							animation-delay: 0.6s;
+							background-color: #e6e6e6;
+						}
+
+						@-webkit-keyframes folding {
+
+							0,
+							10% {
+								-webkit-transform: perspective(140px) rotateX(-180deg);
+								-moz-transform: perspective(140px) rotateX(-180deg);
+								transform: perspective(140px) rotateX(-180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+
+							25%,
+							75% {
+								-webkit-transform: perspective(140px) rotateX(0deg);
+								-moz-transform: perspective(140px) rotateX(0deg);
+								transform: perspective(140px) rotateX(0deg);
+								-webkit-opacity: 1;
+								-moz-opacity: 1;
+								opacity: 1;
+							}
+
+							90%,
+							100% {
+								-webkit-transform: perspective(140px) rotateY(180deg);
+								-moz-transform: perspective(140px) rotateY(180deg);
+								transform: perspective(140px) rotateY(180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+						}
+
+						@-moz-keyframes folding {
+
+							0,
+							10% {
+								-webkit-transform: perspective(140px) rotateX(-180deg);
+								-moz-transform: perspective(140px) rotateX(-180deg);
+								transform: perspective(140px) rotateX(-180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+
+							25%,
+							75% {
+								-webkit-transform: perspective(140px) rotateX(0deg);
+								-moz-transform: perspective(140px) rotateX(0deg);
+								transform: perspective(140px) rotateX(0deg);
+								-webkit-opacity: 1;
+								-moz-opacity: 1;
+								opacity: 1;
+							}
+
+							90%,
+							100% {
+								-webkit-transform: perspective(140px) rotateY(180deg);
+								-moz-transform: perspective(140px) rotateY(180deg);
+								transform: perspective(140px) rotateY(180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+						}
+
+						@-ms-keyframes folding {
+
+							0,
+							10% {
+								-webkit-transform: perspective(140px) rotateX(-180deg);
+								-moz-transform: perspective(140px) rotateX(-180deg);
+								transform: perspective(140px) rotateX(-180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+
+							25%,
+							75% {
+								-webkit-transform: perspective(140px) rotateX(0deg);
+								-moz-transform: perspective(140px) rotateX(0deg);
+								transform: perspective(140px) rotateX(0deg);
+								-webkit-opacity: 1;
+								-moz-opacity: 1;
+								opacity: 1;
+							}
+
+							90%,
+							100% {
+								-webkit-transform: perspective(140px) rotateY(180deg);
+								-moz-transform: perspective(140px) rotateY(180deg);
+								transform: perspective(140px) rotateY(180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+						}
+
+						@keyframes folding {
+
+							0,
+							10% {
+								-webkit-transform: perspective(140px) rotateX(-180deg);
+								-moz-transform: perspective(140px) rotateX(-180deg);
+								transform: perspective(140px) rotateX(-180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+
+							25%,
+							75% {
+								-webkit-transform: perspective(140px) rotateX(0deg);
+								-moz-transform: perspective(140px) rotateX(0deg);
+								transform: perspective(140px) rotateX(0deg);
+								-webkit-opacity: 1;
+								-moz-opacity: 1;
+								opacity: 1;
+							}
+
+							90%,
+							100% {
+								-webkit-transform: perspective(140px) rotateY(180deg);
+								-moz-transform: perspective(140px) rotateY(180deg);
+								transform: perspective(140px) rotateY(180deg);
+								-webkit-opacity: 0;
+								-moz-opacity: 0;
+								opacity: 0;
+							}
+						}
+					</style>
+					<div class="loader-d" id="loader">
+
+						<div class="loader-c">
+							<img src="/themes/custom/cfc/CFC/assets/images/loadinggif.gif" alt="drapeau loader">
+							<div class="inner one"></div>
+							<div class="inner two"></div>
+							<div class="inner three"></div>
+						</div>
+					</div> #}
+
+					{{ page_top }}
+
+					{{ page }}
+					{{ page_bottom }}
+
+					<js-bottom-placeholder token="{{ placeholder_token }}">{# video modal #}
+						{# <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+																			<div class="modal-dialog modal-dialog-centered">
+																				<div class="modal-content">
+																					<div
+																						class="modal-header border-0">
+																						<!-- Remove border from modal header -->
+																						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+																						<!-- Close button with built-in close icon -->
+																					</div>
+																					<div class="modal-body">
+																						<iframe id="videoIframe" src="" frameborder="0" allowfullscreen></iframe>
+																					</div>
+																				</div>
+																			</div>
+																		</div> #}
+					</body>
+				</html>

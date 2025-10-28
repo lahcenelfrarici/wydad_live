@@ -1,0 +1,223 @@
+<!--List -->
+<section class="lists--detail_product">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div
+					class="items--sc-slider">
+					<!--  -->
+					{{ content.field_gallery}}
+					{# <div class="owl-carousel main-carousel owl-theme">
+
+																<div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+															</div>
+
+															<div class="owl-carousel thumb-carousel owl-theme">
+																{{ content.field_gallery}}
+																<div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 1"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+																              <div class="item"><img src="/themes/custom/desktech/Desktech/assets/images/machin.png" alt="Thumb 2"></div>
+															</div> #}
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="items--sc-sl-pr">
+					<div class="title-detail_product">
+						<h2>{{ node.title.value }}</h2>
+						<p>{{ content.body }}</p>
+						<div
+							class="type--detail_product">
+							{# <div class="wrapper---type">
+															<p>{{'Type'|t}}</p>
+															<p>{{ content.field_type}}</p>
+														</div> #}
+							<div class="wrapper---type">
+								<p>{{'Format Papier'|t}}</p>
+								<p>{{ node.field_format_papier_filter.value }}</p>
+							</div>
+							<div class="wrapper---type">
+								<p>{{'Impression'|t}}</p>
+								<p>{{ node.field_impression_filter.value }}</p>
+							</div>
+							<div class="wrapper---type">
+								<p>{{'Vitesse'|t}}</p>
+								<p>{{ node.field_vitesse_filter.value }}</p>
+							</div>
+
+						</div>
+						<div class="tele--brochure mb-3">
+							<a href="{{ file_url(node.field_telecharger_la_brochure.entity.uri.value) }}">
+								<svg xmlns="http://www.w3.org/2000/svg" width="36" height="39" viewbox="0 0 36 39" fill="none">
+									<path d="M30.6 21.35V7.93478C30.6 7.64039 30.4831 7.35806 30.275 7.14988L24.45 1.32512C24.2419 1.11694 23.9596 1 23.6653 1H2.11C1.49697 1 1 1.49697 1 2.11V36.89C1 37.5031 1.49697 38 2.11 38H19.5" stroke="#000849" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M23.2002 1V7.29C23.2002 7.90303 23.6971 8.4 24.3102 8.4H30.6002" stroke="#000849" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M23.2002 32.45H34.3002M34.3002 32.45L28.7502 26.9M34.3002 32.45L28.7502 38" stroke="#000849" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								{{'Télecharger la Brochure'|t}}</a>
+						</div>
+						<div class="tele--contactez">
+
+							<a href="tel:+212666666666">
+								<svg xmlns="http://www.w3.org/2000/svg" width="38" height="33" viewbox="0 0 38 33" fill="none">
+									<path d="M29.2329 20.4795L21.9306 21.7033C16.9981 19.5621 13.9513 17.1025 12.1781 13.2686L13.5434 6.93478L10.9627 1H4.31163C2.31229 1 0.73787 2.42895 1.03647 4.13874C1.78193 8.40717 3.97992 16.1464 10.405 21.7033C17.1522 27.5388 26.8701 30.0711 32.2185 31.0776C34.2839 31.4663 36.116 30.0728 36.116 28.2447V22.7479L29.2329 20.4795Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								{{'Contactez-Nous'|t}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="line---detail_produc">
+	<div class="container">
+		<div class="title--primary">
+			<h2>Informations sur le
+				<span>Produit</span>
+			</h2>
+		</div>
+		<div class="informations_detail_product">
+
+			{{ content.field_informations_sur_le_produi }}
+		</div>
+	</div>
+</section>
+{# <section class="section-five-produits-et-services-desktech" id="devix__1">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="right--section-two-desktech">
+            <div class="title--primary">
+              <h5 class="mb-3 text-white">Vous savez ce que vous voulez ?</h5>
+              <h2 class="text-white">Demandez un devis personnalisé <span>DESKTECH</span></h2>
+            </div>
+            <div class="contact-produits-et-services-desktech">
+              <form action="#" method="post">
+                <div class="champs">
+                  <input type="text" id="nom" name="nom" placeholder="Votre nom*" required="">
+                </div>
+
+                <div class="champs">
+                  <input type="email" id="email" name="email" placeholder="Votre e-mail" required="">
+                </div>
+
+                <div class="champs">
+                  <input type="text" id="societe" name="societe" placeholder="Votre Société">
+                </div>
+
+
+                <div class="champs">
+                  <textarea id="message" name="message" placeholder="Décrivez-nous votre besoin..."></textarea>
+                </div>
+
+                <div>
+                  <input type="submit" value="Envoyer">
+                </div>
+              </form>
+            </div>
+            <!-- <div class="btn--link-dr link--dr">
+              <a href="#">En Savoir Plus </a>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="left--section-two-desktech">
+            <div class="one--img-sc-four">
+              <img src="/themes/custom/desktech/Desktech/assets/images/n-cnt.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> #}
+<section class="section-five-produits-et-services-desktech" id="devix__1">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="right--section-two-desktech">
+					<div class="title--primary">
+						<h5 class="mb-3 text-white">{{'Vous savez ce que vous voulez ?' |t}}</h5>
+						<h2>
+							<span class="text-white">Demandez un devis
+								<br>personnalisé
+								<span class="scanner-desk">DESKTECH</span>
+							</span>
+						</h2>
+					</div>
+					<div
+						class="contact-produits-et-services-desktech">
+
+						{# <form action="#" method="post">
+																			<div class="champs">
+																				<input type="text" id="nom" name="nom" placeholder="Votre nom*" required="">
+																			</div>
+
+																			<div class="champs">
+																				<input type="email" id="email" name="email" placeholder="Votre e-mail" required="">
+																			</div>
+																			<div class="champs">
+																				<input type="text" id="societe" name="societe" placeholder="Numéro de téléphone">
+																			</div>
+																			<div class="champs">
+																				<input type="text" id="societe" name="societe" placeholder="Votre Société">
+																			</div>
+
+																			<div class="champs">
+																				<div class="besoins-label">
+																					<label>
+																						<strong>Vos besoins *</strong>
+																					</label><br>
+																				</div>
+
+																				<label>
+																					<input type="checkbox" name="besoins[]" value="Imprimantes multifonctions">
+																					Imprimantes multifonctions
+																				</label><br>
+
+																				<label>
+																					<input type="checkbox" name="besoins[]" value="Impression de production et traceurs">
+																					Impression de production et traceurs
+																				</label><br>
+
+																				<label>
+																					<input type="checkbox" name="besoins[]" value="Espaces de travail modernes">
+																					Espaces de travail modernes
+																				</label><br>
+
+																				<label>
+																					<input type="checkbox" name="besoins[]" value="Solutions digitales et gestion documentaire">
+																					Solutions digitales et gestion documentaire
+																				</label>
+																			</div>
+
+																			<div class="champs">
+																				<textarea id="message" name="message" placeholder="Décrivez-nous votre besoin..."></textarea>
+																			</div>
+
+																			<div>
+																				<input type="submit" value="Envoyer">
+																			</div>
+																		</form> #}
+						{{ drupal_entity('block','desktech_webform_2') }}
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="left--section-two-desktech">
+					<div class="one--img-sc-four">
+						<img src="/themes/custom/desktech/Desktech/assets/images/n-cnt.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,26 @@
+{# <div class="select-items">
+
+
+ {{ rows }}
+</div>
+ <div class="select-items">
+    {{ rows }}
+</div>
+
+{{ dump(content) }} #}
+
+
+{# ********* #}
+
+
+				<div class="custom-select" id="industry-select">
+					<div class="select-selected" data-category="all">
+						<span>{{'All industries'|t}}</span>
+					</div>
+					<div class="select-items">
+              <div data-category="all">
+      <span>{{'All industries'|t}}</span>
+    </div>
+             {{ rows }}
+					</div>
+				</div>

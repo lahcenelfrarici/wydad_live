@@ -1,0 +1,15 @@
+{% import _self as menus %}
+
+{{ menus.menu_buttons(items) }}
+
+{% macro menu_buttons(items) %}
+    {% if items %}
+        <div class="menu_banner_link">
+            {% for item in items %}
+                <button class="btn btn-outline-light">
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </button>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endmacro %}

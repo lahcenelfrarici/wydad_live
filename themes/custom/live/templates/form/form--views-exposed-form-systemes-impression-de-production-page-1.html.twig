@@ -1,0 +1,85 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+
+<section class="filter-imprimantes-multifonctions form_two_filter">
+	<div class="container">
+		<div class="row">
+			<div class="card-filter-all">
+				<div class="title--filter">
+					<span>Filtres</span>
+				</div>
+				<div class="searhing-checkbox">
+					<form{{attributes}}>
+						{{ children }}
+					</form>
+					{# <div class="item--checkbox">
+					              <h6>Type</h6>
+					              <div class="checkbox-container">
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="mfp">
+					                  MFP
+					                </label>
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="copieurs">
+					                  Copieurs
+					                </label>
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="scanners" checked>
+					                  Scanners
+					                </label>
+					              </div>
+					            </div>
+					            <!--  -->
+					            <div class="item--checkbox">
+					              <h6>Format Papier</h6>
+					              <div class="checkbox-container">
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="mfp">
+					                  MFP
+					                </label>
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="copieurs">
+					                  Copieurs
+					                </label>
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="scanners" checked>
+					                  Scanners
+					                </label>
+					              </div>
+					            </div>
+					             <!--  -->
+					             <div class="item--checkbox">
+					              <h6>Impression</h6>
+					              <div class="checkbox-container">
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="mfp">
+					                  MFP
+					                </label>
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="copieurs">
+					                  Copieurs
+					                </label>
+					                <label class="checkbox-wrapper">
+					                  <input type="checkbox" name="category" value="scanners" checked>
+					                  Scanners
+					                </label>
+					              </div>
+					            </div> #}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

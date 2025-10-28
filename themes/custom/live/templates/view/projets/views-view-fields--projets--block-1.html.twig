@@ -1,0 +1,77 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a single field in a view.
+ *
+ * Available variables:
+ * - view: The view that the field belongs to.
+ * - field: The field handler that can process the input.
+ * - row: The raw result of the database query that generated this field.
+ * - output: The processed output that will normally be used.
+ *
+ * When fetching output from the row this construct should be used:
+ * data = row[field.field_alias]
+ *
+ * The above will guarantee that you'll always get the correct data, regardless
+ * of any changes in the aliasing that might happen if the view is modified.
+ *
+ * @see template_preprocess_views_view_field()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <div class="item">
+	<div class="sc--mg-slider--wrapper">
+		<div class="wrapper-slider---img">
+			<img src="{{ file_url(row._entity.field_image_news.entity.fileuri) }}">
+		</div>
+		<div class="element--slider-item">
+			<h2>{{fields.title.content }}</h2>
+			<p>{{fields.body.content }}</p>
+
+			<div class="btn--pls">
+				<a class="" href="{{ path('entity.node.canonical', {'node':row._entity.nid.value}) }}" target="_blank">
+					<span>Read more</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+						<g clip-path="url(#clip0_4948_4128)">
+							<path d="M40.7279 22.5873C41.1028 22.9623 41.3135 23.4709 41.3135 24.0013C41.3135 24.5316 41.1028 25.0402 40.7279 25.4153L29.4139 36.7293C29.2294 36.9203 29.0087 37.0727 28.7647 37.1775C28.5207 37.2823 28.2583 37.3375 27.9927 37.3398C27.7271 37.3421 27.4638 37.2915 27.218 37.1909C26.9722 37.0903 26.7489 36.9418 26.5611 36.7541C26.3733 36.5663 26.2248 36.343 26.1243 36.0972C26.0237 35.8514 25.9731 35.588 25.9754 35.3225C25.9777 35.0569 26.0329 34.7945 26.1377 34.5505C26.2425 34.3065 26.3949 34.0858 26.5859 33.9013L34.4859 26.0013H7.9999C7.46947 26.0013 6.96076 25.7906 6.58569 25.4155C6.21062 25.0404 5.9999 24.5317 5.9999 24.0013C5.9999 23.4708 6.21062 22.9621 6.58569 22.5871C6.96076 22.212 7.46947 22.0013 7.9999 22.0013H34.4859L26.5859 14.1013C26.2216 13.7241 26.02 13.2189 26.0246 12.6945C26.0291 12.1701 26.2395 11.6684 26.6103 11.2976C26.9811 10.9268 27.4827 10.7165 28.0071 10.7119C28.5315 10.7074 29.0367 10.9089 29.4139 11.2733L40.7279 22.5873Z" fill="url(#paint0_linear_4948_4128)"></path>
+						</g>
+						<defs>
+							<linearGradient id="paint0_linear_4948_4128" x1="23.6567" y1="37.3398" x2="25.6881" y2="13.0491" gradientunits="userSpaceOnUse">
+								<stop stop-color="#009681"></stop>
+								<stop offset="1" stop-color="#007565"></stop>
+							</linearGradient>
+							<clipPath id="clip0_4948_4128">
+								<rect width="48" height="48" fill="white" transform="matrix(0 -1 -1 0 48 48)"></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</div> #}
+ <div class="col-md-6 col-lg-3 mb-4">
+          <div class="project-card card">
+            <a href="{{ path('entity.node.canonical', {'node':row._entity.nid.value}) }}">
+              <img src="{{ file_url(row._entity.field_image.entity.fileuri) }}" class="project-img card-img-top" alt="Projet architectural moderne">
+              <div class="card-body">
+                <div class="project-category">{{ fields.title.content }}</div>
+                <div class="aligne__this">
+                  <h3 class="project-title">{{ fields.field_pays_et_villes.content }} - {{ fields.field_annee_projet.content }}</h3>
+
+                  <div class="see-all-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+                          fill="white" />
+                    </svg>
+                    {{ fields.field_etat.content }}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  </div>

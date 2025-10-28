@@ -1,0 +1,5363 @@
+@media (min-width: 1119px) and (max-width: 1399px) {
+    .investment .investment-box p {
+      font-size: 33px;
+    }
+  
+    .header--menu ul:first-child li a {
+      font-size: 19px;
+    }
+  
+    .header--menu .navbar-brand img {
+      width: 175px;
+    }
+  
+    .multi--select a {
+      font-size: 19px;
+    }
+  
+    .slider {
+      height: 800px;
+    }
+  
+    .container-layout .accordion-button {
+      padding: 20px 10px;
+      font-size: 21px;
+    }
+  
+    #acc-card-6-column .icon-african_pioneericon--card h3 {
+      font-size: 22px;
+    }
+  
+    .values-section {
+      padding: 40px;
+    }
+  
+    .values--meteo h4 {
+      font-size: 46px;
+      line-height: normal;
+    }
+  
+    /* section.global_investment p {
+      font-size: 25px !important;
+    } */
+  
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      font-size: 25px;
+    }
+  
+    .width--img-inc .row.stats-container {
+      padding: 40px;
+    }
+  
+    .team-card p {
+      line-height: 35px;
+    }
+  
+    .title-primary-sc h2 {
+      font-size: 45px;
+    }
+  }
+  
+  @media (min-width: 1119px) {
+  
+  
+    section#safe--sc-wrapper .paragraph--african_insights {
+      margin-top: 0 !important;
+    }
+  
+    #doing---wr p {
+      font-size: 1.2vw;
+    }
+  
+    #doing---wr .row>div:nth-child(2) img {
+      height: 80vh;
+    }
+  
+    section#safe--sc-wrapper div#acc-card-3-column {
+      gap: 10px 0;
+    }
+  
+    section#flex--left-right-wrp ul li {
+      font-size: 1.3vw;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* .sidebar a {
+      font-size: 1.3vw;
+    } */
+  
+    #list--news-all h5 {
+      font-size: 1.5vw;
+      margin-bottom: 0;
+    }
+  
+    /* section#safe--sc-wrapper .title-primary-sc p {
+      font-size: 1.2vw !important;
+    } */
+  
+    section.global_investment .col-lg-6.mb-5 img {
+      height: 80vh;
+      width: 90%;
+    }
+  
+    section.global_investment .col-lg-6.mb-5 {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    #fleex---wrapper-card-img h1 {
+      font-size: 35px;
+    }
+  
+    #fleex---wrapper-card-img p {
+      font-size: 25px;
+    }
+  
+  
+    #flex--box-fs .col-md-6 {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    #flex--box-fs .col-md-6 p {
+      font-size: 1.3vw;
+    }
+  
+    #flex--box-fs .col-md-6 img {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-width: 1119px) {
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      font-size: 23px;
+    }
+  
+    .section---filter-block .filter {
+      flex-wrap: wrap;
+    }
+  
+    .video--sc-2 {
+      height: auto;
+    }
+  
+    section#banner-title {
+      height: 300px;
+    }
+  
+    section#banner-title img.slider-video {
+      object-fit: cover;
+    }
+  
+    section.global_investment h3 {
+      font-size: 40px;
+    }
+  
+    section.global_investment p {
+      font-size: 18px;
+    }
+  
+    .custom-card h4 {
+      font-size: 30px;
+    }
+  
+    .values-section {
+      padding: 15px;
+    }
+  
+    .values--meteo h4 {
+      font-size: 35px;
+      gap: 0 1px;
+      line-height: normal;
+    }
+  
+    .values--meteo {
+      width: 50%;
+    }
+  
+    .meteo--value2 {
+      width: 50% !important;
+      padding: 15px;
+    }
+  
+    .stats-container {
+      padding: 30px;
+    }
+  
+    .count--inc span {
+      font-size: 28px;
+    }
+  
+    .img-counter img {
+      object-fit: contain;
+    }
+  
+    .counter--number p {
+      text-align: left;
+      line-height: 34px;
+      margin-top: 10px;
+    }
+  
+    section.emblemes {
+      margin: 40px;
+    }
+  
+    .tabs--item button {
+      width: 48%;
+      font-size: 19px;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .img-1-maps svg {
+      width: 100%;
+    }
+  
+    .img-2-maps svg {
+      width: 100%;
+    }
+  
+    .team-card p {
+      line-height: 29px;
+    }
+  
+    .team-card h5 {
+      line-height: 40px;
+    }
+  
+    .team-card {
+      padding-bottom: 20px;
+    }
+  
+  
+  
+    section.team_member {}
+  
+    section.team_member .row>div {
+      width: 50%;
+      display: flex;
+      align-items: center;
+    }
+  
+    section.team_member .row>div>div {
+      padding: 20px;
+    }
+  
+    .contact-card h5 {
+      height: auto;
+    }
+  
+    #acc-card-6-column .icon-african_pioneericon--card h3 {
+      height: 90px;
+      align-items: center;
+      display: flex;
+    }
+  
+    .slider {
+      height: 80vh;
+    }
+  
+    .header--menu .navbar-brand img {
+      width: 156px;
+    }
+  
+    .header--menu ul:first-child li a {
+      font-size: 18px;
+      line-height: normal;
+      margin: 0;
+    }
+  
+    ul.multi--select a {
+      font-size: 18px;
+      line-height: normal;
+    }
+  
+    .header--menu nav {
+      max-width: 100%;
+    }
+  
+    .header--menu {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 98%;
+      margin: auto;
+    }
+  
+    section.increment--bx {}
+  
+    .row.stats-container {}
+  
+    .row.stats-container {}
+  
+    .row.stats-container {
+      padding: 40px 30px;
+    }
+  
+    section.increment--bx .col-md-11 {
+      width: 100%;
+    }
+  
+    .counter--number p {
+      line-height: normal;
+      text-align: left;
+    }
+  
+    .counter--number {
+      gap: 15px 0;
+    }
+  
+    .img-counter img {
+      width: auto;
+    }
+  
+    .img-counter {
+      height: 50px;
+    }
+  
+    .header--menu .navbar-brand img {
+      width: 156px;
+    }
+  
+    .header--menu ul:first-child li a {
+      font-size: 18px;
+      line-height: normal;
+  
+      margin: 0;
+    }
+  
+    ul.multi--select a {
+      font-size: 18px;
+      line-height: normal;
+    }
+  
+    .header--menu nav {
+      max-width: 100%;
+    }
+  
+    .header--menu {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 98%;
+      margin: auto;
+    }
+  
+    .slider {
+      height: 80vh;
+    }
+  
+    #acc-card-6-column .icon-african_pioneericon--card h3 {
+      font-size: 20px;
+    }
+  
+    .filters ul li button {
+      text-align: left;
+    }
+  
+    .contact-form {
+      max-width: 60% !important;
+    }
+  
+    .map-container {
+      max-width: 40%;
+    }
+  
+    .member {
+      width: 140px;
+      height: auto;
+    }
+  
+    .slick-slide img {
+      object-fit: cover !important;
+      width: 50%;
+      height: auto;
+    }
+  
+    .img--pays-el {
+      height: 200px;
+    }
+  
+    .accordion-container {
+      max-width: 30%;
+    }
+  
+    .contact-image {
+      max-width: 40% !important;
+    }
+  
+    .contact-container {
+      min-width: 100%;
+    }
+  
+    .contact-image img {
+      object-fit: cover;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .sc--mg-slider--wrapper h2 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  
+    #acc-card-6-column .icon-african_pioneericon--card h3 {
+      font-size: 24px;
+      padding-right: 10px;
+    }
+  
+    #organise--africa div>.row:nth-child(1) {
+      margin-bottom: 45px;
+    }
+  
+    section.banner_status_slider .wrapper-slider---img {
+      width: 50% !important;
+    }
+  
+    section.banner_status_slider .element--slider-item {
+      width: 50%;
+    }
+  
+    .wisiwyg .img--detail img {
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    div#block-cfc-identitedusite img {
+      width: 240px;
+    }
+  
+  
+    .img--wrapper {
+      height: 80vh;
+      margin: auto;
+    }
+  
+    .img--wrapper img {
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      object-fit: contain;
+    }
+  
+    .african_insights .investment-box .wrapper-insight_icon p {
+      font-size: 28px !important;
+    }
+  
+    section#flex--box-fs .wrapper-insight_icon p {
+      font-size: 1.8vw;
+    }
+  
+    .each-year p {
+      font-size: 1.3vw;
+    }
+  
+  
+  
+    .wisiwyg .wrapper-description p {
+      font-size: 1.4vw;
+    }
+  
+    #sticky-sidebar {
+      padding: 10px;
+    }
+  
+    .sidebar a {
+      font-size: 22px;
+      padding: 15px;
+    }
+  
+    section.banner_status_slider .element--slider-item {
+      height: 220px;
+    }
+  
+    .top-tabs button {
+      font-size: 20px;
+    }
+  
+    .element--tabs-sc h3 {
+      font-size: 46px;
+    }
+  
+    .element--tabs-sc p,
+    .size--1-5-members h4,
+    section#flex--box-fs p {
+      font-size: 1.4vw;
+    }
+  
+    .members .slick-slide.count-7,
+    .members .slick-slide:nth-child(7n+7):not([class*="count-"]) {
+      margin-top: 170px;
+    }
+  
+    .members .slick-slide.count-1,
+    .members .slick-slide:nth-child(7n+1):not([class*="count-"]) {
+      margin-top: 170px;
+    }
+  
+    .members .slick-slide.count-4,
+    .members .slick-slide:nth-child(7n+4):not([class*="count-"]) {
+      margin-top: 80px;
+      margin-bottom: 110px;
+    }
+  
+  }
+  
+  /* Break Point */
+  @media (min-width: 1120px) {
+    #flex--box-fs .col-md-6 {
+      justify-content: start;
+    }
+  
+    .investment .investment-box svg {
+      width: 25px;
+    }
+  
+    #filter-verticale .filters {
+      padding-top: 20px;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      font-size: 20px;
+    }
+  
+    .african_pioneer ul li {
+      font-size: 1.3vw !important;
+    }
+  
+    .step-content h3 {
+      font-size: 30px;
+    }
+  
+    .all__telecharger_timeline .header h3 {
+      font-size: 22px;
+    }
+  
+    .all__telecharger_timeline .header p {
+      margin-bottom: 0;
+    }
+  
+    .all__telecharger_timeline .header a {
+      font-size: 22px;
+      position: relative;
+      top: -3px;
+    }
+  
+    .wisiwyg .wrapper-description p {
+      padding-top: 8px;
+    }
+  
+    .each-event {
+      width: 48%;
+    }
+  
+    section#organise--africa li {
+      font-size: 1.4vw !important;
+      line-height: 34px;
+    }
+  
+    section#maps--with-select-pays .all--select-maps-layout {
+      width: 50% !important;
+    }
+  
+    .custom-card ul li {
+      font-size: 1.2;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      font-size: 20px;
+    }
+  
+  
+    .team-card h5 {
+      line-height: 40px;
+    }
+  
+    .team-card {
+      padding-bottom: 20px;
+    }
+  
+    .contact-card h5 {
+      line-height: 40px;
+    }
+  
+    .contact-card h5 {
+  
+  
+      height: min-content;
+  
+      padding-bottom: 0;
+      margin-bottom: 0 !important;
+    }
+  
+    .slider-content {
+  
+      transform: translateY(-41%);
+    }
+  
+    .slider {
+      height: 100vh;
+    }
+  
+    .accordion-body li {
+      font-size: 18px;
+    }
+  
+    .title-primary-sc h2 {
+      font-size: 40px !important;
+      line-height: normal;
+    }
+  
+    #organise--africa .item img {
+      width: 100%;
+      object-fit: cover;
+      height: 387px;
+    }
+  
+    #organise--africa h1 {
+      font-size: 35px;
+    }
+  
+    #organise--africa p {
+      font-size: 1.4vw !important;
+      line-height: 34px;
+    }
+  
+    .col-md-7.color-vert-section.p-3 h2 {
+      font-size: 30px;
+      line-height: normal;
+      padding-bottom: 10px;
+    }
+  
+    .col-md-7.color-vert-section.p-3 ul li {
+      font-size: 20px;
+    }
+  
+    .paragraph--african_insights p {
+      font-size: 20px !important;
+      padding-top: 8px;
+    }
+  
+    section#flex--box-fs p,
+    #fleex---wrapper-card-img p {
+      font-size: 1.4vw;
+      line-height: 34px;
+    }
+  
+    #flex--box-fs h1 {
+      font-size: 35px;
+    }
+  
+    #flex--box-fs .col-md-6 p {
+      line-height: 33px;
+      font-size: 1.4vw;
+    }
+  
+    .slider-content h1 {
+      font-size: 60px;
+    }
+  
+    #acc-card-6-column .icon-african_pioneericon--card h3 {
+      font-size: 20px;
+    }
+  
+    .african_pioneer ul li {
+      font-size: 18px;
+    }
+  
+  
+  
+    .slider-content p {
+      font-size: 25px;
+    }
+  
+    .header--menu ul:first-child li a,
+    .header--menu .navbar-nav li a {
+      font-size: 16px;
+      padding: 0 6px !important;
+    }
+  
+    #langue---style .dropdown-toggle {
+      margin: 0;
+      font-size: 16px;
+    }
+  
+    ul.multi--select li:last-child a {
+      font-size: 16px !important;
+      gap: 0 0px;
+    }
+  
+    /* ul.multi--select li:last-child a {
+      font-size: 16px !important;
+      gap: 0 0px;
+    } */
+  
+    div#block-cfc-identitedusite img {
+      width: 190px;
+    }
+  
+    ul.multi--select li:last-child a svg {
+      width: 24px;
+      position: relative;
+      top: 2px;
+    }
+  
+    section#banner-title {
+      height: 400px;
+    }
+  
+    .wrapper-2column---logo img {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .investment .investment-box p {
+      font-size: 23px !important;
+  
+      line-height: 40px;
+    }
+  
+    .bannertext {
+      font-size: 32px !important;
+      line-height: normal !important;
+    }
+  
+    #flex--box-fs .col-md-6 img {
+      width: auto;
+    }
+  
+    .rectangle.mt-3 {
+      position: relative;
+      top: 30px;
+    }
+  
+    #list--news-all .btn--pls a {
+      gap: 0 15px;
+  
+    }
+  
+    .slider-content p {
+      font-size: 23px;
+    }
+  
+    #list--news-all .btn--pls span {
+  
+      font-size: 25px;
+  
+    }
+  
+    .btn--pls {
+      font-size: 30px;
+    }
+  
+    #list--news-all .btn--pls a svg {
+      width: 35px;
+      height: auto;
+    }
+  
+    .investment .investment-box {
+  
+      padding: 30px 16px;
+  
+    }
+  
+    .member {
+  
+      width: 194px;
+    }
+  
+    .count--inc span {
+      font-size: 30px;
+    }
+  
+    .counter--number h3 {
+      font-size: 30px;
+    }
+  
+    .counter--number p {
+      margin: 5px 0;
+    }
+  
+    .img-counter img {
+      width: auto;
+    }
+  
+    .counter--number p {
+      font-size: 18px;
+    }
+  
+    section.global_investment h3 {
+      font-size: 45px;
+      line-height: 45px;
+    }
+  
+    section.global_investment p {
+      font-size: 1.6vw !important;
+      line-height: normal;
+      margin-bottom: 10px;
+  
+    }
+  
+    .tabs--item {
+      gap: 0 10px;
+    }
+  
+    .global_investment {
+      margin-bottom: -60px;
+    }
+  
+    .custom-card ul li {
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+  
+    .values--meteo h4 {
+      font-size: 44px;
+      line-height: normal;
+    }
+  
+    .wrapper--logo-after-maps p {
+      font-size: 25px;
+    }
+  
+    .wrapper--logo-after-maps {
+      padding: 0 40px;
+    }
+  
+    .three_colmun_to_sc .tabs--item a {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 1120px) {
+    .contact-card p {
+      font-size: 1.8vw;
+    }
+  
+    .contact-card h5 {
+      font-size: 1.8vw;
+      line-height: normal;
+    }
+  
+    .management_team .row>div:nth-child(1) {
+      order: 6;
+    }
+  
+    .management_team .row>div:nth-child(6) {
+      order: 1;
+    }
+  
+    .management_team .row>div:nth-child(2) {
+      order: 2;
+    }
+  
+    .management_team .row>div:nth-child(3) {
+      order: 3;
+    }
+  
+    .management_team .row>div:nth-child(4) {
+      order: 4;
+    }
+  
+    .management_team .row>div:nth-child(5) {
+      order: 5;
+    }
+  
+    .team-card p {
+      line-height: normal;
+    }
+  
+    .contact-container {
+      width: 100%;
+      min-width: 100%;
+    }
+  
+    .map-container>svg {
+      height: 80vh;
+    }
+  
+    .container-layout>div {
+      width: 30%;
+    }
+  
+    .container-layout>.map-container {
+      width: 40%;
+    }
+  
+    .contact-form textarea {
+      height: 95px !important;
+    }
+  
+    .contact-form h3 {
+      margin-bottom: 2%;
+      font-size: 30px;
+    }
+  
+    .contact-image img {
+      height: 80vh;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 30px;
+    }
+  
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      padding: 10px 15px;
+    }
+  
+    .web__form_dr form {
+      gap: 8px 0;
+    }
+  
+    section.global_investment p {
+      font-size: 1.4vw !important;
+      line-height: normal;
+    }
+  
+    .custom-card ul li {
+      font-size: 1.4vw;
+    }
+  
+    section.global_investment .col-lg-6.mb-5 {
+      justify-content: start;
+    }
+  
+    .values-section {
+      gap: 0 15px;
+    }
+  
+    .values--meteo {
+      width: 60%;
+    }
+  
+    .meteo--value2 {
+      width: 40% !important;
+    }
+  
+    .tabs--item button {
+      font-size: 18px;
+    }
+  
+    #maps__2_item #section1 svg {
+      position: relative;
+      left: 15px;
+    }
+  }
+  
+  /*  */
+  @media (min-width: 1400px) {
+    #filter-verticale .members .slick-track {
+      width: 100% !important;
+      padding: 0 29px;
+      margin: 15px 10px;
+    }
+  
+    .member {
+      width: 18.4%;
+    }
+  }
+  
+  @media (min-width: 1120px) and (max-width: 1399px) {
+  
+    #filter-verticale .members .slick-track {
+      width: 100% !important;
+      padding: 0 29px;
+      margin: 15px 5px;
+    }
+  
+    .member {
+      width: 18%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+  
+  
+    .custom-card ul li {
+      margin-bottom: 1rem;
+    }
+  
+    .size--1-5-members h4,
+    section#flex--box-fs p {
+      padding: 0 15px;
+    }
+  
+    #fleex---wrapper-card-img .para-help {
+      margin-bottom: 15px;
+      line-height: 30px;
+      color: #000;
+      font-family: "Averta CY";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    .contact-form h3 {
+      font-size: 30px;
+    }
+  
+    #fleex---wrapper-card-img .row .col-md-7 {
+      padding-bottom: 0 !important;
+    }
+  
+    #baner_hp .banner_status_img {
+      height: 240px !important;
+    }
+  
+    #baner_another .banner_status_img {
+      height: 310px !important;
+    }
+  
+    .form__formualaire form>div {
+      width: 100%;
+    }
+  
+    .form__formualaire form .wrapper_submit path {
+      fill: #007565;
+    }
+  
+    #five_box_two_colon .member {
+      width: 100% !important;
+    }
+  
+    section.organise_testimonials_slide .all___class_box_albume img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    section.two___stories_vs .success img.mb-5 {
+      height: auto;
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    #acc-card-6-column .icon--african_pioneer {
+  
+      align-items: center;
+    }
+  
+    .wisiwyg h2 {
+      font-size: 30px;
+    }
+  
+    .top-tabs button {
+      width: 100%;
+    }
+  
+    .top-tabs {
+      flex-direction: column;
+      gap: 20px 0 !important;
+    }
+  
+    #list--news-all .card img {
+      height: auto;
+      border-radius: 30px;
+    }
+  
+    .rapport_size_img #list--news-all .card img {
+      height: auto;
+    }
+  
+    section.banner_status .banner_status_img img {
+      height: 100%;
+    }
+  
+    .african_insights .investment-box img {
+      height: auto;
+    }
+  
+    .web__form_dr form .js-form-item {
+      width: 100%;
+    }
+  
+    #five_box_two_colon .member {
+      height: 200px;
+    }
+  
+    #form__drupal_sb .btn input {
+      transform: translate(100%, 12%);
+    }
+  
+    /* .ledt--sidbar-click {
+      width: 100%;
+    } */
+    /* .ledt--sidbar-click {
+      width: 100%;
+    }  test git*/
+  
+    .ledt--sidbar-click {
+      width: 100%;
+    }
+  
+    .element--wrapper-enter .content>div {
+      flex-direction: column;
+      gap: 20px 0 !important;
+    }
+  
+    .top-tabs button {
+      padding: 15px;
+    }
+  
+    .items--elements-ll #acc-card-6-column .card .card-header {
+      padding: 0;
+    }
+  
+    .items--elements-ll #acc-card-6-column .card .card-body {
+      line-height: normal;
+      padding: 20px;
+    }
+  
+    .two-column-list {
+      flex-direction: column;
+    }
+  
+    .each-event:nth-child(2n+1) {
+      margin-left: 0;
+    }
+  
+    .all__telecharger_timeline {
+      padding: 20px;
+    }
+  
+    .all__telecharger_timeline .header {
+      flex-direction: column;
+    }
+  
+    .all__telecharger_timeline .header a {
+      line-height: 33px;
+      text-align: left;
+      font-size: 22px;
+    }
+  
+    .each-event {
+      width: 100%;
+    }
+  
+    #sticky-sidebar {
+      margin: 0;
+    }
+  
+    .wrapper {
+      padding: 0;
+    }
+  
+    .each-event:after {
+      opacity: 0;
+    }
+  
+    .sidebar a svg {
+      margin: 0 10px;
+    }
+  
+    .element--tabs-sc h3 {
+      font-size: 44px;
+    }
+  
+    .all--select-maps-layout {
+      gap: 2px;
+    }
+  
+    .all--select-maps-layout h2 {
+      font-size: 38px;
+      line-height: normal;
+    }
+  
+    /*  */
+  
+    .item-info {
+      width: 315px;
+      left: 0 !important;
+      right: 0 !important;
+      margin: auto;
+    }
+  
+    .item-info-content .wrapper-element-africa form {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin: 4px 0 !important;
+      padding: 0;
+      gap: 0 13px;
+    }
+  
+    .item-info .tabs---1,
+    .item-info .tabs---2 {
+      font-size: 10px !important;
+    }
+  
+    .item-info-content .wrapper-element-africa form button {
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: normal;
+    }
+  
+    .item-info-content .wrapper-element-africa input {
+      width: 60%;
+      height: 35px;
+    }
+  
+    /*  */
+  
+  
+    .img-1-maps {
+  
+      overflow-x: scroll;
+      white-space: nowrap;
+      overflow: auto;
+      display: flex;
+      overflow-x: auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+    }
+  
+    .img-1-maps svg {
+      width: 913px;
+    }
+  
+    .wrapper--logo-after-maps {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .banner_status_img img {
+      object-fit: cover;
+    }
+  
+    html,
+    body {
+      height: auto;
+    }
+  
+    .three_colmun_to_sc .tabs--item button,
+    .three_colmun_to_sc .tabs--item a {
+      width: 100%;
+      gap: 0 11px;
+    }
+  
+    .all--select-maps-layout {
+      max-width: 100%;
+    }
+  
+    .three_colmun_to_sc .container-layout {
+      padding: 30px 20px;
+    }
+  
+    .all--select-maps-layout div#country-select {
+      width: 100%;
+    }
+  
+    .three_colmun_to_sc .container-layout .map-container {
+      max-width: 100%;
+    }
+  
+    .width--img-inc .row.stats-container {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .paginations-list li a {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  
+    .paginations-list .pagination-success {
+      padding: 0;
+    }
+  
+    .filter-wp form {
+      flex-direction: column;
+    }
+  
+    .filter-champs {
+      width: 100%;
+    }
+  
+    .filter-champs.submit-filter {
+      width: 100%;
+    }
+  
+    .filter-wp form {
+      gap: 25px 0;
+    }
+  
+    .wrapper-title-filter {
+      padding-bottom: 30px;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      text-align: center;
+    }
+  
+    .slider-navigation {
+      flex-wrap: wrap;
+      position: relative;
+    }
+  
+    .slider-navigation button.slick-prev.slick-arrow {
+      /* display: none; */
+    }
+  
+    .slick-dots-container {
+      display: none;
+    }
+  
+    #filter-verticale .filters {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+  
+    #filter-verticale .filters>div {
+      width: 100%;
+    }
+  
+    #filter-verticale .members .slick-track {
+      height: 241px;
+      margin-top: 9% !important;
+    }
+  
+    .members {
+      padding: 0;
+    }
+  
+    .stats-container>div {
+      width: 100%;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      text-align: left;
+      font-size: 28px;
+    }
+  
+    .counter--number {}
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      text-align: center !important;
+    }
+  
+    .width--img-inc .row.stats-container {
+      gap: 5px;
+    }
+  
+    section.emblemes {
+      margin: 0;
+    }
+  
+    .paragraph--african_insights p {
+      font-size: 20px;
+      padding: 0 15px;
+    }
+  
+    .tabs--item button {
+      padding: 10px 3px;
+      font-size: 17px;
+    }
+  
+    .tabs--item button svg {
+      height: 35px;
+      width: 35px;
+      object-fit: inherit;
+    }
+  
+    .icon--banner-after {
+      width: 215px;
+      height: 215px;
+    }
+  
+    .icon--banner-after img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .wrapper--logo-after-maps p {
+      font-size: 25px;
+    }
+  
+    .stats-container>div {
+      width: 100%;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+      text-align: left;
+      font-size: 28px;
+    }
+  
+    .articles-img {
+      height: 100%;
+    }
+  
+    .section---filter-block .filter {
+      flex-wrap: wrap;
+    }
+  
+    .investment .investment-box p {
+      font-size: 35px;
+    }
+  
+    .section---filter-block .article {
+      width: 100%;
+    }
+  
+    section.banner_status_slider h2 {
+      font-size: 34px;
+      padding: 20px 0;
+    }
+  
+    .element--slider-item .btn--pls span {
+      font-size: 26px;
+    }
+  
+    .element--slider-item .btn--pls path,
+    .element--slider-item .btn--pls svg {
+      fill: #007565;
+    }
+  
+    .section---filter-block .articles {
+      flex-direction: column;
+    }
+  
+    .values-section {
+      flex-direction: column;
+    }
+  
+    .values--meteo h4 {
+      gap: 0 12px;
+      flex-direction: column;
+    }
+  
+    .values-section>div {
+      width: 100% !important;
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .tabs--item {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+  
+    .tabs--item button {
+      width: 100%;
+    }
+  
+    .element-sc {
+      padding: 0;
+    }
+  
+    .element--detail.row {
+      padding: 20px;
+    }
+  
+    .width--img-inc .row.stats-container {
+      flex-direction: column;
+    }
+  
+    .stats-container>div {
+      width: 100%;
+    }
+  
+    .width--img-inc .flex--with-img {
+      flex-direction: column;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child {
+      width: 100%;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 {
+      width: 100%;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:last-child {
+      width: 100%;
+    }
+  
+    section.management_team {}
+  
+    section.management_team .col-md-4 {
+      width: 100%;
+    }
+  
+    .team-card img {
+      width: 100%;
+    }
+  
+    section.team_member .row>div {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    section.team_member .row>div>div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .contact-card h5 {
+      text-align: center;
+      text-align: center;
+    }
+  
+    .contact-card p {
+      text-align: center;
+    }
+  
+    .flag--element img {
+      object-fit: contain;
+    }
+  
+    .wrapper-element-africa div {
+      font-size: 18px;
+    }
+  
+    .item-info {
+      padding: 10px;
+    }
+  
+    .wrapper-element-africa a {
+      font-size: 14px;
+    }
+  
+    header .nav-item {
+      flex-direction: column;
+    }
+  
+    header li.nav-item:hover ul.dropdown-menu {
+      width: 100%;
+      border: 0;
+    }
+  
+    .multi--select li {
+      flex-direction: row;
+    }
+  
+    header li.nav-item:hover ul.dropdown-menu li {
+      margin-bottom: 7px;
+    }
+  
+    body,
+    html {
+      overflow-x: hidden;
+    }
+  
+    section.filter--pays-elements .slick-track {
+      padding: 0;
+      width: 100% !important;
+      margin: 15px !important;
+    }
+  
+  
+    .member {
+      width: 100%;
+      padding: 0;
+      margin: 0 !important;
+    }
+  
+    section.investment .row {
+      padding: 15px;
+    }
+  
+    .text-center.btn--pls svg path {
+      fill: #007565;
+      /* color: red; */
+    }
+  
+    .title-primary-sc {
+      padding: 15px;
+    }
+  
+    .slider {
+      height: 100vh;
+    }
+  
+    .map-container {
+      order: 1;
+    }
+  
+    #acc-card-6-column .icon-african_pioneericon--card h3 {
+      font-size: 23px;
+      padding: 0 8px;
+    }
+  
+    .accordion-container {
+      order: 2;
+    }
+  
+    .section---filter-block .filter {
+      flex-wrap: wrap;
+    }
+  
+    .video--sc-2 {
+      height: auto;
+    }
+  
+    .stats-container {
+      padding: 20px;
+      justify-content: center;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .counter--number h3 {
+      font-size: 30px;
+    }
+  
+    .stats-container>div {
+      width: 47%;
+      margin: auto;
+      text-align: center;
+    }
+  
+    .counter--number {
+      justify-content: left;
+      width: auto;
+    }
+  
+    .img-counter {
+      width: auto;
+      height: 40px;
+    }
+  
+    .counter--number p {
+      line-height: normal;
+      font-size: 18px;
+    }
+  
+    .count--inc span {
+      font-size: 19px;
+    }
+  
+    .title-primary-sc h2 {
+      font-size: 40px;
+    }
+  
+    section.investment {}
+  
+    section.investment .row>div {
+      width: 100%;
+    }
+  
+    section.investment .row {
+      gap: 15px 0;
+    }
+  
+    div#acc-card-6-column .card {
+      width: 100%;
+    }
+  
+    #acc-card-6-column .icon--african_pioneer {
+      right: 5px;
+      height: max-content;
+    }
+  
+    .banner_status_img {
+      height: 433px;
+    }
+  
+    .banner_status_img h2 {
+      font-size: 35px;
+      line-height: normal;
+    }
+  
+    .contact-form {
+      max-width: 100% !important;
+      width: 100%;
+    }
+  
+    .contact-image {
+      max-width: 100% !important;
+      width: 100%;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+  
+  
+    .contact-container .col-md-4 {
+      width: 100%;
+    }
+  
+    footer .col-md-4 {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .social-icons {}
+  
+    footer .row>div:last-child {
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .counter--number p {
+      text-align: left;
+    }
+  
+    .container-layout {
+      flex-direction: column;
+    }
+  
+    .accordion-container {
+      max-width: 100%;
+    }
+  
+    .map-container {
+      max-width: 100%;
+    }
+  
+    footer .row>div form {
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+    }
+  
+    button.form--news {
+      text-align: center;
+      margin: 22px auto;
+    }
+  
+    .social-icons {
+      margin: 0 0 30px 0;
+    }
+  
+    footer .row>div form input {
+      width: 80%;
+      margin: auto;
+    }
+  
+    .header--menu ul:first-child {
+      width: 100%;
+    }
+  
+    header .nav-item {
+      justify-content: space-between;
+    }
+  
+    header .nav-item {
+      width: 100%;
+      padding: 15px 0;
+      height: auto;
+    }
+  
+    .header--menu ul li a {
+      width: 100%;
+    }
+  
+    .multi--select {
+      flex-direction: column;
+    }
+  
+    ul.multi--select .dropdown>a {
+      align-items: center;
+      display: flex;
+      width: auto;
+      gap: 0 7px;
+    }
+  
+    ul.multi--select li:last-child a {
+      align-items: center;
+    }
+  
+    header .navbar-expand-lg .navbar-nav .dropdown-menu {
+      width: 100%;
+      display: none;
+    }
+  
+    header .navbar-expand-lg .navbar-nav ul.dropdown-menu.show {
+      display: block;
+    }
+  
+    header li.nav-item:hover ul.dropdown-menu {
+      display: none;
+    }
+  
+    ul.multi--select .dropdown>ul {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  
+    .multi--select li {
+      position: relative;
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+      justify-content: left;
+      width: 100%;
+      display: flex;
+      align-items: start;
+    }
+  
+  
+    .multi--select li:hover ul.dropdown-menu {
+      display: none;
+    }
+  
+    ul.multi--select .dropdown ul.dropdown-menu.show {
+      display: block;
+    }
+  
+    .stats-container>div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .counter--number {
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .counter--number p {
+      margin-top: 0;
+    }
+  
+    .counter--number p {
+      font-size: 25px;
+      text-align: center;
+    }
+  
+    .img-counter {
+      height: auto;
+    }
+  
+    .title-primary-sc h2 {
+      padding-bottom: 0 !important;
+    }
+  
+    section.banner_status_slider .wrapper-slider---img {
+      width: 100% !important;
+    }
+  
+    footer .row>div:last-child h5::after {
+      width: 100%;
+    }
+  
+    section#banner-title .slider-content {
+      top: -10px;
+    }
+  
+    .doing .doing.d-flex.justify-content-center.flex-column.title-primary-sc.mb-3 {}
+  
+    section div .doing {
+      width: 100%;
+      padding: 15px !important;
+    }
+  
+    .left-tax {
+      left: auto;
+      padding: 20px 15px;
+    }
+  
+    section div.doing {
+      width: 100%;
+    }
+  
+    .right-tax {
+      right: auto;
+    }
+  
+    img.quoteright {
+      top: 0;
+    }
+  
+    img.quoteleft {
+      top: auto;
+    }
+  
+    #textvert {
+      font-size: 29px;
+    }
+  
+    .banner_status_img {
+      height: 387px;
+    }
+  
+    .banner_status_img h2 {
+      font-size: 27px !important;
+    }
+  
+    .banner_status_img a {
+      font-size: 21px;
+    }
+  
+    .banner_status_img a svg {
+      width: 30px;
+    }
+  
+    #flex--box-fs {
+      padding-top: 0;
+    }
+  
+    #flex--box-fs p {
+      font-size: 20px;
+    }
+  
+    #flex--box-fs .rectangle,
+    #flex--box-fs h1,
+    #flex--box-fs p {
+      padding: 15px;
+    }
+  
+    #flex--box-fs .rectangle {
+      padding: 0 15px;
+      left: 15px;
+      position: relative;
+    }
+  
+    #flex--box-fs h1 {
+      padding-top: 10px;
+      margin-top: 0 !important;
+    }
+  
+    #fleex---wrapper-card-img .row>div {
+      width: 100%;
+    }
+  
+    #fleex---wrapper-card-img .row {
+      padding: 15px;
+    }
+  
+    #fleex---wrapper-card-img .row .col-md-7 {
+      padding: 30px 0 !important;
+    }
+  
+    #fleex---wrapper-card-img .para-help {
+      margin-top: 0 !important;
+    }
+  
+    #center--to-responsive p {
+      text-align: center !important;
+    }
+  
+    #effortless--wrapper .row>div {
+      width: 100%;
+      padding: 15px !important;
+    }
+  
+    #effortless--wrapper .row>div h2 {
+      margin-top: 0 !important;
+      font-size: 30px;
+    }
+  
+    #effortless--wrapper .row>.col-md-5 {
+      padding: 0 !important;
+    }
+  
+    #organise--africa .row.mt-5 {
+      margin-top: 0 !important;
+    }
+  
+    #organise--africa {}
+  
+    #organise--africa .row>div {
+      width: 100%;
+    }
+  
+    #organise--africa .row>div img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    #organise--africa ul li {
+      font-size: 20px;
+    }
+  
+    .all--select-maps-layout p {
+      padding: 30px 0;
+    }
+  
+    .all--select-maps-layout {
+      margin-bottom: 30px;
+    }
+  
+    #list--news-all h5 {
+      font-size: 25px;
+    }
+  
+    #list--news-all .article-date {
+      font-size: 16px;
+    }
+  
+    #list--news-all .btn--pls svg path {
+      fill: #007565;
+    }
+  
+    .showing_modal_pop_up .modal-content {
+      width: 90%;
+      padding: 36px 15px 30px 15px;
+    }
+  
+    .showing_modal_pop_up h2 {
+      font-size: 27px;
+      line-height: normal;
+    }
+  
+    .modal__flixible {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .showing_modal_pop_up input {
+      width: 100%;
+    }
+  
+    .showing_modal_pop_up p {
+      font-size: 20px;
+    }
+  
+  
+    ul.multi--select li:last-child a {
+      -webkit-text-stroke-color: #007565 !important;
+    }
+  
+    ul.multi--select li:last-child a svg {
+      font-size: 20px;
+      width: 20px;
+    }
+  
+    header .navbar-expand-lg .navbar-nav ul.dropdown-menu {
+      position: relative;
+      top: 0 !important;
+      background-color: transparent;
+      box-shadow: initial;
+      border: 0;
+      line-height: 35px;
+    }
+  
+    header .navbar-expand-lg .navbar-nav ul.dropdown-menu li {
+      margin-bottom: 9px;
+    }
+  
+    header .nav-item {
+      padding: 0 0 15px 0;
+    }
+  
+    ul.multi--select .dropdown ul.dropdown-menu.show {
+      box-shadow: initial;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      padding-top: 15px;
+    }
+  
+    ul.multi--select .dropdown .dropdown-item {
+      padding: 0;
+      gap: 4px 8px;
+    }
+  
+    .multi--select li {
+      margin-bottom: 10px;
+    }
+  
+    .d-flex.logo-success {
+      flex-direction: column;
+      padding: 32px;
+    }
+  
+    .items--elements-ll h4 {
+      font-size: 20px;
+    }
+  
+    /* Casse  ********/
+    /* section#effortless--wrapper {
+      width: 2px;
+    }
+  
+    #sticky-sidebar {
+      width: 20px;
+    } */
+  
+    /* .contact-form .form-group {
+      flex-direction: row;
+    }
+  
+    .contact-form form {
+      width: 600px;
+    }
+  
+    ul.multi--select {
+      display: none;
+    }
+  
+    .values-section>div {
+      width: 600px !important;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 {
+      width: 10%;
+    }
+  
+    .values-section>div {
+      width: 600px !important;
+    }
+  
+    .width--img-inc .row-column-width--img-inc:first-child .col-md-3 {
+      width: 10%;
+    }
+  
+    section.management_team .col-md-4 {
+      width: 600px;
+      padding-left: 69px;
+    }
+  
+    .three_colmun_to_sc .tabs--item button,
+    .three_colmun_to_sc .tabs--item a {
+      width: 1%;
+    }
+  
+  
+    section#effortless--wrapper {
+      padding: 10px;
+      width: 100px;
+    } */
+  
+    /* Casse */
+    .global_investment .row .col-lg-6 {
+      margin-bottom: 0 !important;
+    }
+  
+    .global_investment .row>div:first-child .custom-card {
+      margin-bottom: 0;
+    }
+  
+    .contact-card h5 {
+      font-size: 20px;
+      text-align: center;
+      margin: auto;
+    }
+  
+    #doing---wr .size--vw-1-5,
+    .size--vw-1-5,
+    #center--to-responsive .size--vw-1-5 {
+      font-size: 18px !important;
+    }
+  
+    section#organise--africa p,
+    .size--1-5-members h4,
+    section#flex--box-fs p,
+    .items--elements-ll ul li,
+    .items--elements-ll #acc-card-6-column .card .card-body li,
+    .items--elements-ll #acc-card-6-column .card .card-body p,
+    .items--elements-ll #acc-card-6-column .card .card-body h5,
+    .items--elements-ll h5,
+    .items--elements-ll p,
+    .items--elements-ll li,
+    .items--elements-ll #acc-card-6-column .card .card-body {
+      font-size: 18px;
+    }
+  
+    #organise--africa .container .row:last-child>div {
+      height: auto;
+    }
+  
+    .video--sc-2 .slider-video {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .filter-wp .filter-champs [type="submit"] {
+      text-align: center;
+      margin: auto;
+    }
+  
+    .header--menu nav #block-cfc-main-menu #langue---style .btn {
+      padding: 0 15px 0 0;
+      line-height: normal;
+    }
+  
+    .header--menu nav #block-cfc-main-menu {
+      display: block !important;
+    }
+  
+    .header--menu nav #block-cfc-main-menu .navbar-nav {
+      width: 100%;
+    }
+  
+    ul.multi--select li:last-child a {
+      font-size: 20px;
+    }
+  
+    ul.multi--select .dropdown ul.dropdown-menu li {
+      display: flex !important;
+      height: auto;
+      padding: 0 !important;
+      margin: 0;
+      font-size: 16px !important;
+      line-height: normal !important;
+      flex-direction: inherit;
+      width: 20px !important;
+      gap: 4px 13px !important;
+      margin-bottom: 5px;
+    }
+  
+    #langue---style ul {
+      height: auto;
+      padding: 0;
+      margin: 0;
+      margin: 16px 8px 0 4px;
+      position: relative;
+    }
+  
+    #langue---style ul {
+      margin: 10px 0;
+    }
+  
+    header .navbar-expand-lg .navbar-nav ul.dropdown-menu.show {
+      padding: 0;
+    }
+  
+    #navbarNav {
+      height: 80vh;
+      overflow: auto;
+    }
+  
+    .banner_status_img div {
+      height: auto !important;
+    }
+  
+    .banner_status_img {
+      height: 350px !important;
+    }
+  
+    .owl .owl-stage-outer {
+      padding-top: 5px;
+    }
+  
+    .banner_status_slider {
+      padding-top: 0;
+    }
+  
+    section.banner_status_slider .owl h2 {
+      font-size: 24px;
+    }
+  
+    section.banner_status_slider .element--slider-item p {
+      display: none;
+    }
+  
+    /*  */
+  
+    ul.multi--select .dropdown ul.dropdown-menu li {
+      margin-bottom: 8px;
+      padding: 5px 5px 0 15px !important;
+    }
+  
+    #langue---style ul {
+      margin-top: 16px;
+      border: 1px solid #000;
+    }
+  
+    button#send-request-btn svg path {
+      fill: #007565;
+    }
+  
+    .element--detail.row {
+      margin: 20px 0 0 0;
+    }
+  
+    .wrapper-2column---logo {
+      flex-direction: column;
+    }
+  
+    .wrapper-2column---logo img {
+      height: auto;
+    }
+  
+    .path-search #banner-title {
+      height: 300px;
+    }
+  
+    #form__drupal_sb .btn input {
+      transform: initial
+    }
+  
+    #form__drupal_sb form .btn,
+    .sc_search #views-exposed-form-search-content-block-1 .btn {
+      top: 0px;
+      right: -7px;
+    }
+  
+    .path-search #banner-title {
+      height: 300px;
+    }
+  
+    .wisiwyg .wrapper-description p {
+      font-size: 20px;
+    }
+  
+    /* .wisiwyg .wrapper-description p {
+      font-size: 20px;
+    } */
+    .content-last p:first-child {
+      line-height: initial;
+    }
+  
+    .scroll-sticky-tabs .event-description ul li {
+      margin-bottom: 0;
+    }
+  
+    #effortless--wrapper .row>div h2 {
+      font-size: calc(1.375rem + 1.5vw);
+      line-height: normal;
+      padding-bottom: 10px;
+    }
+  
+    section#effortless--wrapper .map-container.map-business {
+      height: auto;
+    }
+  
+    .maps-africa .map-container svg {
+      height: 500px;
+    }
+  
+    section#effortless--wrapper .map-container.map-business svg {
+      height: 486px;
+    }
+  
+    section.global_investment p,
+    .custom-card ul li,
+    .wrapper--logo-after-maps p,
+    .team-card p,
+    .text-quote,
+    section#organise--africa p,
+    .content-last p:nth-child(2),
+    .african_pioneer ul li,
+    .element--tabs-sc p,
+    .each-year p,
+    .wisiwyg .wrapper-description p,
+    #organise--africa ul li,
+    .size--1-5-members h4,
+    section#flex--box-fs p,
+    .items--elements-ll ul li,
+    .items--elements-ll #acc-card-6-column .card .card-body li,
+    .items--elements-ll #acc-card-6-column .card .card-body p,
+    .items--elements-ll #acc-card-6-column .card .card-body h5,
+    .items--elements-ll h5,
+    .items--elements-ll p,
+    .items--elements-ll li,
+    .items--elements-ll #acc-card-6-column .card .card-body {
+      color: #000;
+      font-family: "Averta CY";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      -webkit-text-stroke-width: initial;
+      letter-spacing: normal;
+  
+    }
+  
+    .col-md-7.color-vert-section.p-3 ul li,
+    .all--select-maps-layout p,
+    .wrapper-description ul li {
+  
+      font-family: "Averta CY";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      -webkit-text-stroke-width: initial;
+    }
+  
+    #fleex---wrapper-card-img .row .col-md-7 {
+      padding-bottom: 0 !important;
+    }
+  
+    #fleex---wrapper-card-img .para-help {
+      margin-bottom: 0;
+    }
+  
+    @media (min-width: 1119px) and (max-width: 1399px) {
+      .investment .investment-box p {
+        font-size: 33px;
+      }
+  
+      .header--menu ul:first-child li a {
+        font-size: 19px;
+      }
+  
+      .header--menu .navbar-brand img {
+        width: 175px;
+      }
+  
+      .multi--select a {
+        font-size: 19px;
+      }
+  
+      .slider {
+        height: 800px;
+      }
+  
+      .container-layout .accordion-button {
+        padding: 20px 10px;
+        font-size: 21px;
+      }
+  
+      #acc-card-6-column .icon-african_pioneericon--card h3 {
+        font-size: 22px;
+      }
+  
+      .values-section {
+        padding: 40px;
+      }
+  
+      .values--meteo h4 {
+        font-size: 46px;
+        line-height: normal;
+      }
+  
+      /* section.global_investment p {
+        font-size: 25px !important;
+      } */
+  
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        font-size: 25px;
+      }
+  
+      .width--img-inc .row.stats-container {
+        padding: 40px;
+      }
+  
+      .team-card p {
+        line-height: 35px;
+      }
+  
+      .title-primary-sc h2 {
+        font-size: 45px;
+      }
+    }
+  
+    @media (min-width: 1119px) {
+  
+  
+      section#safe--sc-wrapper .paragraph--african_insights {
+        margin-top: 0 !important;
+      }
+  
+      #doing---wr p {
+        font-size: 1.2vw;
+      }
+  
+      #doing---wr .row>div:nth-child(2) img {
+        height: 80vh;
+      }
+  
+      section#safe--sc-wrapper div#acc-card-3-column {
+        gap: 10px 0;
+      }
+  
+      section#flex--left-right-wrp ul li {
+        font-size: 1.3vw;
+      }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      /* .sidebar a {
+        font-size: 1.3vw;
+      } */
+  
+      #list--news-all h5 {
+        font-size: 1.5vw;
+        margin-bottom: 0;
+      }
+  
+      /* section#safe--sc-wrapper .title-primary-sc p {
+        font-size: 1.2vw !important;
+      } */
+  
+      section.global_investment .col-lg-6.mb-5 img {
+        height: 80vh;
+        width: 90%;
+      }
+  
+      section.global_investment .col-lg-6.mb-5 {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+  
+      #fleex---wrapper-card-img h1 {
+        font-size: 35px;
+      }
+  
+      #fleex---wrapper-card-img p {
+        font-size: 25px;
+      }
+  
+  
+      #flex--box-fs .col-md-6 {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+  
+      #flex--box-fs .col-md-6 p {
+        font-size: 1.3vw;
+      }
+  
+      #flex--box-fs .col-md-6 img {
+        height: 80vh;
+      }
+    }
+  
+    @media (max-width: 1119px) {
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        font-size: 23px;
+      }
+  
+      .section---filter-block .filter {
+        flex-wrap: wrap;
+      }
+  
+      .video--sc-2 {
+        height: auto;
+      }
+  
+      section#banner-title {
+        height: 300px;
+      }
+  
+      section#banner-title img.slider-video {
+        object-fit: cover;
+      }
+  
+      section.global_investment h3 {
+        font-size: 40px;
+      }
+  
+      section.global_investment p {
+        font-size: 18px;
+      }
+  
+      .custom-card h4 {
+        font-size: 30px;
+      }
+  
+      .values-section {
+        padding: 15px;
+      }
+  
+      .values--meteo h4 {
+        font-size: 35px;
+        gap: 0 1px;
+        line-height: normal;
+      }
+  
+      .values--meteo {
+        width: 50%;
+      }
+  
+      .meteo--value2 {
+        width: 50% !important;
+        padding: 15px;
+      }
+  
+      .stats-container {
+        padding: 30px;
+      }
+  
+      .count--inc span {
+        font-size: 28px;
+      }
+  
+      .img-counter img {
+        object-fit: contain;
+      }
+  
+      .counter--number p {
+        text-align: left;
+        line-height: 34px;
+        margin-top: 10px;
+      }
+  
+      section.emblemes {
+        margin: 40px;
+      }
+  
+      .tabs--item button {
+        width: 48%;
+        font-size: 19px;
+        height: auto;
+        padding: 20px 0;
+      }
+  
+      .img-1-maps svg {
+        width: 100%;
+      }
+  
+      .img-2-maps svg {
+        width: 100%;
+      }
+  
+      .team-card p {
+        line-height: 29px;
+      }
+  
+      .team-card h5 {
+        line-height: 40px;
+      }
+  
+      .team-card {
+        padding-bottom: 20px;
+      }
+  
+  
+  
+      section.team_member {}
+  
+      section.team_member .row>div {
+        width: 50%;
+        display: flex;
+        align-items: center;
+      }
+  
+      section.team_member .row>div>div {
+        padding: 20px;
+      }
+  
+      .contact-card h5 {
+        height: auto;
+      }
+  
+      #acc-card-6-column .icon-african_pioneericon--card h3 {
+        height: 90px;
+        align-items: center;
+        display: flex;
+      }
+  
+      .slider {
+        height: 80vh;
+      }
+  
+      .header--menu .navbar-brand img {
+        width: 156px;
+      }
+  
+      .header--menu ul:first-child li a {
+        font-size: 18px;
+        line-height: normal;
+        margin: 0;
+      }
+  
+      ul.multi--select a {
+        font-size: 18px;
+        line-height: normal;
+      }
+  
+      .header--menu nav {
+        max-width: 100%;
+      }
+  
+      .header--menu {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 98%;
+        margin: auto;
+      }
+  
+      section.increment--bx {}
+  
+      .row.stats-container {}
+  
+      .row.stats-container {}
+  
+      .row.stats-container {
+        padding: 40px 30px;
+      }
+  
+      section.increment--bx .col-md-11 {
+        width: 100%;
+      }
+  
+      .counter--number p {
+        line-height: normal;
+        text-align: left;
+      }
+  
+      .counter--number {
+        gap: 15px 0;
+      }
+  
+      .img-counter img {
+        width: auto;
+      }
+  
+      .img-counter {
+        height: 50px;
+      }
+  
+      .header--menu .navbar-brand img {
+        width: 156px;
+      }
+  
+      .header--menu ul:first-child li a {
+        font-size: 18px;
+        line-height: normal;
+  
+        margin: 0;
+      }
+  
+      ul.multi--select a {
+        font-size: 18px;
+        line-height: normal;
+      }
+  
+      .header--menu nav {
+        max-width: 100%;
+      }
+  
+      .header--menu {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 98%;
+        margin: auto;
+      }
+  
+      .slider {
+        height: 80vh;
+      }
+  
+      #acc-card-6-column .icon-african_pioneericon--card h3 {
+        font-size: 20px;
+      }
+  
+      .filters ul li button {
+        text-align: left;
+      }
+  
+      .contact-form {
+        max-width: 60% !important;
+      }
+  
+      .map-container {
+        max-width: 40%;
+      }
+  
+      .member {
+        width: 140px;
+        height: auto;
+      }
+  
+      .slick-slide img {
+        object-fit: cover !important;
+        width: 50%;
+        height: auto;
+      }
+  
+      .img--pays-el {
+        height: 200px;
+      }
+  
+      .accordion-container {
+        max-width: 30%;
+      }
+  
+      .contact-image {
+        max-width: 40% !important;
+      }
+  
+      .contact-container {
+        min-width: 100%;
+      }
+  
+      .contact-image img {
+        object-fit: cover;
+      }
+    }
+  
+    @media (min-width: 992px) {
+      .sc--mg-slider--wrapper h2 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+  
+      #acc-card-6-column .icon-african_pioneericon--card h3 {
+        font-size: 24px;
+        padding-right: 10px;
+      }
+  
+      #organise--africa div>.row:nth-child(1) {
+        margin-bottom: 45px;
+      }
+  
+      section.banner_status_slider .wrapper-slider---img {
+        width: 50% !important;
+      }
+  
+      section.banner_status_slider .element--slider-item {
+        width: 50%;
+      }
+  
+      .wisiwyg .img--detail img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+      }
+  
+      div#block-cfc-identitedusite img {
+        width: 240px;
+      }
+  
+  
+      .img--wrapper {
+        height: 80vh;
+        margin: auto;
+      }
+  
+      .img--wrapper img {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        object-fit: contain;
+      }
+  
+      .african_insights .investment-box .wrapper-insight_icon p {
+        font-size: 28px !important;
+      }
+  
+      section#flex--box-fs .wrapper-insight_icon p {
+        font-size: 1.8vw;
+      }
+  
+      .each-year p {
+        font-size: 1.3vw;
+      }
+  
+  
+  
+      .wisiwyg .wrapper-description p {
+        font-size: 1.4vw;
+      }
+  
+      #sticky-sidebar {
+        padding: 10px;
+      }
+  
+      .sidebar a {
+        font-size: 22px;
+        padding: 15px;
+      }
+  
+      section.banner_status_slider .element--slider-item {
+        height: 220px;
+      }
+  
+      .top-tabs button {
+        font-size: 20px;
+      }
+  
+      .element--tabs-sc h3 {
+        font-size: 46px;
+      }
+  
+      .element--tabs-sc p,
+      .size--1-5-members h4,
+      section#flex--box-fs p {
+        font-size: 1.4vw;
+      }
+  
+      .members .slick-slide.count-7,
+      .members .slick-slide:nth-child(7n+7):not([class*="count-"]) {
+        margin-top: 170px;
+      }
+  
+      .members .slick-slide.count-1,
+      .members .slick-slide:nth-child(7n+1):not([class*="count-"]) {
+        margin-top: 170px;
+      }
+  
+      .members .slick-slide.count-4,
+      .members .slick-slide:nth-child(7n+4):not([class*="count-"]) {
+        margin-top: 80px;
+        margin-bottom: 110px;
+      }
+  
+    }
+  
+    /* Break Point */
+    @media (min-width: 1120px) {
+      #flex--box-fs .col-md-6 {
+        justify-content: start;
+      }
+  
+      .investment .investment-box svg {
+        width: 25px;
+      }
+  
+      #filter-verticale .filters {
+        padding-top: 20px;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        font-size: 20px;
+      }
+  
+      .african_pioneer ul li {
+        font-size: 1.3vw !important;
+      }
+  
+      .step-content h3 {
+        font-size: 30px;
+      }
+  
+      .all__telecharger_timeline .header h3 {
+        font-size: 22px;
+      }
+  
+      .all__telecharger_timeline .header p {
+        margin-bottom: 0;
+      }
+  
+      .all__telecharger_timeline .header a {
+        font-size: 22px;
+        position: relative;
+        top: -3px;
+      }
+  
+      .wisiwyg .wrapper-description p {
+        padding-top: 8px;
+      }
+  
+      .each-event {
+        width: 48%;
+      }
+  
+      section#organise--africa li {
+        font-size: 1.4vw !important;
+        line-height: 34px;
+      }
+  
+      section#maps--with-select-pays .all--select-maps-layout {
+        width: 50% !important;
+      }
+  
+      .custom-card ul li {
+        font-size: 1.2;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        font-size: 20px;
+      }
+  
+  
+      .team-card h5 {
+        line-height: 40px;
+      }
+  
+      .team-card {
+        padding-bottom: 20px;
+      }
+  
+      .contact-card h5 {
+        line-height: 40px;
+      }
+  
+      .contact-card h5 {
+  
+  
+        height: min-content;
+  
+        padding-bottom: 0;
+        margin-bottom: 0 !important;
+      }
+  
+      .slider-content {
+  
+        transform: translateY(-41%);
+      }
+  
+      .slider {
+        height: 100vh;
+      }
+  
+      .accordion-body li {
+        font-size: 18px;
+      }
+  
+      .title-primary-sc h2 {
+        font-size: 40px !important;
+        line-height: normal;
+      }
+  
+      #organise--africa .item img {
+        width: 100%;
+        object-fit: cover;
+        height: 387px;
+      }
+  
+      #organise--africa h1 {
+        font-size: 35px;
+      }
+  
+      #organise--africa p {
+        font-size: 1.4vw !important;
+        line-height: 34px;
+      }
+  
+      .col-md-7.color-vert-section.p-3 h2 {
+        font-size: 30px;
+        line-height: normal;
+        padding-bottom: 10px;
+      }
+  
+      .col-md-7.color-vert-section.p-3 ul li {
+        font-size: 20px;
+      }
+  
+      .paragraph--african_insights p {
+        font-size: 20px !important;
+        padding-top: 8px;
+      }
+  
+      section#flex--box-fs p,
+      #fleex---wrapper-card-img p {
+        font-size: 1.4vw;
+        line-height: 34px;
+      }
+  
+      #flex--box-fs h1 {
+        font-size: 35px;
+      }
+  
+      #flex--box-fs .col-md-6 p {
+        line-height: 33px;
+        font-size: 1.4vw;
+      }
+  
+      .slider-content h1 {
+        font-size: 60px;
+      }
+  
+      #acc-card-6-column .icon-african_pioneericon--card h3 {
+        font-size: 20px;
+      }
+  
+      .african_pioneer ul li {
+        font-size: 18px;
+      }
+  
+  
+  
+      .slider-content p {
+        font-size: 25px;
+      }
+  
+      .header--menu ul:first-child li a,
+      .header--menu .navbar-nav li a {
+        font-size: 16px;
+        padding: 0 6px !important;
+      }
+  
+      #langue---style .dropdown-toggle {
+        margin: 0;
+        font-size: 16px;
+      }
+  
+      ul.multi--select li:last-child a {
+        font-size: 16px !important;
+        gap: 0 0px;
+      }
+  
+      /* ul.multi--select li:last-child a {
+        font-size: 16px !important;
+        gap: 0 0px;
+      } */
+  
+      div#block-cfc-identitedusite img {
+        width: 190px;
+      }
+  
+      ul.multi--select li:last-child a svg {
+        width: 24px;
+        position: relative;
+        top: 2px;
+      }
+  
+      section#banner-title {
+        height: 400px;
+      }
+  
+      .wrapper-2column---logo img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+      }
+  
+      .investment .investment-box p {
+        font-size: 23px !important;
+  
+        line-height: 40px;
+      }
+  
+      .bannertext {
+        font-size: 32px !important;
+        line-height: normal !important;
+      }
+  
+      #flex--box-fs .col-md-6 img {
+        width: auto;
+      }
+  
+      .rectangle.mt-3 {
+        position: relative;
+        top: 30px;
+      }
+  
+      #list--news-all .btn--pls a {
+        gap: 0 15px;
+  
+      }
+  
+      .slider-content p {
+        font-size: 23px;
+      }
+  
+      #list--news-all .btn--pls span {
+  
+        font-size: 25px;
+  
+      }
+  
+      .btn--pls {
+        font-size: 30px;
+      }
+  
+      #list--news-all .btn--pls a svg {
+        width: 35px;
+        height: auto;
+      }
+  
+      .investment .investment-box {
+  
+        padding: 30px 16px;
+  
+      }
+  
+      .member {
+  
+        width: 194px;
+      }
+  
+      .count--inc span {
+        font-size: 30px;
+      }
+  
+      .counter--number h3 {
+        font-size: 30px;
+      }
+  
+      .counter--number p {
+        margin: 5px 0;
+      }
+  
+      .img-counter img {
+        width: auto;
+      }
+  
+      .counter--number p {
+        font-size: 18px;
+      }
+  
+      section.global_investment h3 {
+        font-size: 45px;
+        line-height: 45px;
+      }
+  
+      section.global_investment p {
+        font-size: 1.6vw !important;
+        line-height: normal;
+        margin-bottom: 10px;
+  
+      }
+  
+      .tabs--item {
+        gap: 0 10px;
+      }
+  
+      .global_investment {
+        margin-bottom: -60px;
+      }
+  
+      .custom-card ul li {
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+  
+      .values--meteo h4 {
+        font-size: 44px;
+        line-height: normal;
+      }
+  
+      .wrapper--logo-after-maps p {
+        font-size: 25px;
+      }
+  
+      .wrapper--logo-after-maps {
+        padding: 0 40px;
+      }
+  
+      .three_colmun_to_sc .tabs--item a {
+        font-size: 20px;
+      }
+    }
+  
+    @media (min-width: 1120px) {
+      .contact-card p {
+        font-size: 1.8vw;
+      }
+  
+      .contact-card h5 {
+        font-size: 1.8vw;
+        line-height: normal;
+      }
+  
+      .management_team .row>div:nth-child(1) {
+        order: 6;
+      }
+  
+      .management_team .row>div:nth-child(6) {
+        order: 1;
+      }
+  
+      .management_team .row>div:nth-child(2) {
+        order: 2;
+      }
+  
+      .management_team .row>div:nth-child(3) {
+        order: 3;
+      }
+  
+      .management_team .row>div:nth-child(4) {
+        order: 4;
+      }
+  
+      .management_team .row>div:nth-child(5) {
+        order: 5;
+      }
+  
+      .team-card p {
+        line-height: normal;
+      }
+  
+      .contact-container {
+        width: 100%;
+        min-width: 100%;
+      }
+  
+      .map-container>svg {
+        height: 80vh;
+      }
+  
+      .container-layout>div {
+        width: 30%;
+      }
+  
+      .container-layout>.map-container {
+        width: 40%;
+      }
+  
+      .contact-form textarea {
+        height: 95px !important;
+      }
+  
+      .contact-form h3 {
+        margin-bottom: 2%;
+        font-size: 30px;
+      }
+  
+      .contact-image img {
+        height: 80vh;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 30px;
+      }
+  
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        padding: 10px 15px;
+      }
+  
+      .web__form_dr form {
+        gap: 8px 0;
+      }
+  
+      section.global_investment p {
+        font-size: 1.4vw !important;
+        line-height: normal;
+      }
+  
+      .custom-card ul li {
+        font-size: 1.4vw;
+      }
+  
+      section.global_investment .col-lg-6.mb-5 {
+        justify-content: start;
+      }
+  
+      .values-section {
+        gap: 0 15px;
+      }
+  
+      .values--meteo {
+        width: 60%;
+      }
+  
+      .meteo--value2 {
+        width: 40% !important;
+      }
+  
+      .tabs--item button {
+        font-size: 18px;
+      }
+  
+      #maps__2_item #section1 svg {
+        position: relative;
+        left: 15px;
+      }
+    }
+  
+    /*  */
+    @media (min-width: 1400px) {
+      #filter-verticale .members .slick-track {
+        width: 100% !important;
+        padding: 0 29px;
+        margin: 15px 10px;
+      }
+  
+      .member {
+        width: 18.4%;
+      }
+    }
+  
+    @media (min-width: 1120px) and (max-width: 1399px) {
+  
+      #filter-verticale .members .slick-track {
+        width: 100% !important;
+        padding: 0 29px;
+        margin: 15px 5px;
+      }
+  
+      .member {
+        width: 18%;
+      }
+    }
+  
+    @media (max-width: 991px) {
+  
+  
+      .custom-card ul li {
+        margin-bottom: 1rem;
+      }
+  
+      .size--1-5-members h4,
+      section#flex--box-fs p {
+        padding: 0 15px;
+      }
+  
+      #fleex---wrapper-card-img .para-help {
+        margin-bottom: 15px;
+        line-height: 30px;
+        color: #000;
+        font-family: "Averta CY";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .contact-form h3 {
+        font-size: 30px;
+      }
+  
+      #fleex---wrapper-card-img .row .col-md-7 {
+        padding-bottom: 0 !important;
+      }
+  
+      #baner_hp .banner_status_img {
+        height: 240px !important;
+      }
+  
+      #baner_another .banner_status_img {
+        height: 310px !important;
+      }
+  
+      .form__formualaire form>div {
+        width: 100%;
+      }
+  
+      .form__formualaire form .wrapper_submit path {
+        fill: #007565;
+      }
+  
+      #five_box_two_colon .member {
+        width: 100% !important;
+      }
+  
+      section.organise_testimonials_slide .all___class_box_albume img {
+        height: 100%;
+        width: 100%;
+      }
+  
+      section.two___stories_vs .success img.mb-5 {
+        height: auto;
+        width: 100%;
+        padding: 0 10px;
+      }
+  
+      #acc-card-6-column .icon--african_pioneer {
+  
+        align-items: center;
+      }
+  
+      .wisiwyg h2 {
+        font-size: 30px;
+      }
+  
+      .top-tabs button {
+        width: 100%;
+      }
+  
+      .top-tabs {
+        flex-direction: column;
+        gap: 20px 0 !important;
+      }
+  
+      #list--news-all .card img {
+        height: auto;
+        border-radius: 30px;
+      }
+  
+      .rapport_size_img #list--news-all .card img {
+        height: auto;
+      }
+  
+      section.banner_status .banner_status_img img {
+        height: 100%;
+      }
+  
+      .african_insights .investment-box img {
+        height: auto;
+      }
+  
+      .web__form_dr form .js-form-item {
+        width: 100%;
+      }
+  
+      #five_box_two_colon .member {
+        height: 200px;
+      }
+  
+      #form__drupal_sb .btn input {
+        transform: translate(100%, 12%);
+      }
+  
+      /* .ledt--sidbar-click {
+        width: 100%;
+      } */
+      /* .ledt--sidbar-click {
+        width: 100%;
+      }  test git*/
+  
+      .ledt--sidbar-click {
+        width: 100%;
+      }
+  
+      .element--wrapper-enter .content>div {
+        flex-direction: column;
+        gap: 20px 0 !important;
+      }
+  
+      .top-tabs button {
+        padding: 15px;
+      }
+  
+      .items--elements-ll #acc-card-6-column .card .card-header {
+        padding: 0;
+      }
+  
+      .items--elements-ll #acc-card-6-column .card .card-body {
+        line-height: normal;
+        padding: 20px;
+      }
+  
+      .two-column-list {
+        flex-direction: column;
+      }
+  
+      .each-event:nth-child(2n+1) {
+        margin-left: 0;
+      }
+  
+      .all__telecharger_timeline {
+        padding: 20px;
+      }
+  
+      .all__telecharger_timeline .header {
+        flex-direction: column;
+      }
+  
+      .all__telecharger_timeline .header a {
+        line-height: 33px;
+        text-align: left;
+        font-size: 22px;
+      }
+  
+      .each-event {
+        width: 100%;
+      }
+  
+      #sticky-sidebar {
+        margin: 0;
+      }
+  
+      .wrapper {
+        padding: 0;
+      }
+  
+      .each-event:after {
+        opacity: 0;
+      }
+  
+      .sidebar a svg {
+        margin: 0 10px;
+      }
+  
+      .element--tabs-sc h3 {
+        font-size: 44px;
+      }
+  
+      .all--select-maps-layout {
+        gap: 2px;
+      }
+  
+      .all--select-maps-layout h2 {
+        font-size: 38px;
+        line-height: normal;
+      }
+  
+      /*  */
+  
+      .item-info {
+        width: 315px;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto;
+      }
+  
+      .item-info-content .wrapper-element-africa form {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 4px 0 !important;
+        padding: 0;
+        gap: 0 13px;
+      }
+  
+      .item-info .tabs---1,
+      .item-info .tabs---2 {
+        font-size: 10px !important;
+      }
+  
+      .item-info-content .wrapper-element-africa form button {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        line-height: normal;
+      }
+  
+      .item-info-content .wrapper-element-africa input {
+        width: 60%;
+        height: 35px;
+      }
+  
+      /*  */
+  
+  
+      .img-1-maps {
+  
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow: auto;
+        display: flex;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+      }
+  
+      .img-1-maps svg {
+        width: 913px;
+      }
+  
+      .wrapper--logo-after-maps {
+        padding: 15px;
+        text-align: center;
+      }
+  
+      .banner_status_img img {
+        object-fit: cover;
+      }
+  
+      html,
+      body {
+        height: auto;
+      }
+  
+      .three_colmun_to_sc .tabs--item button,
+      .three_colmun_to_sc .tabs--item a {
+        width: 100%;
+        gap: 0 11px;
+      }
+  
+      .all--select-maps-layout {
+        max-width: 100%;
+      }
+  
+      .three_colmun_to_sc .container-layout {
+        padding: 30px 20px;
+      }
+  
+      .all--select-maps-layout div#country-select {
+        width: 100%;
+      }
+  
+      .three_colmun_to_sc .container-layout .map-container {
+        max-width: 100%;
+      }
+  
+      .width--img-inc .row.stats-container {
+        padding: 20px;
+        text-align: center;
+      }
+  
+      .paginations-list li a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+      }
+  
+      .paginations-list .pagination-success {
+        padding: 0;
+      }
+  
+      .filter-wp form {
+        flex-direction: column;
+      }
+  
+      .filter-champs {
+        width: 100%;
+      }
+  
+      .filter-champs.submit-filter {
+        width: 100%;
+      }
+  
+      .filter-wp form {
+        gap: 25px 0;
+      }
+  
+      .wrapper-title-filter {
+        padding-bottom: 30px;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        text-align: center;
+      }
+  
+      .slider-navigation {
+        flex-wrap: wrap;
+        position: relative;
+      }
+  
+      .slider-navigation button.slick-prev.slick-arrow {
+        /* display: none; */
+      }
+  
+      .slick-dots-container {
+        display: none;
+      }
+  
+      #filter-verticale .filters {
+        flex-direction: column;
+        gap: 30px 0;
+      }
+  
+      #filter-verticale .filters>div {
+        width: 100%;
+      }
+  
+      #filter-verticale .members .slick-track {
+        height: 241px;
+        margin-top: 9% !important;
+      }
+  
+      .members {
+        padding: 0;
+      }
+  
+      .stats-container>div {
+        width: 100%;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        text-align: left;
+        font-size: 28px;
+      }
+  
+      .counter--number {}
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        text-align: center !important;
+      }
+  
+      .width--img-inc .row.stats-container {
+        gap: 5px;
+      }
+  
+      section.emblemes {
+        margin: 0;
+      }
+  
+      .paragraph--african_insights p {
+        font-size: 20px;
+        padding: 0 15px;
+      }
+  
+      .tabs--item button {
+        padding: 10px 3px;
+        font-size: 17px;
+      }
+  
+      .tabs--item button svg {
+        height: 35px;
+        width: 35px;
+        object-fit: inherit;
+      }
+  
+      .icon--banner-after {
+        width: 215px;
+        height: 215px;
+      }
+  
+      .icon--banner-after img {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .wrapper--logo-after-maps p {
+        font-size: 25px;
+      }
+  
+      .stats-container>div {
+        width: 100%;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 .icon-box p {
+        text-align: left;
+        font-size: 28px;
+      }
+  
+      .articles-img {
+        height: 100%;
+      }
+  
+      .section---filter-block .filter {
+        flex-wrap: wrap;
+      }
+  
+      .investment .investment-box p {
+        font-size: 35px;
+      }
+  
+      .section---filter-block .article {
+        width: 100%;
+      }
+  
+      section.banner_status_slider h2 {
+        font-size: 34px;
+        padding: 20px 0;
+      }
+  
+      .element--slider-item .btn--pls span {
+        font-size: 26px;
+      }
+  
+      .element--slider-item .btn--pls path,
+      .element--slider-item .btn--pls svg {
+        fill: #007565;
+      }
+  
+      .section---filter-block .articles {
+        flex-direction: column;
+      }
+  
+      .values-section {
+        flex-direction: column;
+      }
+  
+      .values--meteo h4 {
+        gap: 0 12px;
+        flex-direction: column;
+      }
+  
+      .values-section>div {
+        width: 100% !important;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      .tabs--item {
+        flex-direction: column;
+        gap: 30px 0;
+      }
+  
+      .tabs--item button {
+        width: 100%;
+      }
+  
+      .element-sc {
+        padding: 0;
+      }
+  
+      .element--detail.row {
+        padding: 20px;
+      }
+  
+      .width--img-inc .row.stats-container {
+        flex-direction: column;
+      }
+  
+      .stats-container>div {
+        width: 100%;
+      }
+  
+      .width--img-inc .flex--with-img {
+        flex-direction: column;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child {
+        width: 100%;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 {
+        width: 100%;
+      }
+  
+      .width--img-inc .row-column-width--img-inc:last-child {
+        width: 100%;
+      }
+  
+      section.management_team {}
+  
+      section.management_team .col-md-4 {
+        width: 100%;
+      }
+  
+      .team-card img {
+        width: 100%;
+      }
+  
+      section.team_member .row>div {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      section.team_member .row>div>div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .contact-card h5 {
+        text-align: center;
+        text-align: center;
+      }
+  
+      .contact-card p {
+        text-align: center;
+      }
+  
+      .flag--element img {
+        object-fit: contain;
+      }
+  
+      .wrapper-element-africa div {
+        font-size: 18px;
+      }
+  
+      .item-info {
+        padding: 10px;
+      }
+  
+      .wrapper-element-africa a {
+        font-size: 14px;
+      }
+  
+      header .nav-item {
+        flex-direction: column;
+      }
+  
+      header li.nav-item:hover ul.dropdown-menu {
+        width: 100%;
+        border: 0;
+      }
+  
+      .multi--select li {
+        flex-direction: row;
+      }
+  
+      header li.nav-item:hover ul.dropdown-menu li {
+        margin-bottom: 7px;
+      }
+  
+      body,
+      html {
+        overflow-x: hidden;
+      }
+  
+      section.filter--pays-elements .slick-track {
+        padding: 0;
+        width: 100% !important;
+        margin: 15px !important;
+      }
+  
+  
+      .member {
+        width: 100%;
+        padding: 0;
+        margin: 0 !important;
+      }
+  
+      section.investment .row {
+        padding: 15px;
+      }
+  
+      .text-center.btn--pls svg path {
+        fill: #007565;
+        /* color: red; */
+      }
+  
+      .title-primary-sc {
+        padding: 15px;
+      }
+  
+      .slider {
+        height: 100vh;
+      }
+  
+      .map-container {
+        order: 1;
+      }
+  
+      #acc-card-6-column .icon-african_pioneericon--card h3 {
+        font-size: 23px;
+        padding: 0 8px;
+      }
+  
+      .accordion-container {
+        order: 2;
+      }
+  
+      .section---filter-block .filter {
+        flex-wrap: wrap;
+      }
+  
+      .video--sc-2 {
+        height: auto;
+      }
+  
+      .stats-container {
+        padding: 20px;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+      }
+  
+      .counter--number h3 {
+        font-size: 30px;
+      }
+  
+      .stats-container>div {
+        width: 47%;
+        margin: auto;
+        text-align: center;
+      }
+  
+      .counter--number {
+        justify-content: left;
+        width: auto;
+      }
+  
+      .img-counter {
+        width: auto;
+        height: 40px;
+      }
+  
+      .counter--number p {
+        line-height: normal;
+        font-size: 18px;
+      }
+  
+      .count--inc span {
+        font-size: 19px;
+      }
+  
+      .title-primary-sc h2 {
+        font-size: 40px;
+      }
+  
+      section.investment {}
+  
+      section.investment .row>div {
+        width: 100%;
+      }
+  
+      section.investment .row {
+        gap: 15px 0;
+      }
+  
+      div#acc-card-6-column .card {
+        width: 100%;
+      }
+  
+      #acc-card-6-column .icon--african_pioneer {
+        right: 5px;
+        height: max-content;
+      }
+  
+      .banner_status_img {
+        height: 433px;
+      }
+  
+      .banner_status_img h2 {
+        font-size: 35px;
+        line-height: normal;
+      }
+  
+      .contact-form {
+        max-width: 100% !important;
+        width: 100%;
+      }
+  
+      .contact-image {
+        max-width: 100% !important;
+        width: 100%;
+      }
+  
+      .contact-container {
+        flex-direction: column;
+      }
+  
+  
+      .contact-container .col-md-4 {
+        width: 100%;
+      }
+  
+      footer .col-md-4 {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+  
+      .social-icons {
+        justify-content: center;
+      }
+  
+      .social-icons {}
+  
+      footer .row>div:last-child {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .counter--number p {
+        text-align: left;
+      }
+  
+      .container-layout {
+        flex-direction: column;
+      }
+  
+      .accordion-container {
+        max-width: 100%;
+      }
+  
+      .map-container {
+        max-width: 100%;
+      }
+  
+      footer .row>div form {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+      }
+  
+      button.form--news {
+        text-align: center;
+        margin: 22px auto;
+      }
+  
+      .social-icons {
+        margin: 0 0 30px 0;
+      }
+  
+      footer .row>div form input {
+        width: 80%;
+        margin: auto;
+      }
+  
+      .header--menu ul:first-child {
+        width: 100%;
+      }
+  
+      header .nav-item {
+        justify-content: space-between;
+      }
+  
+      header .nav-item {
+        width: 100%;
+        padding: 15px 0;
+        height: auto;
+      }
+  
+      .header--menu ul li a {
+        width: 100%;
+      }
+  
+      .multi--select {
+        flex-direction: column;
+      }
+  
+      ul.multi--select .dropdown>a {
+        align-items: center;
+        display: flex;
+        width: auto;
+        gap: 0 7px;
+      }
+  
+      ul.multi--select li:last-child a {
+        align-items: center;
+      }
+  
+      header .navbar-expand-lg .navbar-nav .dropdown-menu {
+        width: 100%;
+        display: none;
+      }
+  
+      header .navbar-expand-lg .navbar-nav ul.dropdown-menu.show {
+        display: block;
+      }
+  
+      header li.nav-item:hover ul.dropdown-menu {
+        display: none;
+      }
+  
+      ul.multi--select .dropdown>ul {
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+  
+      .multi--select li {
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        justify-content: left;
+        width: 100%;
+        display: flex;
+        align-items: start;
+      }
+  
+  
+      .multi--select li:hover ul.dropdown-menu {
+        display: none;
+      }
+  
+      ul.multi--select .dropdown ul.dropdown-menu.show {
+        display: block;
+      }
+  
+      .stats-container>div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .counter--number {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+      }
+  
+      .counter--number p {
+        margin-top: 0;
+      }
+  
+      .counter--number p {
+        font-size: 25px;
+        text-align: center;
+      }
+  
+      .img-counter {
+        height: auto;
+      }
+  
+      .title-primary-sc h2 {
+        padding-bottom: 0 !important;
+      }
+  
+      section.banner_status_slider .wrapper-slider---img {
+        width: 100% !important;
+      }
+  
+      footer .row>div:last-child h5::after {
+        width: 100%;
+      }
+  
+      section#banner-title .slider-content {
+        top: -10px;
+      }
+  
+      .doing .doing.d-flex.justify-content-center.flex-column.title-primary-sc.mb-3 {}
+  
+      section div .doing {
+        width: 100%;
+        padding: 15px !important;
+      }
+  
+      .left-tax {
+        left: auto;
+        padding: 20px 15px;
+      }
+  
+      section div.doing {
+        width: 100%;
+      }
+  
+      .right-tax {
+        right: auto;
+      }
+  
+      img.quoteright {
+        top: 0;
+      }
+  
+      img.quoteleft {
+        top: auto;
+      }
+  
+      #textvert {
+        font-size: 29px;
+      }
+  
+      .banner_status_img {
+        height: 387px;
+      }
+  
+      .banner_status_img h2 {
+        font-size: 27px !important;
+      }
+  
+      .banner_status_img a {
+        font-size: 21px;
+      }
+  
+      .banner_status_img a svg {
+        width: 30px;
+      }
+  
+      #flex--box-fs {
+        padding-top: 0;
+      }
+  
+      #flex--box-fs p {
+        font-size: 20px;
+      }
+  
+      #flex--box-fs .rectangle,
+      #flex--box-fs h1,
+      #flex--box-fs p {
+        padding: 15px;
+      }
+  
+      #flex--box-fs .rectangle {
+        padding: 0 15px;
+        left: 15px;
+        position: relative;
+      }
+  
+      #flex--box-fs h1 {
+        padding-top: 10px;
+        margin-top: 0 !important;
+      }
+  
+      #fleex---wrapper-card-img .row>div {
+        width: 100%;
+      }
+  
+      #fleex---wrapper-card-img .row {
+        padding: 15px;
+      }
+  
+      #fleex---wrapper-card-img .row .col-md-7 {
+        padding: 30px 0 !important;
+      }
+  
+      #fleex---wrapper-card-img .para-help {
+        margin-top: 0 !important;
+      }
+  
+      #center--to-responsive p {
+        text-align: center !important;
+      }
+  
+      #effortless--wrapper .row>div {
+        width: 100%;
+        padding: 15px !important;
+      }
+  
+      #effortless--wrapper .row>div h2 {
+        margin-top: 0 !important;
+        font-size: 30px;
+      }
+  
+      #effortless--wrapper .row>.col-md-5 {
+        padding: 0 !important;
+      }
+  
+      #organise--africa .row.mt-5 {
+        margin-top: 0 !important;
+      }
+  
+      #organise--africa {}
+  
+      #organise--africa .row>div {
+        width: 100%;
+      }
+  
+      #organise--africa .row>div img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+  
+      #organise--africa ul li {
+        font-size: 20px;
+      }
+  
+      .all--select-maps-layout p {
+        padding: 30px 0;
+      }
+  
+      .all--select-maps-layout {
+        margin-bottom: 30px;
+      }
+  
+      #list--news-all h5 {
+        font-size: 25px;
+      }
+  
+      #list--news-all .article-date {
+        font-size: 16px;
+      }
+  
+      #list--news-all .btn--pls svg path {
+        fill: #007565;
+      }
+  
+      .showing_modal_pop_up .modal-content {
+        width: 90%;
+        padding: 36px 15px 30px 15px;
+      }
+  
+      .showing_modal_pop_up h2 {
+        font-size: 27px;
+        line-height: normal;
+      }
+  
+      .modal__flixible {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .showing_modal_pop_up input {
+        width: 100%;
+      }
+  
+      .showing_modal_pop_up p {
+        font-size: 20px;
+      }
+  
+  
+      ul.multi--select li:last-child a {
+        -webkit-text-stroke-color: #007565 !important;
+      }
+  
+      ul.multi--select li:last-child a svg {
+        font-size: 20px;
+        width: 20px;
+      }
+  
+      header .navbar-expand-lg .navbar-nav ul.dropdown-menu {
+        position: relative;
+        top: 0 !important;
+        background-color: transparent;
+        box-shadow: initial;
+        border: 0;
+        line-height: 35px;
+      }
+  
+      header .navbar-expand-lg .navbar-nav ul.dropdown-menu li {
+        margin-bottom: 9px;
+      }
+  
+      header .nav-item {
+        padding: 0 0 15px 0;
+      }
+  
+      ul.multi--select .dropdown ul.dropdown-menu.show {
+        box-shadow: initial;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        padding-top: 15px;
+      }
+  
+      ul.multi--select .dropdown .dropdown-item {
+        padding: 0;
+        gap: 4px 8px;
+      }
+  
+      .multi--select li {
+        margin-bottom: 10px;
+      }
+  
+      .d-flex.logo-success {
+        flex-direction: column;
+        padding: 32px;
+      }
+  
+      .items--elements-ll h4 {
+        font-size: 20px;
+      }
+  
+      /* Casse  ********/
+      /* section#effortless--wrapper {
+        width: 2px;
+      }
+    
+      #sticky-sidebar {
+        width: 20px;
+      } */
+  
+      /* .contact-form .form-group {
+        flex-direction: row;
+      }
+    
+      .contact-form form {
+        width: 600px;
+      }
+    
+      ul.multi--select {
+        display: none;
+      }
+    
+      .values-section>div {
+        width: 600px !important;
+      }
+    
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 {
+        width: 10%;
+      }
+    
+      .values-section>div {
+        width: 600px !important;
+      }
+    
+      .width--img-inc .row-column-width--img-inc:first-child .col-md-3 {
+        width: 10%;
+      }
+    
+      section.management_team .col-md-4 {
+        width: 600px;
+        padding-left: 69px;
+      }
+    
+      .three_colmun_to_sc .tabs--item button,
+      .three_colmun_to_sc .tabs--item a {
+        width: 1%;
+      }
+    
+    
+      section#effortless--wrapper {
+        padding: 10px;
+        width: 100px;
+      } */
+  
+      /* Casse */
+      .global_investment .row .col-lg-6 {
+        margin-bottom: 0 !important;
+      }
+  
+      .global_investment .row>div:first-child .custom-card {
+        margin-bottom: 0;
+      }
+  
+      .contact-card h5 {
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+      }
+  
+      #doing---wr .size--vw-1-5,
+      .size--vw-1-5,
+      #center--to-responsive .size--vw-1-5 {
+        font-size: 18px !important;
+      }
+  
+      section#organise--africa p,
+      .size--1-5-members h4,
+      section#flex--box-fs p,
+      .items--elements-ll ul li,
+      .items--elements-ll #acc-card-6-column .card .card-body li,
+      .items--elements-ll #acc-card-6-column .card .card-body p,
+      .items--elements-ll #acc-card-6-column .card .card-body h5,
+      .items--elements-ll h5,
+      .items--elements-ll p,
+      .items--elements-ll li,
+      .items--elements-ll #acc-card-6-column .card .card-body {
+        font-size: 18px;
+      }
+  
+      #organise--africa .container .row:last-child>div {
+        height: auto;
+      }
+  
+      .video--sc-2 .slider-video {
+        height: 100%;
+        width: 100%;
+      }
+  
+      .filter-wp .filter-champs [type="submit"] {
+        text-align: center;
+        margin: auto;
+      }
+  
+      .header--menu nav #block-cfc-main-menu #langue---style .btn {
+        padding: 0 15px 0 0;
+        line-height: normal;
+      }
+  
+      .header--menu nav #block-cfc-main-menu {
+        display: block !important;
+      }
+  
+      .header--menu nav #block-cfc-main-menu .navbar-nav {
+        width: 100%;
+      }
+  
+      ul.multi--select li:last-child a {
+        font-size: 20px;
+      }
+  
+      ul.multi--select .dropdown ul.dropdown-menu li {
+        display: flex !important;
+        height: auto;
+        padding: 0 !important;
+        margin: 0;
+        font-size: 16px !important;
+        line-height: normal !important;
+        flex-direction: inherit;
+        width: 20px !important;
+        gap: 4px 13px !important;
+        margin-bottom: 5px;
+      }
+  
+      #langue---style ul {
+        height: auto;
+        padding: 0;
+        margin: 0;
+        margin: 16px 8px 0 4px;
+        position: relative;
+      }
+  
+      #langue---style ul {
+        margin: 10px 0;
+      }
+  
+      header .navbar-expand-lg .navbar-nav ul.dropdown-menu.show {
+        padding: 0;
+      }
+  
+      #navbarNav {
+        height: 80vh;
+        overflow: auto;
+      }
+  
+      .banner_status_img div {
+        height: auto !important;
+      }
+  
+      .banner_status_img {
+        height: 350px !important;
+      }
+  
+      .owl .owl-stage-outer {
+        padding-top: 5px;
+      }
+  
+      .banner_status_slider {
+        padding-top: 0;
+      }
+  
+      section.banner_status_slider .owl h2 {
+        font-size: 24px;
+      }
+  
+      section.banner_status_slider .element--slider-item p {
+        display: none;
+      }
+  
+      /*  */
+  
+      ul.multi--select .dropdown ul.dropdown-menu li {
+        margin-bottom: 8px;
+        padding: 5px 5px 0 15px !important;
+      }
+  
+      #langue---style ul {
+        margin-top: 16px;
+        border: 1px solid #000;
+      }
+  
+      button#send-request-btn svg path {
+        fill: #007565;
+      }
+  
+      .element--detail.row {
+        margin: 20px 0 0 0;
+      }
+  
+      .wrapper-2column---logo {
+        flex-direction: column;
+      }
+  
+      .wrapper-2column---logo img {
+        height: auto;
+      }
+  
+      .path-search #banner-title {
+        height: 300px;
+      }
+  
+      #form__drupal_sb .btn input {
+        transform: initial
+      }
+  
+      #form__drupal_sb form .btn,
+      .sc_search #views-exposed-form-search-content-block-1 .btn {
+        top: 0px;
+        right: -7px;
+      }
+  
+      .path-search #banner-title {
+        height: 300px;
+      }
+  
+      .wisiwyg .wrapper-description p {
+        font-size: 20px;
+      }
+  
+      /* .wisiwyg .wrapper-description p {
+        font-size: 20px;
+      } */
+      .content-last p:first-child {
+        line-height: initial;
+      }
+  
+      .scroll-sticky-tabs .event-description ul li {
+        margin-bottom: 0;
+      }
+  
+      #effortless--wrapper .row>div h2 {
+        font-size: calc(1.375rem + 1.5vw);
+        line-height: normal;
+        padding-bottom: 10px;
+      }
+  
+      section#effortless--wrapper .map-container.map-business {
+        height: auto;
+      }
+  
+      .maps-africa .map-container svg {
+        height: 500px;
+      }
+  
+      section#effortless--wrapper .map-container.map-business svg {
+        height: 486px;
+      }
+  
+      section.global_investment p,
+      .custom-card ul li,
+      .wrapper--logo-after-maps p,
+      .team-card p,
+      .text-quote,
+      section#organise--africa p,
+      .content-last p:nth-child(2),
+      .african_pioneer ul li,
+      .element--tabs-sc p,
+      .each-year p,
+      .wisiwyg .wrapper-description p,
+      #organise--africa ul li,
+      .size--1-5-members h4,
+      section#flex--box-fs p,
+      .items--elements-ll ul li,
+      .items--elements-ll #acc-card-6-column .card .card-body li,
+      .items--elements-ll #acc-card-6-column .card .card-body p,
+      .items--elements-ll #acc-card-6-column .card .card-body h5,
+      .items--elements-ll h5,
+      .items--elements-ll p,
+      .items--elements-ll li,
+      .items--elements-ll #acc-card-6-column .card .card-body {
+        color: #000;
+        font-family: "Averta CY";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        -webkit-text-stroke-width: initial;
+        letter-spacing: normal;
+  
+      }
+  
+      .col-md-7.color-vert-section.p-3 ul li,
+      .all--select-maps-layout p,
+      .wrapper-description ul li {
+  
+        font-family: "Averta CY";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        -webkit-text-stroke-width: initial;
+      }
+  
+      #fleex---wrapper-card-img .row .col-md-7 {
+        padding-bottom: 0 !important;
+      }
+  
+      #fleex---wrapper-card-img .para-help {
+        margin-bottom: 0;
+      }
+  
+      section#banner-title .slider-content {
+        top: auto;
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 65px;
+        text-align: center;
+      }
+  
+      section#banner-title .slider-content h2 {
+        font-size: 30px;
+        overflow: hidden;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+  
+      section#banner-title {
+        height: 390px;
+      }
+    }
+  
+    @media (max-width: 767px) {
+      .members {
+        width: 100%;
+      }
+  
+      .members {
+        padding: 15px;
+      }
+  
+      section.filter--pays-elements .slick-track {
+        height: 260px;
+        padding: 20px;
+        gap: 0;
+        flex-direction: column;
+      }
+  
+      .member {
+        width: 100%;
+      }
+  
+      section.filter--pays-elements .container {
+        flex-direction: column;
+      }
+  
+      section.banner_status_slider .sc--mg-slider--wrapper {
+        flex-direction: column;
+      }
+  
+      section.banner_status_slider .wrapper-slider---img {
+        width: 100%;
+      }
+  
+      section.banner_status_slider .element--slider-item {
+        width: 100%;
+      }
+  
+      section.banner_status_slider .active .item {
+        margin-top: 0;
+      }
+  
+      .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 20px;
+      }
+  
+      .banner_status_img {
+        padding: 15px;
+      }
+  
+      .contact-form {
+        padding: 20px;
+      }
+  
+  
+      .sugg--btn>div:last-child>div {
+        flex-direction: column !important;
+        padding-bottom: 58px !important;
+      }
+  
+      .sugg--btn .btn {
+        width: 100%;
+        padding: 10px;
+      }
+  
+      .slider {
+        height: 948px;
+      }
+  
+      .contact-form .form-group {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+  
+      .section---filter-block .article {
+        width: 100%;
+      }
+  
+      .section---filter-block .articles {
+        flex-direction: column;
+      }
+  
+      .section---filter-block .articles {
+        padding: 20px;
+      }
+  
+      .stats-container>div {
+        width: 100%;
+      }
+  
+      .title-primary-sc h2 {
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+        line-height: normal;
+      }
+  
+      .title-primary-sc.mb-3 {
+        margin-bottom: 15px !important;
+      }
+  
+  
+      div#country-select {
+        width: 100%;
+      }
+  
+      .filters {
+        width: 100%;
+      }
+  
+      .slider-content h1 {
+        font-size: 22px;
+        line-height: normal;
+        padding-top: 40px;
+      }
+  
+      .slider-content p {
+        font-size: 22px;
+      }
+  
+      .slider {
+        height: 830px;
+      }
+  
+      .title-primary-sc.mb-3 {
+        margin-bottom: 15px !important;
+      }
+  
+      .investment .title-primary-sc {
+        padding: 0;
+      }
+  
+      section.investment .row.mt-5 {
+        padding: 0;
+      }
+  
+      section.investment.african_insights .row.mt-5 {
+        padding: 15px;
+      }
+  
+      section.investment.african_insights .row.mt-5 {
+        padding: 15px;
+      }
+  
+      .member {
+        margin: 0 !important;
+      }
+  
+      .parnet--title {
+        height: auto;
+        padding: 15px;
+      }
+  
+      .slider-content {
+        max-width: 100%;
+        padding: 16px;
+        top: 43%;
+      }
+  
+  
+      .sugg--btn>div:last-child {
+        width: 100%;
+      }
+  
+      .sugg--btn>div:first-child {
+        width: 100%;
+      }
+  
+      .sugg--btn {
+        flex-direction: column;
+        margin-top: 0;
+      }
+  
+  
+      .sugg--btn .btn {
+        width: 100% !important;
+      }
+  
+      .search-filter form {
+        width: auto;
+      }
+  
+      .search-filter form .btn {
+        right: 14px;
+      }
+  
+      .sugg--btn .btn {
+        width: 46%;
+        font-size: 17px;
+        padding: 5px;
+      }
+  
+      .sugg--btn>div:last-child>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+      }
+  
+      .slider-content p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+      section {
+        padding-bottom: 0;
+      }
+  
+      .video--sc-2 {
+        width: 100%;
+        border-radius: 20px;
+      }
+  
+      .banner_status_img div {
+        padding: 20px;
+      }
+  
+      .banner_status_img {
+        height: 400px;
+        object-fit: cover;
+      }
+  
+      .member {
+        width: 100% !important;
+      }
+  
+      .slick-slide img {
+        object-fit: none;
+      }
+  
+      section.filter--pays-elements .slick-track {
+        padding: 0;
+        margin: 0 !important;
+      }
+  
+      .members .slick-dots {
+        bottom: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        left: 0;
+        right: 0;
+        width: 100%;
+        justify-content: center;
+      }
+  
+      .members button.slick-arrow {
+        display: none !important;
+      }
+    }
+  
+  
+  
+    @media (max-width: 767px) {
+      .members {
+        width: 100%;
+      }
+  
+      .members {
+        padding: 15px;
+      }
+  
+      section.filter--pays-elements .slick-track {
+        height: 260px;
+        padding: 20px;
+        gap: 0;
+        flex-direction: column;
+      }
+  
+      .member {
+        width: 100%;
+      }
+  
+      section.filter--pays-elements .container {
+        flex-direction: column;
+      }
+  
+      section.banner_status_slider .sc--mg-slider--wrapper {
+        flex-direction: column;
+      }
+  
+      section.banner_status_slider .wrapper-slider---img {
+        width: 100%;
+      }
+  
+      section.banner_status_slider .element--slider-item {
+        width: 100%;
+      }
+  
+      section.banner_status_slider .active .item {
+        margin-top: 0;
+      }
+  
+      .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 20px;
+      }
+  
+      .banner_status_img {
+        padding: 15px;
+      }
+  
+      .contact-form {
+        padding: 20px;
+      }
+  
+  
+      .sugg--btn>div:last-child>div {
+        flex-direction: column !important;
+        padding-bottom: 58px !important;
+      }
+  
+      .sugg--btn .btn {
+        width: 100%;
+        padding: 10px;
+      }
+  
+      .slider {
+        height: 948px;
+      }
+  
+      .contact-form .form-group {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+  
+      .section---filter-block .article {
+        width: 100%;
+      }
+  
+      .section---filter-block .articles {
+        flex-direction: column;
+      }
+  
+      .section---filter-block .articles {
+        padding: 20px;
+      }
+  
+      .stats-container>div {
+        width: 100%;
+      }
+  
+      .title-primary-sc h2 {
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+        line-height: normal;
+      }
+  
+      .title-primary-sc.mb-3 {
+        margin-bottom: 15px !important;
+      }
+  
+  
+      div#country-select {
+        width: 100%;
+      }
+  
+      .filters {
+        width: 100%;
+      }
+  
+      .slider-content h1 {
+        font-size: 22px;
+        line-height: normal;
+        padding-top: 40px;
+      }
+  
+      .slider-content p {
+        font-size: 22px;
+      }
+  
+      .slider {
+        height: 830px;
+      }
+  
+      .title-primary-sc.mb-3 {
+        margin-bottom: 15px !important;
+      }
+  
+      .investment .title-primary-sc {
+        padding: 0;
+      }
+  
+      section.investment .row.mt-5 {
+        padding: 0;
+      }
+  
+      section.investment.african_insights .row.mt-5 {
+        padding: 15px;
+      }
+  
+      section.investment.african_insights .row.mt-5 {
+        padding: 15px;
+      }
+  
+      .member {
+        margin: 0 !important;
+      }
+  
+      .parnet--title {
+        height: auto;
+        padding: 15px;
+      }
+  
+      .slider-content {
+        max-width: 100%;
+        padding: 16px;
+        top: 43%;
+      }
+  
+  
+      .sugg--btn>div:last-child {
+        width: 100%;
+      }
+  
+      .sugg--btn>div:first-child {
+        width: 100%;
+      }
+  
+      .sugg--btn {
+        flex-direction: column;
+        margin-top: 0;
+      }
+  
+      .sugg--btn {}
+  
+      .sugg--btn .btn {
+        width: 100% !important;
+      }
+  
+      .search-filter form {
+        width: auto;
+      }
+  
+      .search-filter form .btn {
+        right: 14px;
+      }
+  
+      .sugg--btn .btn {
+        width: 46%;
+        font-size: 17px;
+        padding: 5px;
+      }
+  
+      .sugg--btn>div:last-child>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+      }
+  
+      .slider-content p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+      section {
+        padding-bottom: 0;
+      }
+  
+      .video--sc-2 {
+        width: 100%;
+        border-radius: 20px;
+      }
+  
+      .banner_status_img div {
+        padding: 20px;
+      }
+  
+      .banner_status_img {
+        height: 400px;
+        object-fit: cover;
+      }
+  
+      .member {
+        width: 100% !important;
+      }
+  
+      .slick-slide img {
+        object-fit: none;
+      }
+  
+      section.filter--pays-elements .slick-track {
+        padding: 0;
+        margin: 0 !important;
+      }
+  
+      .members .slick-dots {
+        bottom: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        left: 0;
+        right: 0;
+        width: 100%;
+        justify-content: center;
+      }
+  
+      .members button.slick-arrow {
+        display: none !important;
+      }
+    }
+  

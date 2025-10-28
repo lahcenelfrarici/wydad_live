@@ -1,0 +1,18 @@
+services:
+  sii_map.map_service:
+    class: 'Drupal\sii_map\Services\MapService'
+    arguments: ['@entity_type.manager', '@logger.factory']
+
+  sii_map.block.map:
+    class: Drupal\sii_map\Plugin\Block\MapBlock
+    arguments: ['@sii_map.map_service']
+
+  sii_map.controller.map:
+    class: Drupal\sii_map\Controller\MapController
+    arguments: ['@sii_map.map_service']
+  
+  sii_map.command.update_agence:
+    class: Drupal\sii_map\Command\UpdateAgenceCommand
+    arguments: []
+    tags:
+      - { name: drush.command }

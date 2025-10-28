@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * The views infinite scroll pager template.
+ */
+#}
+
+{% if items.next %}
+  {# <div {{ attributes.addClass('col-lg-12') }} >
+    <!-- Button -->
+    <div class="link--btn text-center">
+      <a href="{{ items.next.href }}" class="btn btn-primary btn--main">{{ options.button_text }}</a>
+    </div>
+  </div> #}
+       <div {{ attributes.addClass('col-lg-12') }} >
+        <a href="{{ items.next.href }}" class="btn btn-discover">
+          {{'Voir plus de projets'}} <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+            fill="none">
+            <rect width="32" height="32" rx="16" fill="white" />
+            <g clip-path="url(#clip0_6010_3350)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.4345 7.01562C16.4345 8.11199 16.6302 9.19763 17.0104 10.2105C17.3906 11.2235 17.9479 12.1438 18.6504 12.9191C19.3529 13.6943 20.1869 14.3093 21.1048 14.7288C22.0226 15.1484 23.0065 15.3643 24 15.3643V15.3997V16.5997V16.6351C23.0065 16.6351 22.0226 16.8511 21.1048 17.2706C20.1869 17.6902 19.3529 18.3051 18.6504 19.0804C17.9479 19.8556 17.3906 20.7761 17.0104 21.789C16.6302 22.8018 16.4345 23.8875 16.4345 24.9838H15.2077C15.2077 20.455 17.9943 17.4498 21.7469 16.5997H8L8 15.3997H21.747C17.9943 14.5497 15.2077 11.5444 15.2077 7.01562H16.4345Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_6010_3350">
+                <rect width="16" height="16" fill="white" transform="translate(8 8)" />
+              </clipPath>
+            </defs>
+          </svg></i>
+        </a>
+      </div>
+{% endif %}
+
+

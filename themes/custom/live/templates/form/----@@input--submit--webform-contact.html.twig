@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Custom submit button for the webform contact form.
+ */
+#}
+
+<button type="submit"{{ attributes.addClass('btn-submit') }}>
+  {{'Envoyer le message'|t}}
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+<rect x="0.5" width="32" height="32" rx="16" fill="white"/>
+<path d="M10.5625 16H22.4375M22.4375 16L17.9844 11.25M22.4375 16L17.9844 20.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+
+{{ children }}
+
+
+{# <div class="hidden_contact_1">
+	<button type="submit" {{ attributes.addClass('btn-submit') }}>
+		{{'Envoyer le message'|t}}
+		<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewbox="0 0 33 32" fill="none">
+			<rect x="0.5" width="32" height="32" rx="16" fill="white"/>
+			<path d="M10.5625 16H22.4375M22.4375 16L17.9844 11.25M22.4375 16L17.9844 20.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	</button>
+	</div>
+
+		<div class="hidden_carriere_1">
+			<button type="submit" {{ attributes.addClass('btn-submit') }}>
+				{{'Postuler'|t}}
+				<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewbox="0 0 33 32" fill="none">
+					<rect x="0.5" width="32" height="32" rx="16" fill="white"/>
+					<path d="M10.5625 16H22.4375M22.4375 16L17.9844 11.25M22.4375 16L17.9844 20.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			</div>
+				{{ children }} #}

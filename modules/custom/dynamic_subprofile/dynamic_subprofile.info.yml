@@ -1,0 +1,8 @@
+name: 'Dynamic Subprofile'
+type: module
+description: 'Filters subprofile options based on the selected profile.'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - taxonomy
+version: 1.0

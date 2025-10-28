@@ -1,0 +1,370 @@
+/*  */
+@font-face {
+  font-family: "Cairo Black";
+  src: url("../webfonts/Cairo-Black.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo Bold";
+  src: url("../webfonts/Cairo-Bold.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo ExtraBold";
+  src: url("../webfonts/Cairo-ExtraBold.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo ExtraLight";
+  src: url("../webfonts/Cairo-ExtraLight.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo Light";
+  src: url("../webfonts/Cairo-Light.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo Medium";
+  src: url("../webfonts/Cairo-Medium.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo Regular";
+  src: url("../webfonts/Cairo-Regular.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo SemiBold";
+  src: url("../webfonts/Cairo-SemiBold.ttf");
+  font-display: swap;
+}
+
+/*  */
+@font-face {
+  font-family: "Cairo VariableFont";
+  src: url("../webfonts/Cairo-VariableFont.ttf");
+  font-display: swap;
+}
+
+body {
+  overflow-x: hidden;
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+span,
+p,
+li,
+button,
+div,
+select,
+option,
+h5,
+h6,
+div,
+strong,
+td,
+tr,
+table {
+  font-family: "Cairo Regular" !important;
+}
+
+ul.multi--select li:last-child a svg,
+.btn--pls a svg,
+.investment .investment-box svg,
+.slider-navigation button.slick-arrow,
+.banner_status_img a svg,
+.contact-form .web__form_dr .wrapper_submit svg,
+footer .row>div form i,
+.sidebar a svg {
+  transform: scaleX(-1);
+}
+
+.header--menu ul .dropdown-toggle {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13" fill="none"><g clip-path="url(%23clip0_4795_8400)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7106 10.8757L18.3676 5.21869L16.9536 3.80469L12.0036 8.75469L7.05365 3.80469L5.63965 5.21869L11.2966 10.8757C11.4842 11.0632 11.7385 11.1685 12.0036 11.1685C12.2688 11.1685 12.5231 11.0632 12.7106 10.8757Z" fill=%22black%22/></g><defs><clipPath id=%22clip0_4795_8400%22><rect width=%2212%22 height=%2224%22 fill=%22white%22 transform=%22matrix(0 1 1 0 0 0.71875)%22/></clipPath></defs></svg>') no-repeat left 3px center;
+
+}
+
+header .navbar-expand-lg .navbar-nav .dropdown-menu li,
+.investment .investment-box {
+  text-align: right;
+}
+
+.search--bar-1 svg {
+  left: 12px;
+  right: auto;
+}
+
+.contact-card p {
+  text-align: right;
+}
+
+.contact-card h5 {
+  text-align: right;
+}
+
+footer .row>div:last-child ul {
+  padding: 0;
+}
+
+section.global_investment h3.section-title::after {
+  right: 0;
+  left: auto;
+}
+
+.contact-form select {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13" fill="none"><g clip-path="url(%23clip0_4795_8400)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7106 10.8757L18.3676 5.21869L16.9536 3.80469L12.0036 8.75469L7.05365 3.80469L5.63965 5.21869L11.2966 10.8757C11.4842 11.0632 11.7385 11.1685 12.0036 11.1685C12.2688 11.1685 12.5231 11.0632 12.7106 10.8757Z" fill=%22black%22/></g><defs><clipPath id=%22clip0_4795_8400%22><rect width=%2212%22 height=%2224%22 fill=%22white%22 transform=%22matrix(0 1 1 0 0 0.71875)%22/></clipPath></defs></svg>') no-repeat left 10px center;
+  background-color: #fff;
+}
+
+.contact-form .web__form_dr .wrapper_submit {
+  left: 0;
+  right: auto;
+  justify-content: left;
+  text-align: left;
+}
+
+.web__form_dr #edit-actions-submit,
+.web__form_dr #edit-actions-submit--2 {
+  text-align: left;
+  justify-content: left;
+}
+
+.wrapper-insight_icon {
+  justify-content: right;
+}
+
+section.banner_status_slider .sc--mg-slider--wrapper {
+  flex-direction: row-reverse;
+}
+
+section.banner_status_slider .owl h2 {
+  text-align: right;
+}
+
+.element--slider-item .btn--pls {
+  text-align: right;
+}
+
+.element--slider-item .btn--pls a {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+
+#acc-card-6-column .icon--african_pioneer {
+  text-align: left;
+  left: 5px;
+  right: auto !important;
+}
+
+.african_pioneer ul li {
+  text-align: right;
+}
+
+.items--elements-ll #acc-card-6-column .card .card-body {
+  text-align: right;
+}
+
+#acc-card-6-column .icon-african_pioneericon--card h3 {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.select-selected {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13" fill="none"><g clip-path="url(%23clip0_4795_8400)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7106 10.8757L18.3676 5.21869L16.9536 3.80469L12.0036 8.75469L7.05365 3.80469L5.63965 5.21869L11.2966 10.8757C11.4842 11.0632 11.7385 11.1685 12.0036 11.1685C12.2688 11.1685 12.5231 11.0632 12.7106 10.8757Z" fill=%22black%22/></g><defs><clipPath id=%22clip0_4795_8400%22><rect width=%2212%22 height=%2224%22 fill=%22white%22 transform=%22matrix(0 1 1 0 0 0.71875)%22/></clipPath></defs></svg>') no-repeat left 5px center;
+}
+
+.container-layout .accordion-button::after {
+  margin-right: 0;
+  margin-left: initial;
+}
+
+.container-layout .accordion-button {
+  justify-content: space-between;
+}
+
+#form__drupal_sb form .btn {
+  left: 0;
+  right: auto;
+}
+
+.owl-stage-outer {
+  direction: ltr;
+}
+
+.search-filter form#views-exposed-form-search-content-block-1 label {
+  display: none;
+}
+
+.sugg--btn {
+  justify-content: space-evenly;
+}
+
+.stats-container {
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding: 70px 90px 70px 0;
+
+}
+
+.breadcrumb-container::after {
+  right: -19.725px;
+  left: auto;
+}
+
+.breadcrumb-container::before {
+  left: -20px;
+  right: auto;
+}
+
+.breadcrumb-container li a::after {
+  right: 0;
+  left: auto;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: right;
+  padding-left: var(--bs-breadcrumb-item-padding-x);
+}
+
+.breadcrumb-container {
+  left: 83px;
+  right: auto;
+}
+
+.slider .slider-video {
+  right: 0;
+  left: auto;
+}
+
+section#banner-title .slider-content {
+  right: 0;
+  left: auto;
+}
+
+.search-filter h2 {
+  text-align: right;
+}
+
+.icon--banner-after {
+  left: auto;
+  right: -44px;
+}
+
+.col-md-4.right-tax .row>div:hover {
+  transform: translateX(27%);
+}
+
+.col-md-4.left-tax .row>div {
+  transition: transform 0.3s ease-in-out;
+}
+
+.col-md-4.left-tax .row>div:hover {
+  transform: translateX(-27%);
+}
+
+.custom-card.card-doing:hover {
+  transform: translateY(13px);
+}
+
+.custom-card.card-doing {
+  transition: transform 0.3s ease-in-out;
+}
+
+section.two___stories_vs .logo-success .me-3 {
+  margin-left: 1rem !important;
+  margin-right: 0 !important;
+}
+
+#acc-card-3-column .icon--african_pioneer {
+  text-align: left;
+  left: 5px;
+  left: auto;
+}
+
+#safe--sc-wrapper #acc-card-3-column .icon--african_pioneer {
+  left: 5px;
+  right: auto;
+}
+
+#flex--box-fs h1 {
+  text-align: right !important;
+}
+
+.col-md-7.color-vert-section.p-3>div h2,
+.col-md-7.color-vert-section.p-3>div ul,
+.col-md-7.color-vert-section.p-3>div li,
+.col-md-7.color-vert-section.p-3>div p {
+  text-align: right !important;
+}
+
+#organise--africa h1 {
+  text-align: right !important;
+}
+
+.all_modale_albume .close-btn {
+  left: 20px;
+  right: auto;
+}
+
+.block::before {
+  right: 50%;
+  left: auto;
+}
+
+.each-event:nth-child(2n+1)::after {
+  left: auto;
+  right: -13px;
+  border-right: 0;
+  border-left: 14px solid #ffffff;
+}
+
+.each-event::before {
+  left: auto !important;
+  right: -58px;
+}
+
+.each-event:nth-child(2n+1) {
+  margin-left: 0;
+  margin-right: calc(50% + 40px);
+}
+
+.each-event:nth-child(2n)::after {
+  left: -13px;
+  right: auto;
+  border-right: 14px solid #ffffff;
+  border-left: 0;
+}
+
+.each-event:nth-child(2n)::before {
+  left: -58px !important;
+  right: auto;
+}
+
+.each-event:nth-child(2n) {
+  margin: 0 -20px 0 0px;
+}
+

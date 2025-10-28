@@ -1,0 +1,345 @@
+{#
+/**
+ * @file
+ * Default theme implementation for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   JavaScript.
+ *
+ * @see template_preprocess_views_view()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+  ]
+%}
+<div{{attributes.addClass(classes)}}>
+{# <div class="button-row">
+  <a href="{{ path('view.projets.page_1') }}">
+    <button class="btn">{{ 'Tout'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_2') }}">
+    <button class="btn">{{ 'Résidentiel'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_3') }}">
+    <button class="btn">{{ 'Sport et loisirs'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_4') }}">
+    <button class="btn">{{ 'Santé'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_5') }}">
+    <button class="btn">{{ 'Transport'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_6') }}">
+    <button class="btn">{{ 'Industriel'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_7') }}">
+    <button class="btn">{{ 'Institutionnel'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_8') }}">
+    <button class="btn">{{ 'Éducation'|t }}</button>
+  </a>
+  <a href="{{ path('view.projets.page_9') }}">
+    <button class="btn">{{ 'Hôtellerie'|t }}</button>
+  </a>
+</div> #}
+
+	<section class="sc---prj-1">
+		<div class="container">
+			<div class="intro-text title--sc">
+				{{ drupal_entity('block','live_nosprojetstitre') }}
+
+			</div>
+
+		<div class="sc---prj-2-filter">
+				<div class="row">
+					<div class="button-row container fr___page">
+						<a href="/fr/projets" tabindex="-1">
+							<button class="btn" tabindex="-1">Tout</button>
+						</a>
+						<a href="/fr/residentiel" tabindex="-1">
+							<button class="btn" tabindex="-1">Résidentiel</button>
+						</a>
+						<a href="/fr/sport_loisirs" tabindex="-1">
+							<button class="btn" tabindex="-1">Sport et loisirs</button>
+						</a>
+						<a href="/fr/sante" tabindex="-1">
+							<button class="btn" tabindex="-1">Santé</button>
+						</a>
+						<a href="/fr/transport" tabindex="-1">
+							<button class="btn" tabindex="-1">Transport</button>
+						</a>
+						<a href="/fr/industriel" tabindex="-1">
+							<button class="btn" tabindex="-1">Industriel</button>
+						</a>
+						<a href="/fr/institutionnel" tabindex="-1">
+							<button class="btn" tabindex="-1">Institutionnel</button>
+						</a>
+						<a href="/fr/education" tabindex="-1">
+							<button class="btn" tabindex="-1">Éducation</button>
+						</a>
+						<a href="/fr/hotellerie" tabindex="-1">
+							<button class="btn" tabindex="-1">Hôtellerie</button>
+						</a>
+					</div>
+					<div class="button-row container en___page d-none">
+						<a href="/en/projets" tabindex="-1">
+							<button class="btn" tabindex="-1">Tout</button>
+						</a>
+						<a href="/en/residentiel" tabindex="-1">
+							<button class="btn" tabindex="-1">Résidentiel</button>
+						</a>
+						<a href="/en/sport_loisirs" tabindex="-1">
+							<button class="btn" tabindex="-1">Sport et loisirs</button>
+						</a>
+						<a href="/en/sante" tabindex="-1">
+							<button class="btn" tabindex="-1">Santé</button>
+						</a>
+						<a href="/en/transport" tabindex="-1">
+							<button class="btn" tabindex="-1">Transport</button>
+						</a>
+						<a href="/en/industriel" tabindex="-1">
+							<button class="btn" tabindex="-1">Industriel</button>
+						</a>
+						<a href="/en/institutionnel" tabindex="-1">
+							<button class="btn" tabindex="-1">Institutionnel</button>
+						</a>
+						<a href="/en/education" tabindex="-1">
+							<button class="btn" tabindex="-1">Éducation</button>
+						</a>
+						<a href="/en/hotellerie" tabindex="-1">
+							<button class="btn" tabindex="-1">Hôtellerie</button>
+						</a>
+					</div>
+					{#  #}
+				{# {{ exposed }} #}
+					{# <div class="col-md-4">
+																			<div class="filter-option">
+																				<input type="text" class="form-control" placeholder="Rechercher des projets par nom ou description">
+																			</div>
+																		</div>
+																		<div class="col-md-2 select__list" id="select__list">
+																			<div class="filter-option">
+																				<div class="filter-label">Lieu</div>
+																				<select class="form-select">
+																					<option>Lieu</option>
+																				</select>
+																			</div>
+																		</div>
+																		<div class="col-md-2 select__list">
+																			<div class="filter-option">
+																				<div class="filter-label">Type</div>
+																				<select class="form-select">
+																					<option>Type</option>
+																				</select>
+																			</div>
+																		</div>
+																		<div class="col-md-2 select__list">
+																			<div class="filter-option">
+																				<div class="filter-label">Etat</div>
+																				<select class="form-select">
+																					<option>État</option>
+																				</select>
+																			</div>
+																		</div> #}
+
+				</div>
+			</div>
+	</section>
+
+	<section class="section--4">
+		<div class="container">
+
+			<div class="row">
+
+				{{ rows }}
+				{# <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new2.png" class="project-img card-img-top" alt="Projet résidentiel">
+													              <div class="card-body">
+													                <div class="project-category">Anfa prime hospital</div>
+													                <h3 class="project-title">Résidence Horizon</h3>
+													                <p class="project-description">Un complexe résidentiel de 80 unités intégrant des espaces verts et des
+													                  équipements communautaires.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new3.png" class="project-img card-img-top" alt="Projet urbain">
+													              <div class="card-body">
+													                <div class="project-category">MH CMNMC</div>
+													                <h3 class="project-title">Parc Central</h3>
+													                <p class="project-description">Réaménagement de 12 hectares en espace vert public avec installations
+													                  sportives et culturelles.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new1.png" class="project-img card-img-top" alt="Projet architectural moderne">
+													              <div class="card-body">
+													                <div class="project-category">Glass Tower Complex</div>
+													                <h3 class="project-title">Tour Lumina</h3>
+													                <p class="project-description">Une tour de 40 étages alliant durabilité et innovation technologique au
+													                  cœur du quartier d'affaires.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new2.png" class="project-img card-img-top" alt="Projet résidentiel">
+													              <div class="card-body">
+													                <div class="project-category">Anfa prime hospital</div>
+													                <h3 class="project-title">Résidence Horizon</h3>
+													                <p class="project-description">Un complexe résidentiel de 80 unités intégrant des espaces verts et des
+													                  équipements communautaires.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new3.png" class="project-img card-img-top" alt="Projet urbain">
+													              <div class="card-body">
+													                <div class="project-category">MH CMNMC</div>
+													                <h3 class="project-title">Parc Central</h3>
+													                <p class="project-description">Réaménagement de 12 hectares en espace vert public avec installations
+													                  sportives et culturelles.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new1.png" class="project-img card-img-top" alt="Projet architectural moderne">
+													              <div class="card-body">
+													                <div class="project-category">Glass Tower Complex</div>
+													                <h3 class="project-title">Tour Lumina</h3>
+													                <p class="project-description">Une tour de 40 étages alliant durabilité et innovation technologique au
+													                  cœur du quartier d'affaires.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new2.png" class="project-img card-img-top" alt="Projet résidentiel">
+													              <div class="card-body">
+													                <div class="project-category">Anfa prime hospital</div>
+													                <h3 class="project-title">Résidence Horizon</h3>
+													                <p class="project-description">Un complexe résidentiel de 80 unités intégrant des espaces verts et des
+													                  équipements communautaires.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div>
+
+													        <div class="col-md-6 col-lg-4 mb-4">
+													          <div class="project-card card">
+													            <a href="#">
+													              <img src="/themes/custom/live/live/assets/images/new3.png" class="project-img card-img-top" alt="Projet urbain">
+													              <div class="card-body">
+													                <div class="project-category">MH CMNMC</div>
+													                <h3 class="project-title">Parc Central</h3>
+													                <p class="project-description">Réaménagement de 12 hectares en espace vert public avec installations
+													                  sportives et culturelles.</p>
+													                <div class="see-all-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+													                    viewBox="0 0 20 20" fill="none">
+													                    <path
+													                      d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z"
+													                      fill="white" />
+													                  </svg>Terminé en 2021 </div>
+													              </div>
+													            </a>
+													          </div>
+													        </div> #}
+			</div>
+
+			<div class="text-center pagination_pager">
+				{{ pager }}
+
+			</div>
+		</div>
+	</section>
+</div>

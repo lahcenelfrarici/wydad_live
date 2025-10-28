@@ -1,0 +1,31 @@
+name: live
+type: theme
+description: A custom theme from live
+core_version_requirement: ^9 || ^10 || ^10
+base theme: false
+package: Core
+version: VERSION
+
+libraries:
+  - live/global-css
+  - live/global-js
+  - live/addtoany-js
+
+regions:
+  top_header: Top header
+  primary_menu: Primary menu
+  page_title: 'Page Title'
+  breadcrumb: Breadcrumb
+  banner: Banner
+  home_center: 'Home Center'
+  hidden: 'hidden'
+  content: Content
+  sidebar: Sidebar
+  footer_top_1: 'Footer 1'
+  footer_top_2: 'Footer 2'
+  footer_top_3: 'Footer 3'
+  footer_top_4: 'Footer 4'
+  footer_top_seconde: Footer top seconde
+  footer_bottom: Footer Bottom
+
+

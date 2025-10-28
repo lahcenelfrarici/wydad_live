@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+  .video-overlay h1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .detail___video_node .video-thumbnail {
+    height: 300px;
+  }
+
+  .detail___video_node h3 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .detail___video_node .col-lg-8 {
+    padding-bottom: 40px;
+  }
+
+  .left---img_recent img {
+    object-fit: cover;
+  }
+
+  .footer---btm .row>div:last-child .all__icons_social {
+    text-align: left;
+    justify-content: left;
+  }
+
+  .footer---btm .row>div:last-child .all__icons_social+div {
+    text-align: left;
+  }
+}

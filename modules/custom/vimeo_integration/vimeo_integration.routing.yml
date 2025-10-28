@@ -1,0 +1,7 @@
+vimeo_integration.videos:
+  path: '/vimeo/videos'
+  defaults:
+    _controller: '\Drupal\vimeo_integration\Controller\VimeoController::videosPage'
+    _title: 'Vimeo Videos'
+  requirements:
+    _permission: 'access content'

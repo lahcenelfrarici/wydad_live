@@ -1,0 +1,39 @@
+global-css:
+  version: 1.0
+  css:
+    theme:
+      ./live/assets/css/all.min.css: {}
+      ./live/assets/css/bootstrap.min.css: {}
+      ./live/assets/css/owl.carousel.min.css: {}
+      ./live/assets/css/owl.theme.default.min.css: {}
+      ./live/assets/css/aos.css: {}
+      # ./live/assets/css/slick.css: {}
+      ./live/assets/css/style.css: {}
+      ./live/assets/css/style_dr.css: {}
+      # ./live/assets/css/ayoub.css: {}
+      ./live/assets/css/responsive.css: {}
+
+global-js:
+  version: 1.0
+  js:
+    # ./live/assets/js/jquery-3.7.1.min.js: {}
+    ./live/assets/js/jquery-ui.min.js: {}
+    ./live/assets/js/bootstrap.bundle.min.js: {}
+    ./live/assets/js/owl.carousel.min.js: {}
+    ./live/assets/js/slick.min.js: {}
+    ./live/assets/js/aos.js: {}
+    ./live/assets/js/scripts.js: {}
+    # ./live/assets/js/ayoub.js: {}
+  dependencies:
+    - core/jquery
+
+
+global-css-rtl:
+  css:
+    theme:
+      ./live/assets/css/style-rtl.css: {}
+
+global-css-responsive:
+  css:
+    theme:
+      ./live/assets/css/responsive.css: {}

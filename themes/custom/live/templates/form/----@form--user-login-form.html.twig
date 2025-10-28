@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Theme override for a login form.
+ *
+ * Available variables:
+ * - form: The form array.
+ * - attributes: HTML attributes for the form.
+ * - children: Child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <div class="login--page-cfc container">
+    {% if messages %}
+        <div class="messages">
+            {{ messages }}
+        </div>
+    {% endif %}
+
+    <form{{ attributes }}>
+        {{ children }}
+    </form>
+
+</div> #}
+
+
+<div class="container container-md mb-5 pb-6 pt-6">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-xxl-7" data-aos="fade-up">
+            <div class="card px-md-4 shadow-sm">
+                <div class="card-body p-5">
+                    <h1 class="text-center mb-5 h2">{{ "Se connecter"|t }}</h1>
+
+                    {% if form.errors %}
+                      <div class="alert alert-danger">
+                        <ul>
+                          {% for error in form.errors %}
+                            <li>{{ error }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    {% endif %}
+
+                    <form {{ attributes }}>
+                        <div class="position-relative mb-4">
+                            {{ element.name }}
+                        </div>
+                        <div class="position-relative mb-4">
+                            {{ element.pass }}
+                            <i toggle="#login_pwd" class="fa-solid fa-eye toggle-password"></i>
+                        </div>
+
+                        <!-- reCAPTCHA -->
+                        <div class="mb-4 captcha_log">
+                            {{ element.captcha }}
+                        </div>
+
+                        <div class="text-center mb-2">
+                            {{ element.form_build_id }}
+                            {{ element.form_id }}
+                            {{ element.actions.submit }}
+                        </div>
+                    </form>
+                    <hr class="my-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

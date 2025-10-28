@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <form {{ attributes }}>
+    <div class="btn-search-submit">
+        <div class="input--text">
+            {{ element.keys }}
+        </div>
+        <div class="form-actions js-form-wrapper form-wrapper d-none">
+            {{ element.actions.submit }}
+        </div>
+    </div>
+    {{ form_id }}
+    {{ form_token }}
+    {{ form_build_id }}
+</form> #}
+<form class="d-flex align-items-center">
+          {{ element.keys }}
+          <div  class="btn">
+             {{ element.actions.submit }}
+          </div>
+              {{ form_id }}
+    {{ form_token }}
+    {{ form_build_id }}
+        </form>
