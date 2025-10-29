@@ -759,19 +759,19 @@ line-height: 20px; /* 142.857% */
 }
 
 .detail___video_node .video-thumbnail {
-  height: 600px;
+  height: 500px;
   border-radius: 8px;
 }
 .detail___video_node .video-thumbnail iframe {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   border-radius: 8px;
 }
 body:not(.path-frontpage) #header-inside {
   border: 0;
 }
 .detail___video_node {
-  padding: 10px 0 40px 0;
+  padding: 40px 0 40px 0;
 }
 
 .left---img_recent {

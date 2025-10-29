@@ -73,45 +73,69 @@ gtag('js', new Date());
 gtag('config', 'G-9WWD1TRBQN');
 	</script>
 </footer> #}
-<footer class="footer---btm bg-dark-red text-white pt-5 pb-3">
+  <footer class="footer---btm bg-dark-red text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and slogan -->
+        <div class="col-md-6 mb-4">
+          <a class="navbar-brand" href="{{ path('<front>') }}">
+            <img src="/themes/custom/live/live/assets/images/logo_footer.svg">
+          </a>
+
+
+
+          <p class="body_footer mt-3">© 2025 Wydad Athletic Club. Tous droits réservés.</p>
+          <p class="realise__footer">Créé par <a href="#">GEB Analysis</a></p>
+        </div>
+
+
+
+        <!-- Social links -->
+        <div class="col-md-6 mb-4">
+
+          <div class="all__icons_social"> <a href="#" class="footer-social"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-x-twitter"></i></a></div>
+          <div class="mt-3"><a href="#">Mentions légales</a></div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </footer>
+{# <footer class="footer---btm bg-dark-red text-white pt-5 pb-3">
 	<div class="container">
 		<div
 			class="row">
-			<!-- Logo and slogan -->
+
 			<div class="col-md-3 mb-4">
 				<a class="navbar-brand" href="{{ path('<front>') }}">
 					<img class="two--sc--img mb-3" src="/themes/custom/live/live/assets/images/logo.png"></a>
 
 
 				<p>{{"Créer l'excellence architecturale à travers le Maroc et au-delà" |t}}.</p>
-				{# {{ drupal_entity('block','live_footer1') }} #}
+
 			</div>
 
-			<!-- Quick links -->
+
 			<div class="col-md-3 mb-4">
 				<h6 class="mb-3">{{'Liens rapides'|t}}</h6>
-				{# <ul class="list-unstyled">
-								            <li><a href="#" class="footer-link">À propos</a></li>
-								            <li><a href="#" class="footer-link">Projets</a></li>
-								            <li><a href="#" class="footer-link">Carrières</a></li>
-								            <li><a href="#" class="footer-link">Contact</a></li>
-								          </ul> #}
+
 				{% if page.footer_top_2 %}
 					{{page.footer_top_2}}
 				{% endif %}
 			</div>
 
-			<!-- Contact information -->
+
 			<div
 				class="col-md-3 mb-4 localed-icon">
-				{# <h6 class="mb-3">Informations de contact</h6>
-								          <p><i class="fa-solid fa-location-dot"></i>Casablanca, Morocco</p>
-								          <p><i class="fa-solid fa-phone"></i>+212 522 22 24 45</p>
-								          <p><i class="fa-solid fa-envelope"></i>secretariat@agencelive.com</p> #}
+
 				{{ drupal_entity('block','live_footer3') }}
 			</div>
 
-			<!-- Social links -->
+
 			<div class="col-md-3 mb-4">
 				<h6 class="mb-3">{{'Suivez-nous'|t}}</h6>
 				<a href="#" class="footer-social">
@@ -123,7 +147,7 @@ gtag('config', 'G-9WWD1TRBQN');
 				<a href="#" class="footer-social">
 					<i class="fa-brands fa-facebook"></i>
 				</a>
-				{# {{ drupal_entity('block','live_footer4') }} #}
+
 			</div>
 		</div>
 
@@ -132,43 +156,5 @@ gtag('config', 'G-9WWD1TRBQN');
 		<div class="text-center">
 			<small>{{'© 2025 Agence live. All rights reserved'|t}}.</small>
 		</div>
-	</div>
-</footer>
-{# <footer class="text-light py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 mb-4">
-				{{ drupal_entity('block','desktech_site_branding') }}
-			</div>
-
-			<div class="col-md-4">
-      {{ drupal_entity('block','desktech_footerleft') }}
-
-
-			</div>
-
-			<div class="col-md-4">
- {{ drupal_entity('block','desktech_liensutiles') }}
-
-
-			</div>
-
-			<div class="col-md-4 last--list-foooter">
-				<h3>Newsletter</h3>
-				<p>
-					Abonnez-vous pour recevoir les dernières nouveautés et offres exclusives Ricoh au Maroc.
-				</p>
-
-        {{ drupal_entity('block','desktech_webform_3') }}
-			</div>
-
-			<div class="text-center mb-4 copyright--foooter mt-3">
-				<hr class="line__footer">
-        {{ drupal_entity('block','desktech_copyright') }}
-			</div>
-
-		</div>
-
-
 	</div>
 </footer> #}
