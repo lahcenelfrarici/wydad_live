@@ -1,0 +1,17 @@
+<section class="vimeo-list container-fluid py-5">
+  <h2 class="text-white mb-4">Latest Videos</h2>
+  <div class="row">
+    {% for video in videos %}
+      <div class="col-md-3 mb-4">
+        <a href="{{ video.url }}" class="text-decoration-none text-white">
+          <div class="video-card position-relative">
+            <img src="{{ video.thumbnail }}" alt="{{ video.title }}" class="img-fluid rounded">
+            <small class="position-absolute bottom-0 end-0 bg-dark px-2 text-white-50 rounded">{{ video.duration }}</small>
+          </div>
+          <h5 class="mt-2">{{ video.title }}</h5>
+          <p class="small text-muted">{{ video.description|striptags|truncate(80, true, '...') }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

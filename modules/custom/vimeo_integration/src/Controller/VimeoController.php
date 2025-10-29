@@ -5,83 +5,99 @@ namespace Drupal\vimeo_integration\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\vimeo_integration\VimeoClient;
-use Drupal\Core\Render\Markup;
 
-class VimeoController extends ControllerBase {
+/**
+ * Controller for Vimeo video list and detail pages.
+ */
+class VimeoController extends ControllerBase
+{
 
+  /**
+   * Vimeo client service.
+   *
+   * @var \Drupal\vimeo_integration\VimeoClient
+   */
   protected $vimeoClient;
 
-  public function __construct(VimeoClient $vimeoClient) {
+  /**
+   * Construct the Vimeo controller.
+   */
+  public function __construct(VimeoClient $vimeoClient)
+  {
     $this->vimeoClient = $vimeoClient;
   }
 
-  public static function create(ContainerInterface $container) {
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container)
+  {
     return new static(
       $container->get('vimeo_integration.client')
     );
   }
 
-  public function videosPage() {
-    $videos = $this->vimeoClient->getVideos(6);
+  /**
+   * Displays a list of Vimeo videos.
+   */
+  public function listVideos()
+  {
+    $videos = $this->vimeoClient->getVideos(12);
 
-    $output = '<div class="container my-5">';
-    $output .= '<div class="row gy-4">';
-
+    $items = [];
     foreach ($videos as $video) {
-      $title = htmlspecialchars($video['name'] ?? '', ENT_QUOTES, 'UTF-8');
-      $iframe = $video['embed']['html'] ?? '';
-      $description = htmlspecialchars($video['description'] ?? '', ENT_QUOTES, 'UTF-8');
-      $views = $video['stats']['plays'] ?? 0;
-      $duration = $video['duration'] ?? 0;
-      $categories = $video['categories'] ?? [];
-
-      // Convert duration from seconds → minutes:seconds
-      $minutes = floor($duration / 60);
-      $seconds = $duration % 60;
-      $formatted_duration = sprintf('%02d:%02d', $minutes, $seconds);
-
-      // Format views count
-      if ($views >= 1000000) {
-        $views_formatted = round($views / 1000000, 1) . 'M';
-      } elseif ($views >= 1000) {
-        $views_formatted = round($views / 1000, 1) . 'K';
-      } else {
-        $views_formatted = $views;
-      }
-
-      // Extract category names
-      $category_names = [];
-      foreach ($categories as $cat) {
-        $category_names[] = htmlspecialchars($cat['name'], ENT_QUOTES, 'UTF-8');
-      }
-      $category_list = !empty($category_names) ? implode(', ', $category_names) : 'No category';
-
-      $output .= "
-        <div class='col-lg-4 col-md-6 col-sm-12'>
-          <div class='vimeo-item text-center border p-3 rounded shadow-sm h-100'>
-            <div class='ratio ratio-16x9 mb-3'>
-              {$iframe}
-            </div>
-            <h4 class='h6 mt-2 mb-1'>{$title}</h4>
-            <p class='text-muted small mb-1'>
-              <i class='bi bi-eye'></i> {$views_formatted} views &nbsp;•&nbsp; ⏱ {$formatted_duration}
-            </p>
-            <p class='text-secondary small mb-1'>
-              <strong>Category:</strong> {$category_list}
-            </p>
-            <p class='small text-muted'>{$description}</p>
-          </div>
-        </div>
-      ";
+      $duration = gmdate("i:s", $video['duration']);
+      $items[] = [
+        'id' => basename($video['uri']),
+        'title' => $video['name'],
+        'thumbnail' => $video['pictures']['sizes'][3]['link'] ?? '',
+        'duration' => $duration,
+        'description' => $video['description'] ?? '',
+        'category' => $video['categories'][0]['name'] ?? 'General',
+        'url' => '/vimeo/video/' . basename($video['uri']),
+      ];
     }
 
-    $output .= '</div></div>';
+    return [
+      '#theme' => 'vimeo_list',
+      '#videos' => $items,
+      '#attached' => [
+        'library' => ['vimeo_integration/styles'],
+      ],
+    ];
+  }
+
+  /**
+   * Displays the detail page for a single Vimeo video.
+   */
+  public function videoDetail($video_id)
+  {
+    $video = $this->vimeoClient->getVideo($video_id);
+
+    // Safety check if video not found or invalid.
+    if (empty($video) || isset($video['error'])) {
+      return [
+        '#markup' => '<p>Video not found.</p>',
+      ];
+    }
+
+    $duration = gmdate("i:s", $video['duration']);
+    $related = $this->vimeoClient->getVideos(6);
 
     return [
-      '#type' => 'markup',
-      '#markup' => Markup::create($output),
+      '#theme' => 'vimeo_detail',
+      '#video' => [
+        'id' => $video_id,
+        'title' => $video['name'],
+        'description' => $video['description'],
+        'duration' => gmdate("i:s", $video['duration']),
+        'player' => "https://player.vimeo.com/video/$video_id",
+        'created' => date('d M Y', strtotime($video['created_time'] ?? '')),
+      ],
+
+      '#related' => $related,
       '#attached' => [
-        'library' => [],
+        'library' => ['vimeo_integration/styles'],
       ],
     ];
   }

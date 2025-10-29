@@ -1,7 +1,7 @@
-name: Vimeo Integration
+name: 'Vimeo Integration'
 type: module
-description: 'Intégration avec l’API Vimeo pour afficher des vidéos.'
-core_version_requirement: ^10
+description: 'Displays Vimeo videos list and detail pages.'
+core_version_requirement: ^10 || ^11
 package: Custom
 dependencies:
-  - drupal:system
+  - drupal:block

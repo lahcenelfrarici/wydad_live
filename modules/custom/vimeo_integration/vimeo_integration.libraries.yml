@@ -1,0 +1,9 @@
+# styles:
+#   css:
+#     theme:
+#       css/vimeo.css: {}
+# owl_init:
+#   js:
+#     js/owl_init.js: {}
+#   dependencies:
+#     - core/jquery

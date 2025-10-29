@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function vimeo_integration_theme($existing, $type, $theme, $path) {
+  return [
+    'vimeo_list' => [
+      'variables' => [
+        'videos' => NULL,
+      ],
+      'template' => 'vimeo-list',
+      'path' => $path . '/templates',
+    ],
+    'vimeo_detail' => [
+      'variables' => [
+        'video' => NULL,
+        'related' => NULL,
+      ],
+      'template' => 'vimeo-detail',
+      'path' => $path . '/templates',
+    ],
+  ];
+}

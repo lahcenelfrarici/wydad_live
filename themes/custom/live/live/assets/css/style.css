@@ -827,8 +827,8 @@ body:not(.path-frontpage) #header-inside {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 5px !important;
+  right: 5px !important;
 }
 
 .left---img_recent {
@@ -902,3 +902,6 @@ header.header-inside.scrolled {
   opacity: 1;
 }
 
+.detail___video_node .play-icon svg {
+  display: none;
+}

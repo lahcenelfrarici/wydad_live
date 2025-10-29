@@ -1,7 +1,15 @@
-vimeo_integration.videos:
-  path: '/vimeo/videos'
+vimeo_integration.videos_list:
+  path: '/videos'
   defaults:
-    _controller: '\Drupal\vimeo_integration\Controller\VimeoController::videosPage'
-    _title: 'Vimeo Videos'
+    _controller: '\Drupal\vimeo_integration\Controller\VimeoController::listVideos'
+    _title: 'Videos'
+  requirements:
+    _permission: 'access content'
+
+vimeo_integration.video_detail:
+  path: '/vimeo/video/{video_id}'
+  defaults:
+    _controller: '\Drupal\vimeo_integration\Controller\VimeoController::videoDetail'
+    _title: 'Video Detail'
   requirements:
     _permission: 'access content'

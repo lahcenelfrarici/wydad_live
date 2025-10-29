@@ -1,0 +1,10 @@
+.vimeo-list img {
+  transition: 0.3s;
+}
+.vimeo-list img:hover {
+  transform: scale(1.05);
+}
+.video-card {
+  overflow: hidden;
+  border-radius: 8px;
+}

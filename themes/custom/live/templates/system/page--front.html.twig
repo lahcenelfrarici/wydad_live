@@ -47,5 +47,7 @@
 #}
 
 {% include "@live/partials/header.html.twig" %}
-
+	{% if page.content %}
+		{{ page.content }}
+	{% endif %}
 {% include "@live/partials/footer.html.twig" %}
