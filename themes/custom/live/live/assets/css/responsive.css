@@ -6,6 +6,15 @@
 .video-overlay h1 {
   max-width: 54%;
 }
+
+.all__icons_social a:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+}
+header .all__icons_social a {
+  border: 0;
+}
+
 }
 @media (max-width: 991px) {
   .video-overlay h1 {
