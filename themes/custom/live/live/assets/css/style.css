@@ -915,3 +915,7 @@ header.header-inside.scrolled {
   align-items: end;
   padding-bottom: 7%;
 }
+.detail___video_node .video-thumbnail iframe {
+
+  border: 2px solid #fff;
+}
