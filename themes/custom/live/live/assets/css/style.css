@@ -905,3 +905,13 @@ header.header-inside.scrolled {
 .detail___video_node .play-icon svg {
   display: none;
 }
+.detail___video_node .video-thumbnail iframe {
+    height: 500px;
+}
+.vedio__full_first {
+  height: 640px;
+}
+.vedio__full_first .video-overlay {
+  align-items: end;
+  padding-bottom: 7%;
+}

@@ -1,4 +1,16 @@
+@media (min-width: 992px) {
+.container-fluid {
+  padding-right: calc(var(--bs-gutter-x) * 1.5);
+  padding-left: calc(var(--bs-gutter-x) * 1.5);
+}
+.video-overlay h1 {
+  max-width: 54%;
+}
+}
 @media (max-width: 991px) {
+  .video-overlay h1 {
+  max-width: 65%;
+}
   .video-overlay h1 {
     font-size: 30px;
     line-height: normal;
