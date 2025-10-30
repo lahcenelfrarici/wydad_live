@@ -1,25 +1,29 @@
 @media (min-width: 992px) {
-.container-fluid {
-  padding-right: calc(var(--bs-gutter-x) * 1.5);
-  padding-left: calc(var(--bs-gutter-x) * 1.5);
-}
-.video-overlay h1 {
-  max-width: 54%;
+  .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 1.5);
+    padding-left: calc(var(--bs-gutter-x) * 1.5);
+  }
+
+  .video-overlay h1 {
+    max-width: 54%;
+  }
+
+  .all__icons_social a:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+  }
+
+  header .all__icons_social a {
+    border: 0;
+  }
+
 }
 
-.all__icons_social a:hover {
-  background-color: #000;
-  border: 1px solid #fff;
-}
-header .all__icons_social a {
-  border: 0;
-}
-
-}
 @media (max-width: 991px) {
   .video-overlay h1 {
-  max-width: 65%;
-}
+    max-width: 65%;
+  }
+
   .video-overlay h1 {
     font-size: 30px;
     line-height: normal;
@@ -49,5 +53,13 @@ header .all__icons_social a {
 
   .footer---btm .row>div:last-child .all__icons_social+div {
     text-align: left;
+  }
+
+  .detail___video_node .video-thumbnail {
+    height: auto;
+  }
+
+  .detail___video_node .video-thumbnail iframe {
+    height: auto;
   }
 }
