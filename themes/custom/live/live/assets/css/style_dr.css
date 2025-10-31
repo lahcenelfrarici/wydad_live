@@ -86,3 +86,6 @@
 .detail___video_node small {
   display: none;
 }
+.videos_similaires a {
+  pointer-events: none;
+}
