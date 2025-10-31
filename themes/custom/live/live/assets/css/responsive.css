@@ -62,4 +62,19 @@
   .detail___video_node .video-thumbnail iframe {
     height: auto;
   }
+
+  .video__info {
+    width: 50%;
+  }
+  .detail___video_node .video-thumbnail iframe {
+  width: 100vw;
+  height: calc(100vw * 9 / 16);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: block;
+  border: none;
+}
 }

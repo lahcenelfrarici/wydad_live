@@ -32,7 +32,8 @@
               <path d="M12.667 2.667H3.333A1.333 1.333 0 002 4v9.333A1.333 1.333 0 003.333 14.667h9.333A1.333 1.333 0 0014 13.333V4a1.333 1.333 0 00-1.333-1.333z" stroke="#B3B3B3" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M2 6.667h12" stroke="#B3B3B3" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span>{{ video.created|default('') }}</span>
+            {# <span>{{ video.created|default('') }}</span> #}
+            <span>{{ video.description }}</span>
           </div>
           <button class="btn-share">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +57,7 @@
       <!-- Sidebar -->
       <div class="col-lg-4 right----conetnt">
         <div class="videos_similaires">
-          <h6 class="text-uppercase text-white-50 mb-3">Vidéos similaires</h6>
+          <h6 class="text-uppercase text-white-50 mb-3">Prochainement</h6>
 
           {% for item in related %}
             {% set id = item.uri|split('/')|last %}

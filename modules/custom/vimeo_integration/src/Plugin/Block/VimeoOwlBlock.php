@@ -87,7 +87,7 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
   <section class="all_video_owl" id="remove_all">
     <div class="container-fluid">
       <div class="title__sc mb-4">
-        <h2>DERNIÈRES VIDÉOS</h2>
+        <h2>Prochainement</h2>
       </div>
       <div class="slider__owl owl-carousel owl-theme">';
 
