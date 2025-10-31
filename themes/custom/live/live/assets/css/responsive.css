@@ -77,4 +77,7 @@
   display: block;
   border: none;
 }
+.video__badge{
+  font-size: 10px !important;
+}
 }
