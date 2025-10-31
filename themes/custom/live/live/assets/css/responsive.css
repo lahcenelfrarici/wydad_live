@@ -1,4 +1,7 @@
 @media (min-width: 992px) {
+  .videos_similaires img {
+  object-fit: cover;
+}
   .container-fluid {
     padding-right: calc(var(--bs-gutter-x) * 1.5);
     padding-left: calc(var(--bs-gutter-x) * 1.5);
@@ -79,5 +82,8 @@
 }
 .video__badge{
   font-size: 10px !important;
+}
+.slider__owl .item img {
+  object-fit: contain;
 }
 }
