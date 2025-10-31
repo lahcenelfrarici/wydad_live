@@ -86,6 +86,9 @@
 .detail___video_node small {
   display: none;
 }
-.videos_similaires a {
+.videos_similaires a,.all_video_owl .item .video__link {
   pointer-events: none;
+}
+#remove_all {
+  display: none;
 }
