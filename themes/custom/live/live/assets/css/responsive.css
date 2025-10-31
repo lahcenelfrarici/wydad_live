@@ -86,4 +86,16 @@
 .slider__owl .item img {
   object-fit: contain;
 }
+  .slider__owl .item img {
+    object-fit: cover;
+    height: 222px;
+  }
+.wrapper_img {
+  height: 222px;
+}
+.all_video_owl .owl-nav {
+
+  top: 34%;
+
+}
 }
