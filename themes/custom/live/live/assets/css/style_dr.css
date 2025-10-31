@@ -109,3 +109,7 @@
 .wrapper_img {
   width: 100%;
 }
+.video__info p {
+  opacity: 0;
+  margin-bottom: 0;
+}
