@@ -16,16 +16,19 @@ use Drupal\Core\Render\Markup;
  *   admin_label = @Translation("Vimeo - Dernières vidéos (Owl Carousel)")
  * )
  */
-class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface {
+class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
+{
 
   protected $vimeoClient;
 
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, VimeoClient $vimeoClient) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, VimeoClient $vimeoClient)
+  {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->vimeoClient = $vimeoClient;
   }
 
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition)
+  {
     return new static(
       $configuration,
       $plugin_id,
@@ -34,24 +37,25 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
     );
   }
 
-public function build() {
-  $videos = $this->vimeoClient->getVideos(10);
+  public function build()
+  {
+    $videos = $this->vimeoClient->getVideos(10);
 
-  if (empty($videos)) {
-    return [
-      '#markup' => '<p>No videos found.</p>',
-    ];
-  }
+    if (empty($videos)) {
+      return [
+        '#markup' => '<p>No videos found.</p>',
+      ];
+    }
 
-  // --- HERO SECTION (latest video) ---
-  $hero = $videos[0];
-  $hero_id = basename($hero['uri']);
-  $hero_title = htmlspecialchars($hero['name']);
-  $hero_desc = htmlspecialchars($hero['description'] ?? '');
+    // --- HERO SECTION (latest video) ---
+    $hero = $videos[0];
+    $hero_id = basename($hero['uri']);
+    $hero_title = htmlspecialchars($hero['name']);
+    $hero_desc = htmlspecialchars($hero['description'] ?? '');
 
-  $hero_link = "/vimeo/video/$hero_id";
+    $hero_link = "/vimeo/video/$hero_id";
 
-  $output = "
+    $output = "
   <div class='vedio__full_first'>
     <div class='video-container'>
       <iframe src='https://player.vimeo.com/video/{$hero_id}?autoplay=1&loop=1&muted=1&background=1'
@@ -65,7 +69,7 @@ public function build() {
       <div class='content'>
         <h1>{$hero_title}</h1>
         <p>{$hero_desc}</p>
-        <a href='{$hero_link}' class='btn'>
+        <a href='{$hero_link}' class='btn test'>
           <svg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
             <path
               d='M13.0568 5.51498C13.417 5.70654 13.7183 5.9925 13.9284 6.34222C14.1385 6.69194 14.2495 7.09224 14.2495 7.50023C14.2495 7.90822 14.1385 8.30852 13.9284 8.65824C13.7183 9.00796 13.417 9.29392 13.0568 9.48548L3.44775 14.7107C1.9005 15.553 0 14.458 0 12.7262V2.27498C0 0.542481 1.9005 -0.551769 3.44775 0.288981L13.0568 5.51498Z'
@@ -78,26 +82,26 @@ public function build() {
   </div>
   ";
 
-  // --- Dernières vidéos carousel ---
-  $output .= '
-  <section class="all_video_owl">
+    // --- Dernières vidéos carousel ---
+    $output .= '
+  <section class="all_video_owl" id="remove_all">
     <div class="container-fluid">
       <div class="title__sc mb-4">
         <h2>DERNIÈRES VIDÉOS</h2>
       </div>
       <div class="slider__owl owl-carousel owl-theme">';
 
-  foreach ($videos as $video) {
-    $id = basename($video['uri']);
-    $title = htmlspecialchars($video['name']);
-    $thumb = $video['pictures']['sizes'][3]['link'] ?? '';
-    $duration = gmdate("i:s", $video['duration']);
-    $views = $video['stats']['plays'] ?? 0;
-    $link = "/vimeo/video/$id";
-    $category = $video['categories'][0]['name'] ?? 'Highlights';
- // <img src='{$thumb}' alt='{$title}'>     <span class='video__badge'>{$category}</span>
-    $output .= "
-    <div class='item'>
+    foreach ($videos as $video) {
+      $id = basename($video['uri']);
+      $title = htmlspecialchars($video['name']);
+      $thumb = $video['pictures']['sizes'][3]['link'] ?? '';
+      $duration = gmdate("i:s", $video['duration']);
+      $views = $video['stats']['plays'] ?? 0;
+      $link = "/vimeo/video/$id";
+      $category = $video['categories'][0]['name'] ?? 'Highlights';
+      // <img src='{$thumb}' alt='{$title}'>     <span class='video__badge'>{$category}</span>
+      $output .= "
+      <div class='item' >
       <a href='{$link}' class='video__link'>
         <div class='wrapper_img'>
 
@@ -117,23 +121,23 @@ public function build() {
           <span>👁️ {$views} vues</span>
         </div>
       </a>
-    </div>";
-  }
+      </div>";
+      }
 
-  $output .= '
+      $output .= '
       </div>
-    </div>
-  </section>';
+        </div>
+      </section>';
 
-  return [
-    '#type' => 'markup',
-    '#markup' => Markup::create($output),
-    '#attached' => [
-      'library' => [
-        'vimeo_integration/owl_init',
+      return [
+      '#type' => 'markup',
+      '#markup' => Markup::create($output),
+      '#attached' => [
+        'library' => [
+          'vimeo_integration/owl_init',
+        ],
       ],
-    ],
-  ];
-}
+      ];
+    }
 
 }

@@ -22,7 +22,8 @@ class VimeoClient {
    * Get a list of videos.
    */
   public function getVideos($limit = 6) {
-    $token = '42317667d21e5ca32648753a5e3faef1';
+    // $token = '4e0088fd72d8147e194b7a32daec833c';
+$token = '4e0088fd72d8147e194b7a32daec833c';
     $uri = "https://api.vimeo.com/me/videos?per_page=$limit";
 
     try {
