@@ -63,7 +63,8 @@
             <a href="/vimeo/video/{{ id }}" class="text-decoration-none">
               <div class="video_box d-flex align-items-center mb-2 p-2 position-relative" style="background:#1E1E1E; border-radius:8px;">
                 <div class="left---img_recent position-relative me-2">
-                  <img src="{{ item.pictures.sizes[2].link }}" alt="{{ item.name }}" class="rounded" width="100">
+                  {# <img src="{{ item.pictures.sizes[2].link }}" alt="{{ item.name }}" class="rounded" width="100"> #}
+                  <img src='/themes/custom/live/live/assets/images/shadow.svg' alt='{$title}' class="rounded" width="100">
                   <small class="position-absolute bottom-0 end-0 bg-dark px-2 text-white-50 rounded">{{ item.duration|date('i:s') }}</small>
                   <div class="video__play position-absolute top-50 start-50 translate-middle">
                     <svg width="32" height="32" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,6 +72,7 @@
                       <path d="M23.4 18L40.2 28.8L23.4 39.6V18Z" fill="white" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </div>
+                  <span class="video__badge"><div class="cercle__box"></div>Bientôt Disponible</span>
                 </div>
                 <div class="wrapper__body">
                   <p class="mb-0 text-white fw-medium">{{ item.name }}</p>

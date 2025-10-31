@@ -48,7 +48,7 @@ public function build() {
   $hero_id = basename($hero['uri']);
   $hero_title = htmlspecialchars($hero['name']);
   $hero_desc = htmlspecialchars($hero['description'] ?? '');
-  
+
   $hero_link = "/vimeo/video/$hero_id";
 
   $output = "
@@ -95,12 +95,13 @@ public function build() {
     $views = $video['stats']['plays'] ?? 0;
     $link = "/vimeo/video/$id";
     $category = $video['categories'][0]['name'] ?? 'Highlights';
-
+ // <img src='{$thumb}' alt='{$title}'>     <span class='video__badge'>{$category}</span>
     $output .= "
     <div class='item'>
       <a href='{$link}' class='video__link'>
         <div class='wrapper_img'>
-          <img src='{$thumb}' alt='{$title}'>
+
+          <img src='themes/custom/live/live/assets/images/shadow.svg' alt='{$title}'>
           <div class='video__play'>
             <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M0 28.8C0 12.8942 12.8943 0 28.8 0C44.7058 0 57.6001 12.8942 57.6001 28.8C57.6001 44.7058 44.7058 57.6 28.8 57.6C12.8943 57.6 0 44.7058 0 28.8Z' fill='#E30613'/>
@@ -109,9 +110,10 @@ public function build() {
           </div>
           <span class='video__duration'>{$duration}</span>
         </div>
-        <span class='video__badge'>{$category}</span>
+        <span class='video__badge'><div class='cercle__box'></div>Bientôt Disponible</span>
         <div class='video__info'>
           <h6>{$title}</h6>
+          <p>Disponible prochainement</p>
           <span>👁️ {$views} vues</span>
         </div>
       </a>

@@ -1,3 +1,88 @@
 .vimeo-item iframe {
   width: 100%;
 }
+/*  */
+.wrapper_img::before {
+
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 1;
+}
+
+
+.video__badge div {
+  border-radius: 33554400px;
+  opacity: 0.9035;
+  background: #FFF;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  top: 5px;
+}
+.video__badge {
+  display: flex !important;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  gap: 5px;
+}
+.video__badge p {
+  color: #B3B3B3;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.video__info p {
+  color: #B3B3B3;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.video__duration {
+  display: none;
+}
+.video__info {
+  position: absolute;
+  bottom: 0;
+  padding: 0 10px;
+}
+.video__play {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.all_video_owl .item:hover .wrapper_img::before {
+  /*! opacity: 1; */
+  /*! transform: translate(-50%, -50%) scale(1.1); */
+}
+.all_video_owl .item:hover .wrapper_img::before {
+  background: rgba(0, 0, 0, 0.52);
+  opacity: 1;
+}
+.video__info h6 {
+  margin-bottom: 2px;
+}
+.video_box .left---img_recent::before {
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 1;
+}
+.videos_similaires img {
+  border-radius: 8px !important;
+}
+
+
+.left---img_recent .video__badge {
+  line-height: normal;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.detail___video_node small {
+  display: none;
+}
