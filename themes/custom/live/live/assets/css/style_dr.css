@@ -122,3 +122,20 @@
   bottom: 10px;
   font-size: 10px;
 }
+
+.video__info .video__badge {
+  color: #fff;
+  font-size: 10px;
+  line-height: normal;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  position: relative;
+  width: max-content;
+  margin: 0;
+  left: auto;
+  bottom: 5px;
+}

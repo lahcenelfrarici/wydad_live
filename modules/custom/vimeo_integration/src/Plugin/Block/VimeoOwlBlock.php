@@ -114,8 +114,9 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
           </div>
           <span class='video__duration'>{$duration}</span>
         </div>
-        <span class='video__badge'><div class='cercle__box'></div>Bientôt Disponible</span>
+
         <div class='video__info'>
+        <span class='video__badge'><div class='cercle__box'></div>Bientôt Disponible</span>
           <h6>{$title}</h6>
           <p>Disponible prochainement</p>
           <span>👁️ {$views} vues</span>
