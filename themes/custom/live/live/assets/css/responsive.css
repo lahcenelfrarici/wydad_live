@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+  .vedio__full_first {
+  width: 100vw;
+  height: 100vh;
+}
 
 .video-overlay h1 {
   max-width: 100%;
