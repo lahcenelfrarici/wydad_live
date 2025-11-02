@@ -150,10 +150,10 @@
 .vedio__full_first .video-container {
   z-index: 3;
 }
-.vedio__full_first iframe {
+/* .vedio__full_first iframe {
 
   height: 100%;
   width: 100%;
   aspect-ratio: 16 / 9;
   background-color: #121212;
-}
+} */
