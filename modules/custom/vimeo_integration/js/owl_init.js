@@ -21,3 +21,19 @@
 //     },
 //   };
 // })(jQuery, Drupal);
+jQuery(document).ready(function($) {
+    var iframe = $('#vimeo-hero')[0];
+    if (iframe) {
+        var player = new Vimeo.Player(iframe);
+
+        // Wait 3 seconds after page load
+        setTimeout(function() {
+            player.setVolume(1); // Full volume
+            player.play().catch(function(error) {
+                // Autoplay with sound may be blocked; fallback: mute and play
+                console.log('Autoplay with sound blocked. Trying muted autoplay.');
+                player.setVolume(0).play();
+            });
+        }, 3000);
+    }
+});

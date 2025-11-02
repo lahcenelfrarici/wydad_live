@@ -89,9 +89,7 @@
 .videos_similaires a,.all_video_owl .item .video__link {
   pointer-events: none;
 }
-#remove_all {
-  display: none;
-}
+
 .detail___video_node .description {
   display: none;
 }
@@ -138,4 +136,24 @@
   margin: 0;
   left: auto;
   bottom: 5px;
+}
+#remove_all {
+  display: none;
+}
+.vedio__full_first .video-overlay {
+  position: absolute;
+  bottom: 0;
+  background: initial;
+  height: auto;
+  z-index: 4;
+}
+.vedio__full_first .video-container {
+  z-index: 3;
+}
+.vedio__full_first iframe {
+
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #121212;
 }

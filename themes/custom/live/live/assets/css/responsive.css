@@ -1,4 +1,12 @@
 @media (min-width: 992px) {
+
+.video-overlay h1 {
+  max-width: 100%;
+}
+.vedio__full_first .video-overlay {
+  max-width: 37%;
+  width: 37%;
+}
   .videos_similaires img {
   object-fit: cover;
 }
@@ -7,9 +15,9 @@
     padding-left: calc(var(--bs-gutter-x) * 1.5);
   }
 
-  .video-overlay h1 {
+  /* .video-overlay h1 {
     max-width: 54%;
-  }
+  } */
 
   .all__icons_social a:hover {
     background-color: #000;
