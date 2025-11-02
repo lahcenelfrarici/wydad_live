@@ -145,7 +145,7 @@
   bottom: 0;
   background: initial;
   height: auto;
-  z-index: 4;
+  z-index: 6;
 }
 .vedio__full_first .video-container {
   z-index: 3;

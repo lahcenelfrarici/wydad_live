@@ -58,7 +58,7 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
     $output = "
   <div class='vedio__full_first'>
     <div class='video-container'>
-      <iframe src='https://player.vimeo.com/video/{$hero_id}?autoplay=1'
+      <iframe src='https://player.vimeo.com/video/{$hero_id}?autoplay=1&loop=1&muted=0&background=1'
         frameborder='0'
         allow='autoplay; fullscreen; picture-in-picture'
         allowfullscreen>
