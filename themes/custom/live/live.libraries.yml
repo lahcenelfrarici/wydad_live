@@ -21,7 +21,7 @@ global-js:
     ./live/assets/js/player.js: {}
     ./live/assets/js/bootstrap.bundle.min.js: {}
     ./live/assets/js/owl.carousel.min.js: {}
-    ./live/assets/js/slickkk.min.js: {}
+    ./live/assets/js/slick.min.js: {}
     ./live/assets/js/page.js: {}
     ./live/assets/js/aos.js: {}
     ./live/assets/js/scripts.js: {}
