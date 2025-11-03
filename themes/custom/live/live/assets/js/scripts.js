@@ -53,30 +53,118 @@ jQuery(document).ready(function ($) {
     toggleDropdownAttribute();
   });
 });
-jQuery(document).ready(function ($) {
-  $('.btn-share').on('click', function (e) {
+jQuery(document).ready(function($) {
+
+  // Smooth "Link copied!" feedback
+  function showCopyFeedback() {
+    const fb = document.createElement("div");
+    fb.className = "copy-feedback";
+    fb.textContent = "✅ Link copied!";
+    document.body.appendChild(fb);
+    setTimeout(() => fb.remove(), 2500);
+  }
+
+  // Open modal
+  $('#shareBtn').on('click', function(e) {
     e.preventDefault();
+    $('#shareModal').fadeIn(300);
+  });
 
-    // Set the URL and title dynamically
-    var share_url = window.location.href;
-    var share_title = document.title;
+  // Close modal
+  $('#closeModal').on('click', function() {
+    $('#shareModal').fadeOut(300);
+  });
 
-    // Ensure AddToAny is ready
-    if (typeof a2a !== 'undefined' && a2a.init_all) {
-      // Use the "universal share" link
-      var popupUrl = "https://www.addtoany.com/share#url=" + encodeURIComponent(share_url) + "&title=" + encodeURIComponent(share_title);
-
-      // Open AddToAny popup window
-      window.open(
-        popupUrl,
-        "share",
-        "width=600,height=500,scrollbars=no,resizable=yes"
-      );
-    } else {
-      console.error('AddToAny script not loaded yet.');
+  // Close when clicking outside modal
+  $(document).on('click', function(e) {
+    if ($(e.target).is('#shareModal')) {
+      $('#shareModal').fadeOut(300);
     }
   });
+
+  // Handle share icons
+  $('.share-option').on('click', function() {
+    var platform = $(this).data('platform');
+    var pageUrl = encodeURIComponent(window.location.href);
+    var pageTitle = encodeURIComponent(document.title);
+    var shareUrl = '';
+
+    switch (platform) {
+      case 'facebook':
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+        break;
+
+      case 'messenger':
+        shareUrl = `https://www.facebook.com/dialog/send?link=${pageUrl}&app_id=YOUR_APP_ID&redirect_uri=${pageUrl}`;
+        break;
+
+      case 'whatsapp':
+        shareUrl = `https://api.whatsapp.com/send?text=${pageTitle}%20${pageUrl}`;
+        break;
+
+      case 'telegram':
+        shareUrl = `https://t.me/share/url?url=${pageUrl}&text=${pageTitle}`;
+        break;
+
+      case 'x':
+        shareUrl = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+        break;
+
+      case 'linkedin':
+        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+        break;
+
+      case 'copy':
+        // Copy URL without alerts
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(window.location.href).then(() => showCopyFeedback());
+          } else {
+            var tempInput = $('<input>');
+            $('body').append(tempInput);
+            tempInput.val(window.location.href).select();
+            document.execCommand('copy');
+            tempInput.remove();
+            showCopyFeedback();
+          }
+        } catch (err) {
+          console.error('Copy failed:', err);
+        }
+        return; // stop here, no popup
+    }
+
+    if (shareUrl) {
+      window.open(shareUrl, '_blank', 'width=600,height=500,scrollbars=no,resizable=yes');
+    }
+
+    $('#shareModal').fadeOut(300);
+  });
+
 });
+// jQuery(document).ready(function ($) {
+//   $('.btn-share').on('click', function (e) {
+//     e.preventDefault();
+
+//     // Set the URL and title dynamically
+//     var share_url = window.location.href;
+//     var share_title = document.title;
+
+//     // Ensure AddToAny is ready
+//     if (typeof a2a !== 'undefined' && a2a.init_all) {
+//       // Use the "universal share" link
+//       var popupUrl = "https://www.addtoany.com/share#url=" + encodeURIComponent(share_url) + "&title=" + encodeURIComponent(share_title);
+
+//       // Open AddToAny popup window
+//       window.open(
+//         popupUrl,
+//         "share",
+//         "width=600,height=500,scrollbars=no,resizable=yes"
+//       );
+//     } else {
+//       console.error('AddToAny script not loaded yet.');
+//     }
+//   });
+// });
 (function ($) {
   //
   // Function to check screen size and modify the attribute
