@@ -18,9 +18,11 @@ global-js:
   js:
     # ./live/assets/js/jquery-3.7.1.min.js: {}
     ./live/assets/js/jquery-ui.min.js: {}
+    ./live/assets/js/player.js: {}
     ./live/assets/js/bootstrap.bundle.min.js: {}
     ./live/assets/js/owl.carousel.min.js: {}
     ./live/assets/js/slick.min.js: {}
+    ./live/assets/js/page.js: {}
     ./live/assets/js/aos.js: {}
     ./live/assets/js/scripts.js: {}
     # ./live/assets/js/ayoub.js: {}
