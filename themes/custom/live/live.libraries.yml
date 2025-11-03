@@ -25,7 +25,6 @@ global-js:
     ./live/assets/js/page.js: {}
     ./live/assets/js/aos.js: {}
     ./live/assets/js/scripts.js: {}
-    # ./live/assets/js/ayoub.js: {}
   dependencies:
     - core/jquery
 
