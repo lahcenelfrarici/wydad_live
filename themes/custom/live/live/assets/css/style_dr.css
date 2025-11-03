@@ -160,3 +160,6 @@
 .realise__footer a {
   pointer-events: none;
 }
+.btn-share {
+    display: none;
+}
