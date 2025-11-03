@@ -157,3 +157,6 @@
   aspect-ratio: 16 / 9;
   background-color: #121212;
 } */
+.realise__footer a {
+  pointer-events: none;
+}

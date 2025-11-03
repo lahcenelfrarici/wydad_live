@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-   $('.slider__owl').owlCarousel({
+  $('.slider__owl').owlCarousel({
     loop: false,
     margin: 15,
     nav: true,
@@ -12,10 +12,18 @@ jQuery(document).ready(function ($) {
        </svg>`
     ],
     responsive: {
-      0: { items: 1 },
-      576: { items: 2 },
-      768: { items: 3 },
-      992: { items: 6 }
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 6
+      }
     }
   });
   // Find all .wrapper_img elements that do not contain an <img> tag
@@ -30,10 +38,10 @@ jQuery(document).ready(function ($) {
 
     if ($(window).width() >= 992) { // For desktop view (width >= 992px)
       $('.dropdown-menu a').removeAttr('data-bs-toggle');
-       $dropdownLink.removeAttr('data-bs-toggle'); // Remove the dropdown toggle attribute
+      $dropdownLink.removeAttr('data-bs-toggle'); // Remove the dropdown toggle attribute
     } else {
       $dropdownLink.attr('data-bs-toggle', 'dropdown'); // Add it back for mobile
-        $('header.header-inside .container ul ul a').removeAttr('data-bs-toggle');
+      $('header.header-inside .container ul ul a').removeAttr('data-bs-toggle');
     }
   }
 
@@ -45,7 +53,30 @@ jQuery(document).ready(function ($) {
     toggleDropdownAttribute();
   });
 });
+jQuery(document).ready(function ($) {
+  $('.btn-share').on('click', function (e) {
+    e.preventDefault();
 
+    // Set the URL and title dynamically
+    var share_url = window.location.href;
+    var share_title = document.title;
+
+    // Ensure AddToAny is ready
+    if (typeof a2a !== 'undefined' && a2a.init_all) {
+      // Use the "universal share" link
+      var popupUrl = "https://www.addtoany.com/share#url=" + encodeURIComponent(share_url) + "&title=" + encodeURIComponent(share_title);
+
+      // Open AddToAny popup window
+      window.open(
+        popupUrl,
+        "share",
+        "width=600,height=500,scrollbars=no,resizable=yes"
+      );
+    } else {
+      console.error('AddToAny script not loaded yet.');
+    }
+  });
+});
 (function ($) {
   //
   // Function to check screen size and modify the attribute
