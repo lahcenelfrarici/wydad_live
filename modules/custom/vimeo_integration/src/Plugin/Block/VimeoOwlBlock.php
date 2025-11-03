@@ -48,11 +48,11 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
     }
 
     // --- HERO SECTION (latest video) ---
-    $hero = $videos[0];
+    $hero = $videos[1];
     $hero_id = basename($hero['uri']);
     $hero_title = htmlspecialchars($hero['name']);
     $hero_desc = htmlspecialchars($hero['description'] ?? '');
-
+// dump($videos);
     $hero_link = "/vimeo/video/$hero_id";
 
     $output = "
@@ -123,14 +123,14 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
         </div>
       </a>
       </div>";
-      }
+    }
 
-      $output .= '
+    $output .= '
       </div>
         </div>
       </section>';
 
-      return [
+    return [
       '#type' => 'markup',
       '#markup' => Markup::create($output),
       '#attached' => [
@@ -138,7 +138,7 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
           'vimeo_integration/owl_init',
         ],
       ],
-      ];
-    }
+    ];
+  }
 
 }
