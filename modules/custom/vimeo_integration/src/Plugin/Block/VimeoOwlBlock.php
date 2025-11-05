@@ -48,7 +48,7 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
     }
 
     // --- HERO SECTION (latest video) ---
-    $hero = $videos[1];
+    $hero = $videos[0];
     $hero_id = basename($hero['uri']);
     $hero_title = htmlspecialchars($hero['name']);
     $hero_desc = htmlspecialchars($hero['description'] ?? '');
@@ -84,10 +84,10 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
 
     // --- Dernières vidéos carousel ---
     $output .= '
-  <section class="all_video_owl" id="remove_all">
+  <section class="all_video_owl">
     <div class="container-fluid">
       <div class="title__sc mb-4">
-        <h2>Prochainement</h2>
+        <h2>Précédent</h2>
       </div>
       <div class="slider__owl owl-carousel owl-theme">';
 
@@ -102,10 +102,10 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
       // <img src='{$thumb}' alt='{$title}'>     <span class='video__badge'>{$category}</span>
       $output .= "
       <div class='item' >
-      <a href='{$link}' class='video__link'>
+      <a href='{$link}' class='video__link remove_link_default'>
         <div class='wrapper_img'>
 
-          <img src='themes/custom/live/live/assets/images/shadow.svg' alt='{$title}'>
+         <img src='{$thumb}' alt='{$title}'>
           <div class='video__play'>
             <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M0 28.8C0 12.8942 12.8943 0 28.8 0C44.7058 0 57.6001 12.8942 57.6001 28.8C57.6001 44.7058 44.7058 57.6 28.8 57.6C12.8943 57.6 0 44.7058 0 28.8Z' fill='#E30613'/>
@@ -116,7 +116,7 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
         </div>
 
         <div class='video__info'>
-        <span class='video__badge'><div class='cercle__box'></div>Bientôt Disponible</span>
+
           <h6>{$title}</h6>
           <p>Disponible prochainement</p>
           <span>👁️ {$views} vues</span>

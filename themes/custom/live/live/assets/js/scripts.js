@@ -121,7 +121,7 @@ jQuery(document).ready(function($) {
             navigator.clipboard.writeText(window.location.href).then(() => showCopyFeedback());
           } else {
             var tempInput = $('<input>');
-            $('body').append(tempInput);
+            // $('body').append(tempInput);
             tempInput.val(window.location.href).select();
             document.execCommand('copy');
             tempInput.remove();
@@ -141,6 +141,19 @@ jQuery(document).ready(function($) {
   });
 
 });
+jQuery(document).ready(function($) {
+  // Get href of the main video button
+  var mainHref = $('.btn.test').attr('href');
+
+  // Loop through all owl-item elements
+  $('.all_video_owl .owl-item').each(function() {
+    var itemHref = $(this).find('.video__link').attr('href');
+    if (itemHref === mainHref) {
+      $(this).remove(); // Remove the entire owl-item
+    }
+  });
+});
+
 // jQuery(document).ready(function ($) {
 //   $('.btn-share').on('click', function (e) {
 //     e.preventDefault();

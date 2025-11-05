@@ -100,7 +100,7 @@
   display: none;
 }
 
-.videos_similaires a,
+
 .all_video_owl .item .video__link {
   pointer-events: none;
 }
@@ -403,4 +403,13 @@
   bottom: 0;
   background: #1e1e1e;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+.all_video_owl .item .remove_link_default {
+  pointer-events: auto;
+}
+#block-live-vimeodernieresvideosowlcarousel .all_video_owl {
+  padding-bottom: 0;
+}
+.videos_similaires a:first-of-type {
+  display: none !important;
 }

@@ -31,7 +31,7 @@
 						{# <span>{{ video.created|default('') }}</span> #}
 						<span>{{ video.description }}</span>
 					</div>
-					<button class="btn-share test" id="shareBtn">
+					<button class="btn-share d-none" id="shareBtn">
 						<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12 5.3335C13.1046 5.3335 14 4.43807 14 3.3335C14 2.22893 13.1046 1.3335 12 1.3335C10.8954 1.3335 10 2.22893 10 3.3335C10 4.43807 10.8954 5.3335 12 5.3335Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
 							<path d="M4 10C5.10457 10 6 9.10457 6 8C6 6.89543 5.10457 6 4 6C2.89543 6 2 6.89543 2 8C2 9.10457 2.89543 10 4 10Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -53,52 +53,33 @@
 			<!-- Sidebar -->
 			<div class="col-lg-4 right----conetnt">
 				<div class="videos_similaires">
-					<h6 class="text-uppercase text-white-50 mb-3">Prochainement</h6>
-					<a href="/vimeo/video/{{ id }}" class="text-decoration-none">
-						<div class="video_box d-flex align-items-center mb-2 p-2 position-relative" style="background:#1E1E1E; border-radius:8px;">
-							<div
-								class="left---img_recent position-relative me-2">
-								{# <img src="{{ item.pictures.sizes[2].link }}" alt="{{ item.name }}" class="rounded" width="100"> #}
-								<img
-								src='/themes/custom/live/live/assets/images/ziyach.jpg' alt='{$title}' class="rounded" width="100">
-								{# <small class="position-absolute bottom-0 end-0 bg-dark px-2 text-white-50 rounded">{{ item.duration|date('i:s') }}</small> #}
-								<div class="video__play position-absolute top-50 start-50 translate-middle">
-									<svg width="32" height="32" viewbox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 28.8C0 12.8942 12.8943 0 28.8 0C44.7058 0 57.6001 12.8942 57.6001 28.8C57.6001 44.7058 44.7058 57.6 28.8 57.6C12.8943 57.6 0 44.7058 0 28.8Z" fill="#E30613"/>
-										<path d="M23.4 18L40.2 28.8L23.4 39.6V18Z" fill="white" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<span class="video__badge">
-									<div class="cercle__box"></div>Bientôt Disponible</span>
-							</div>
-							<div class="wrapper__body">
-								<p class="mb-0 text-white fw-medium">ZIYECH - Chapitre I</p>
-							</div>
-						</div>
-					</a>
-					{#  #}
-					<a href="/vimeo/video/{{ id }}" class="text-decoration-none">
-						<div class="video_box d-flex align-items-center mb-2 p-2 position-relative" style="background:#1E1E1E; border-radius:8px;">
-							<div
-								class="left---img_recent position-relative me-2">
-								{# <img src="{{ item.pictures.sizes[2].link }}" alt="{{ item.name }}" class="rounded" width="100"> #}
-								<img
-								src='/themes/custom/live/live/assets/images/flam.jpeg' alt='{$title}' class="rounded" width="100">
-								{# <small class="position-absolute bottom-0 end-0 bg-dark px-2 text-white-50 rounded">{{ item.duration|date('i:s') }}</small> #}
-								<div class="video__play position-absolute top-50 start-50 translate-middle">
-									<svg width="32" height="32" viewbox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 28.8C0 12.8942 12.8943 0 28.8 0C44.7058 0 57.6001 12.8942 57.6001 28.8C57.6001 44.7058 44.7058 57.6 28.8 57.6C12.8943 57.6 0 44.7058 0 28.8Z" fill="#E30613"/>
-										<path d="M23.4 18L40.2 28.8L23.4 39.6V18Z" fill="white" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<span class="video__badge">
-									<div class="cercle__box"></div>Bientôt Disponible</span>
-							</div>
-							<div class="wrapper__body">
-								<p class="mb-0 text-white fw-medium">DERBY - CASA NOSTRA</p>
-							</div>
-						</div>
-					</a>
+					<h6 class="text-uppercase text-white-50 mb-3">Précédent</h6>
+
+          {#  #}
+          {% for item in related %}
+            {% set id = item.uri|split('/')|last %}
+            <a href="/vimeo/video/{{ id }}" class="text-decoration-none">
+              <div class="video_box d-flex align-items-center mb-2 p-2 position-relative" style="background:#1E1E1E; border-radius:8px;">
+                <div class="left---img_recent position-relative me-2">
+                  <img src="{{ item.pictures.sizes[2].link }}" alt="{{ item.name }}" class="rounded" width="100">
+                  {# <img src='/themes/custom/live/live/assets/images/shadow.svg' alt='{$title}' class="rounded" width="100"> #}
+                  <small class="position-absolute bottom-0 end-0 bg-dark px-2 text-white-50 rounded">{{ item.duration|date('i:s') }}</small>
+                  <div class="video__play position-absolute top-50 start-50 translate-middle">
+                    <svg width="32" height="32" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 28.8C0 12.8942 12.8943 0 28.8 0C44.7058 0 57.6001 12.8942 57.6001 28.8C57.6001 44.7058 44.7058 57.6 28.8 57.6C12.8943 57.6 0 44.7058 0 28.8Z" fill="#E30613"/>
+                      <path d="M23.4 18L40.2 28.8L23.4 39.6V18Z" fill="white" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  {# <span class="video__badge"><div class="cercle__box"></div>Bientôt Disponible</span> #}
+                </div>
+                <div class="wrapper__body">
+                  <p class="mb-0 text-white fw-medium">{{ item.name }}</p>
+                </div>
+              </div>
+            </a>
+          {% else %}
+            <p class="text-white-50">Aucune vidéo similaire trouvée.</p>
+          {% endfor %}
 				</div>
 			</div>
 
