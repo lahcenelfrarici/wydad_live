@@ -4,9 +4,10 @@
 			class="row">
 
 			<!-- Main Video -->
+      {# {{ video.player }} #}
 			<div class="col-lg-8">
 				<div class="video-thumbnail position-relative">
-					<iframe src="{{ video.player }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://vimeo.com/event/5505960/embed/b0fe9153aa/interaction" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 					<div class="play-icon position-absolute top-50 start-50 translate-middle">
 						<svg width="80" height="80" viewbox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,6 +59,7 @@
           {#  #}
           {% for item in related %}
             {% set id = item.uri|split('/')|last %}
+            {# <a href="/vimeo/video/{{ id }}" class="text-decoration-none"> #}
             <a href="/vimeo/video/{{ id }}" class="text-decoration-none">
               <div class="video_box d-flex align-items-center mb-2 p-2 position-relative" style="background:#1E1E1E; border-radius:8px;">
                 <div class="left---img_recent position-relative me-2">
