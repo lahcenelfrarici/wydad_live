@@ -792,7 +792,7 @@ body:not(.path-frontpage) #header-inside {
   padding: 20px;
   width: 65%;
 }
-.videos_similaires h6 {
+.videos_similaires h6,.right----conetnt h6 {
   color: #FFF !important;
   font-family: "Bebas Neue";
   font-size: 30px;

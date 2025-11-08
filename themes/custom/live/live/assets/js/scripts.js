@@ -153,6 +153,18 @@ jQuery(document).ready(function($) {
     }
   });
 });
+jQuery(document).ready(function($) {
+    // Get the main video href
+    var mainVideoHref = $('.link___href').attr('href');
+
+    // Loop through all sidebar video links
+    $('.remove___video_link').each(function() {
+        var sidebarVideoHref = $(this).attr('href');
+        if (sidebarVideoHref === mainVideoHref) {
+            $(this).remove(); // Remove the entire sidebar link
+        }
+    });
+});
 
 // jQuery(document).ready(function ($) {
 //   $('.btn-share').on('click', function (e) {

@@ -7,6 +7,10 @@
 			<div class="col-lg-8">
 				<div class="video-thumbnail position-relative">
         {# {{dump(video)}}; #}
+
+         <a href="{{ video.hero_link }}" class="text-decoration-none d-none link___href">
+         remove
+         </a>
 					<iframe src="{{ video.player_embed_url }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 					<div class="play-icon position-absolute top-50 start-50 translate-middle">
@@ -52,14 +56,14 @@
 			</div>
 
 			<!-- Sidebar -->
-			<div class="col-lg-4 right----conetnt">
+			<div class="col-lg-4 right----conetnt"><h6 class="text-uppercase text-white-50 mb-3">Précédent</h6>
 				<div class="videos_similaires">
-					<h6 class="text-uppercase text-white-50 mb-3">Précédent</h6>
+
 
           {#  #}
           {% for item in related %}
             {% set id = item.uri|split('/')|last %}
-            <a href="/vimeo/video/{{ id }}" class="text-decoration-none">
+            <a href="/vimeo/video/{{ id }}" class="text-decoration-none remove___video_link">
               <div class="video_box d-flex align-items-center mb-2 p-2 position-relative" style="background:#1E1E1E; border-radius:8px;">
                 <div class="left---img_recent position-relative me-2">
                   <img src="{{ item.pictures.sizes[2].link }}" alt="{{ item.name }}" class="rounded" width="100">
