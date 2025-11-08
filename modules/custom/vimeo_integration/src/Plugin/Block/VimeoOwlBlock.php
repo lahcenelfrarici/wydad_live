@@ -160,13 +160,13 @@ public function build() {
   $hero_embed = $hero['player_embed_url'] ?? '';
   $type = $hero['type'] ?? 'video';
 
-  // Select iframe source based on type
-  if ($type === 'live') {
-    $iframe_src = "{$hero_embed}";
-  } else {
-    $iframe_src = "{$hero_embed}?autoplay=1&loop=1&muted=0&background=1";
-  }
-
+  // Select iframe source based on type dump($videos);
+  // if ($type === 'live') {
+  //   $iframe_src = "{$hero_embed}?autoplay=1";
+  // } else {
+  //   $iframe_src = "{$hero_embed}?autoplay=1&loop=1&muted=0&background=1";
+  // }
+$iframe_src = "{$hero_embed}?autoplay=1&loop=1&muted=0&background=1";
   // --- HERO VIDEO OUTPUT ---
   $output = "
   <div class='vedio__full_first'>
