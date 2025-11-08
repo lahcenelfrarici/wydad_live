@@ -52,7 +52,7 @@ class VimeoOwlBlock extends BlockBase implements ContainerFactoryPluginInterface
     $hero_id = basename($hero['uri']);
     $hero_title = htmlspecialchars($hero['name']);
     $hero_desc = htmlspecialchars($hero['description'] ?? '');
-dump($videos);
+// dump($videos);
     $hero_link = "/vimeo/video/$hero_id";
 
     $output = "
