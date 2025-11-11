@@ -1,3 +1,16 @@
+
+jQuery(document).ready(function($) {
+  // Get href of the main video button
+  var mainHref = $('.btn.test').attr('href');
+
+  // Loop through all owl-item elements
+  $('.all_video_owl .item').each(function() {
+    var itemHref = $(this).find('.video__link').attr('href');
+    if (itemHref === mainHref) {
+      $(this).remove(); // Remove the entire owl-item
+    }
+  });
+});
 jQuery(document).ready(function ($) {
   $('.slider__owl').owlCarousel({
     loop: false,
@@ -13,7 +26,8 @@ jQuery(document).ready(function ($) {
     ],
     responsive: {
       0: {
-        items: 1
+        items: 1,
+
       },
       576: {
         items: 2
@@ -141,18 +155,7 @@ jQuery(document).ready(function($) {
   });
 
 });
-jQuery(document).ready(function($) {
-  // Get href of the main video button
-  var mainHref = $('.btn.test').attr('href');
 
-  // Loop through all owl-item elements
-  $('.all_video_owl .owl-item').each(function() {
-    var itemHref = $(this).find('.video__link').attr('href');
-    if (itemHref === mainHref) {
-      $(this).remove(); // Remove the entire owl-item
-    }
-  });
-});
 jQuery(document).ready(function($) {
     // Get the main video href
     var mainVideoHref = $('.link___href').attr('href');
