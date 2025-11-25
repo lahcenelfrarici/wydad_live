@@ -407,9 +407,9 @@
 .all_video_owl .item .remove_link_default {
   pointer-events: auto;
 }
-#block-live-vimeodernieresvideosowlcarousel .all_video_owl {
+/* #block-live-vimeodernieresvideosowlcarousel .all_video_owl {
   padding-bottom: 0;
-}
+} */
 /* .videos_similaires a:first-of-type {
   display: none !important;
 } */
