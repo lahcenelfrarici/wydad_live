@@ -413,3 +413,12 @@
 /* .videos_similaires a:first-of-type {
   display: none !important;
 } */
+.toolbar-icon-10.user-logged-in.path-frontpage.toolbar-horizontal.toolbar-fixed {
+  padding-top: 0 !important;
+}
+.header-inside {
+  z-index: 500;
+}
+#toolbar-administration {
+  display: none;
+}
