@@ -46,7 +46,7 @@
 */
 #}
 
-{% include "@live/partials/header.html.twig" %}
+{# {% include "@live/partials/header.html.twig" %}
 {% if page.home_center %}
 	{{ page.home_center }}
 {% endif %}
@@ -87,4 +87,82 @@
 	</div>
 </section>
 
-{% include "@live/partials/footer.html.twig" %}
+{% include "@live/partials/footer.html.twig" %} #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wydad TV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    .message-box {
+      max-width: 600px;
+      padding: 50px 40px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: #d80027; /* red accent */
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="message-box">
+
+    <!-- LOGO -->
+    <img
+      src="/themes/custom/live/live/assets/images/logo_footer.svg"
+      alt="Wydad TV Logo"
+      class="logo"
+    >
+
+
+
+    <div class="divider"></div>
+
+    <p>
+      The Wydad TV platform is currently undergoing optimization and improvements
+      to bring you impactful content in the coming weeks.
+    </p>
+
+  </div>
+
+</body>
+</html>
