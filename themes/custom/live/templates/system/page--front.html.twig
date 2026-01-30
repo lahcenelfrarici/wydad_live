@@ -46,7 +46,7 @@
 */
 #}
 
-{# {% include "@live/partials/header.html.twig" %}
+{% include "@live/partials/header.html.twig" %}
 {% if page.home_center %}
 	{{ page.home_center }}
 {% endif %}
@@ -87,7 +87,8 @@
 	</div>
 </section>
 
-{% include "@live/partials/footer.html.twig" %} #}
+{% include "@live/partials/footer.html.twig" %}
+{#
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,9 +127,7 @@
       margin-bottom: 15px;
       letter-spacing: 1px;
     }
-{# .messages--status {
-  display: none !important;
-} #}
+
 .messages__wrapper {
   display: none;
 }
@@ -170,4 +169,4 @@
   </div>
 
 </body>
-</html>
+</html> #}
